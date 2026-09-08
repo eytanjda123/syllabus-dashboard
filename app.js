@@ -426,15 +426,16 @@
     var open = !!state.expanded[key];
     var done = isDone(it);
     var overdue = !done && it._due < new Date();
+    var urgent = !done && (it._due - new Date()) <= URGENT_HOURS * 3600000;
     var isPool = !!(it.pool && it.pool.isPool);
 
     var cls = 'item';
     if (done) cls += ' item--done';
     if (isPool) cls += ' item--pool';
     if (overdue && opts.flagOverdue !== false) cls += ' item--overdue';
+    if (urgent && opts.flagOverdue !== false) cls += ' item--urgent';
 
     var meta = [];
-    meta.push('<span class="typetag">' + esc(TYPE_LABEL[it.type]) + '</span>');
     if (opts.showDate) meta.push('<span>' + esc(fmtWhen(it)) + '</span>');
     else if (it.time) meta.push('<span>' + esc(fmtTime(it.time)) + '</span>');
     if (opts.showCourse) meta.push('<span>' + esc(shortCourse(it.courseName)) + '</span>');
@@ -452,11 +453,11 @@
     html += '<li class="' + cls + '">';
     html += '<input class="check" type="checkbox" data-complete="' + attr(key) + '"' +
             (done ? ' checked' : '') + ' aria-label="Mark ' + attr(it.summary) + ' complete">';
-    html += '<span class="bar bar-' + it.type + '" aria-hidden="true"></span>';
     html += '<div class="body">';
     html += '<button class="disclose" type="button" data-toggle="' + attr(key) + '" aria-expanded="' + (open ? 'true' : 'false') + '">';
+    html += '<span class="itemtag itemtag-' + it.type + '">' + esc(TYPE_LABEL[it.type]) + '</span>';
     html += '<span class="summary">' + esc(it.summary) + '</span>';
-    html += '<span class="meta">' + meta.join('') + '</span>';
+    if (meta.length) html += '<span class="meta">' + meta.join('') + '</span>';
     html += '</button>';
 
     if (open) {

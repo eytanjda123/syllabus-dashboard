@@ -383,10 +383,10 @@ button {
 
 .item {
   display: grid;
-  grid-template-columns: 1.3rem 0.42rem 1fr;
-  gap: 0 0.45rem;
+  grid-template-columns: 1.3rem 1fr;
+  gap: 0 0.5rem;
   align-items: start;
-  padding: 0.3rem 0;
+  padding: 0.35rem 0;
   border-bottom: 1px solid var(--rule);
   font-size: 0.87rem;
 }
@@ -400,22 +400,6 @@ button {
   height: 1rem;
 }
 
-.item .bar {
-  width: 3px;
-  border-radius: 2px;
-  align-self: stretch;
-  margin-top: 0.2rem;
-  margin-bottom: 0.15rem;
-  background: var(--other);
-}
-
-.bar-reading { background: var(--reading); }
-.bar-assignment { background: var(--assignment); }
-.bar-exam { background: var(--exam); }
-.bar-project { background: var(--project); }
-.bar-deliverable { background: var(--deliverable); }
-.bar-other { background: var(--other); }
-
 .item .body { min-width: 0; }
 
 .item .disclose {
@@ -427,22 +411,50 @@ button {
 
 .item .disclose:hover .summary { text-decoration: underline; text-decoration-color: var(--rule-strong); }
 
+.item .itemtag {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  margin-bottom: 0.25rem;
+}
+
+.itemtag-reading     { background: color-mix(in srgb, var(--reading) 16%, var(--paper-raised)); color: var(--reading); }
+.itemtag-assignment  { background: color-mix(in srgb, var(--assignment) 16%, var(--paper-raised)); color: var(--assignment); }
+.itemtag-exam        { background: color-mix(in srgb, var(--exam) 16%, var(--paper-raised)); color: var(--exam); }
+.itemtag-project     { background: color-mix(in srgb, var(--project) 16%, var(--paper-raised)); color: var(--project); }
+.itemtag-deliverable { background: color-mix(in srgb, var(--deliverable) 16%, var(--paper-raised)); color: var(--deliverable); }
+.itemtag-other       { background: color-mix(in srgb, var(--other) 16%, var(--paper-raised)); color: var(--other); }
+
+.item .summary { display: block; }
+
 .item .meta {
   font-size: 0.72rem;
   color: var(--ink-faint);
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.05rem;
+  margin-top: 0.2rem;
   font-variant-numeric: tabular-nums;
 }
 
 .item--done .summary { color: var(--ink-faint); text-decoration: line-through; text-decoration-thickness: 1px; }
 .item--pool { opacity: 0.78; }
-.item--pool .bar { opacity: 0.5; }
 .item--overdue .summary { color: var(--exam); }
 
-.typetag { color: var(--ink-soft); }
+/* strategic bolding: only rows due within the next 48 hours (or overdue) compete for attention */
+.item--urgent {
+  background: var(--paper-raised);
+  margin: 0.1rem -0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  border-bottom-color: transparent;
+}
+.item--urgent .summary { font-weight: 600; }
+.item:not(.item--urgent):not(.item--done) .summary { color: var(--ink-soft); }
 
 .detail {
   margin: 0.35rem 0 0.5rem;
