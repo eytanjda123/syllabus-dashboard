@@ -65,6 +65,93 @@
   function isPlanned(it) { return !!poolSelected[itemKey(it.courseId, it.id)]; }
   function isIgnored(it) { return !!ignored[itemKey(it.courseId, it.id)]; }
 
+  /* ------------------------------------------------------- cross-device sync
+     No server involved: progress travels as a link or a file, device to
+     device, and merges in additively (it only ever adds checked-off items,
+     never removes them). */
+
+  function b64urlEncode(str) {
+    var b64 = btoa(unescape(encodeURIComponent(str)));
+    return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+
+  function b64urlDecode(s) {
+    var b64 = s.replace(/-/g, '+').replace(/_/g, '/');
+    while (b64.length % 4) b64 += '=';
+    try { return decodeURIComponent(escape(atob(b64))); } catch (e) { return null; }
+  }
+
+  function syncPayload() {
+    return { completed: completed, poolSelected: poolSelected, ignored: ignored };
+  }
+
+  function mergeSyncData(data) {
+    var n = 0;
+    function mergeInto(target, src) {
+      if (!src) return;
+      Object.keys(src).forEach(function (k) {
+        if (src[k] && !target[k]) { target[k] = true; n++; }
+      });
+    }
+    mergeInto(completed, data.completed);
+    mergeInto(poolSelected, data.poolSelected);
+    mergeInto(ignored, data.ignored);
+    if (n) {
+      write(KEY.completed, completed);
+      write(KEY.pool, poolSelected);
+      write(KEY.ignored, ignored);
+    }
+    return n;
+  }
+
+  function importSyncPayload(payloadB64) {
+    var json = b64urlDecode(payloadB64);
+    if (!json) return 0;
+    var data;
+    try { data = JSON.parse(json); } catch (e) { return 0; }
+    return mergeSyncData(data);
+  }
+
+  function buildSyncLink() {
+    return window.location.href.split('#')[0] + '#/sync/import/' + b64urlEncode(JSON.stringify(syncPayload()));
+  }
+
+  function copySyncLink() {
+    var url = buildSyncLink();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function () {
+        state.syncMessage = 'Sync link copied. Send it to your other device (Messages, email, AirDrop) and open it there — it merges in automatically.';
+        render();
+      }, function () { showSyncLinkFallback(url); });
+    } else {
+      showSyncLinkFallback(url);
+    }
+  }
+
+  function showSyncLinkFallback(url) {
+    state.syncMessage = 'Could not copy automatically — tap the link below, select all, and copy it yourself.';
+    state.syncFallbackLink = url;
+    render();
+  }
+
+  function downloadSyncFile() {
+    var data = syncPayload();
+    data.exportedAt = new Date().toISOString();
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'coursework-progress-' + ymd(today()) + '.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    state.syncMessage = 'Backup file downloaded. Import it on another device the same way.';
+    render();
+  }
+
+  function countKeys(obj) { return Object.keys(obj).filter(function (k) { return obj[k]; }).length; }
+
   /* ------------------------------------------------------------------- state */
 
   var state = {
@@ -712,6 +799,41 @@
     return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
+  /* --------------------------------------------------------------- sync page */
+
+  function renderSync() {
+    var html = '<h2 class="section-head">Sync across devices</h2>';
+    html += '<p class="empty" style="font-style:normal;font-family:inherit;font-size:.85rem;padding-top:0">' +
+      'Checked-off items live in this browser only, so a phone and a laptop keep separate progress. ' +
+      'Move it over with a link or a file — nothing goes through a server, it stays on your devices.</p>';
+
+    if (state.syncMessage) {
+      html += '<p class="poolbanner">' + esc(state.syncMessage) + '</p>';
+      delete state.syncMessage;
+    }
+    if (state.syncFallbackLink) {
+      html += '<input class="synclink" type="text" readonly value="' + attr(state.syncFallbackLink) + '">';
+      delete state.syncFallbackLink;
+    }
+
+    var n = countKeys(completed) + countKeys(poolSelected) + countKeys(ignored);
+    html += '<p style="font-size:.85rem;color:var(--ink-soft);margin-top:.9rem">' +
+      n + ' item' + (n === 1 ? '' : 's') + ' checked off, planned, or cleared on this device.</p>';
+
+    html += '<div class="nudge-actions">';
+    html += '<button class="btn" type="button" data-sync="link">Copy a sync link</button>';
+    html += '<button class="btn" type="button" data-sync="file">Download a backup file</button>';
+    html += '<label class="btn" for="syncImportFile">Import a file&hellip;</label>';
+    html += '<input type="file" id="syncImportFile" accept="application/json" class="sr-only">';
+    html += '</div>';
+
+    html += '<p class="found-note" style="margin-top:.6rem;max-width:34rem">' +
+      'On the device that has your progress: tap <strong>Copy a sync link</strong>, send it to yourself, and open it on the other device — it merges in on its own. ' +
+      '<strong>Download a backup file</strong> does the same thing through Files or email instead of a link. Importing only adds items; it never unchecks anything.</p>';
+
+    return html;
+  }
+
   /* ------------------------------------------------------------ courses page */
 
   function renderCourses() {
@@ -775,11 +897,23 @@
     if (parts[0] === 'archive') return { name: 'archive' };
     if (parts[0] === 'reference') return { name: 'reference' };
     if (parts[0] === 'courses') return { name: 'courses' };
+    if (parts[0] === 'sync' && parts[1] === 'import' && parts[2]) return { name: 'syncImport', payload: parts[2] };
+    if (parts[0] === 'sync') return { name: 'sync' };
     return { name: 'home' };
   }
 
   function render() {
     var route = currentRoute();
+
+    if (route.name === 'syncImport') {
+      var imported = importSyncPayload(route.payload);
+      state.syncMessage = imported > 0
+        ? ('Imported ' + imported + ' item' + (imported === 1 ? '' : 's') + ' from the link.')
+        : 'That link had nothing new to add.';
+      window.location.hash = '#/sync';
+      return;
+    }
+
     var main = document.getElementById('view');
     var html = '';
 
@@ -794,6 +928,7 @@
     else if (route.name === 'reference') html += renderReference();
     else if (route.name === 'courses') html += renderCourses();
     else if (route.name === 'archive') html += renderArchive();
+    else if (route.name === 'sync') html += renderSync();
     else html += renderHome();
 
     main.innerHTML = html;
@@ -843,9 +978,16 @@
   }
 
   document.addEventListener('click', function (e) {
-    var t = e.target.closest ? e.target.closest('[data-view],[data-step],[data-day],[data-toggle],[data-plan],[data-missed]') : null;
+    var t = e.target.closest ? e.target.closest('[data-view],[data-step],[data-day],[data-toggle],[data-plan],[data-missed],[data-sync],.synclink') : null;
     if (!t) return;
 
+    if (t.classList && t.classList.contains('synclink')) { t.select(); return; }
+    if (t.hasAttribute('data-sync')) {
+      var kind = t.getAttribute('data-sync');
+      if (kind === 'link') copySyncLink();
+      else if (kind === 'file') downloadSyncFile();
+      return;
+    }
     if (t.hasAttribute('data-view')) { setView(t.getAttribute('data-view')); return; }
     if (t.hasAttribute('data-step')) {
       var s = t.getAttribute('data-step');
@@ -901,6 +1043,20 @@
     if (el.id === 'dotsToggle') {
       write(KEY.monthDots, el.checked);
       render();
+      return;
+    }
+    if (el.id === 'syncImportFile' && el.files && el.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var data = null;
+        try { data = JSON.parse(reader.result); } catch (e) { data = null; }
+        var n = data ? mergeSyncData(data) : 0;
+        state.syncMessage = data
+          ? ('Imported ' + n + ' item' + (n === 1 ? '' : 's') + ' from the file.')
+          : 'That file could not be read — make sure it’s a backup downloaded from this dashboard.';
+        render();
+      };
+      reader.readAsText(el.files[0]);
     }
   });
 
@@ -927,7 +1083,10 @@
     else if (e.key === 't' || e.key === 'T') { e.preventDefault(); step('today'); }
   });
 
-  window.addEventListener('hashchange', render);
+  window.addEventListener('hashchange', function () {
+    render();
+    window.scrollTo(0, 0);
+  });
 
   /* ------------------------------------------------------------------- boot */
 
@@ -935,7 +1094,7 @@
   syncAnchors();
 
   document.getElementById('footnote').innerHTML =
-    'Checkboxes are saved in this browser only — they do not sync across devices, and they never change what the dashboard treats as due. ' +
+    'Checkboxes are saved in this browser only and never change what the dashboard treats as due — see <a href="#/sync">Sync</a> to move them to another device. ' +
     'Keyboard: 1 day, 2 week, 3 month, arrows to move, T for today.';
 
   loadAll().then(function () {

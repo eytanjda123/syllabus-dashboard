@@ -199,6 +199,12 @@ button {
 
 .stepper button:hover { color: var(--ink); border-color: var(--ink-soft); }
 
+.stepper button.btn {
+  width: auto;
+  height: 1.6rem;
+  padding: 0 0.6rem;
+}
+
 .stepper .range {
   font-variant-numeric: tabular-nums;
   min-width: 9.5rem;
@@ -377,7 +383,7 @@ button {
 
 .item {
   display: grid;
-  grid-template-columns: 1.1rem 0.42rem 1fr;
+  grid-template-columns: 1.3rem 0.42rem 1fr;
   gap: 0 0.45rem;
   align-items: start;
   padding: 0.3rem 0;
@@ -388,10 +394,10 @@ button {
 .item:last-child { border-bottom: none; }
 
 .item .check {
-  margin: 0.18rem 0 0;
+  margin: 0.15rem 0 0;
   accent-color: var(--ink-soft);
-  width: 0.85rem;
-  height: 0.85rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .item .bar {
@@ -682,6 +688,19 @@ button {
   max-width: 46rem;
 }
 
+.synclink {
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.5rem;
+  margin-top: 0.4rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+  color: var(--ink);
+}
+
 .hidden { display: none !important; }
 
 .sr-only {
@@ -698,6 +717,8 @@ button {
 
 @media (max-width: 620px) {
   body { font-size: 14px; }
+  .nav { flex-wrap: wrap; gap: 0.5rem 0.9rem; }
+  .nav a { flex: 0 0 auto; }
   .daytile { min-height: 4.3rem; padding: 0.35rem 0.2rem 0.4rem; }
   .dnum { font-size: 0.95rem; }
   .dname { font-size: 0.6rem; }
@@ -705,7 +726,12 @@ button {
   .mcell { min-height: 3.2rem; }
   .stepper { margin-left: 0; width: 100%; justify-content: space-between; }
   .stepper .range { min-width: 0; }
-  .item { grid-template-columns: 1rem 0.35rem 1fr; }
+  .stepper button { width: 2rem; height: 2rem; }
+  .stepper button.btn { width: auto; height: 2rem; padding: 0 0.75rem; }
+  .segmented button { padding: 0.35rem 0.85rem; }
+  .item { grid-template-columns: 1.7rem 0.4rem 1fr; padding: 0.45rem 0; }
+  .item .check { width: 1.35rem; height: 1.35rem; margin-top: 0.08rem; }
+  .nudge-actions .btn, .nudge-actions label.btn { flex: 1 1 auto; text-align: center; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
