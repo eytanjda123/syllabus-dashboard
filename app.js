@@ -1077,6 +1077,11 @@
       }
       return;
     }
+    if ((e.key === 'd' || e.key === 'D') && !mod) {
+      e.preventDefault();
+      window.location.hash = '#/';
+      return;
+    }
     if (!onHome || mod) return;
     if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
     else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
@@ -1095,7 +1100,7 @@
 
   document.getElementById('footnote').innerHTML =
     'Checkboxes are saved in this browser only and never change what the dashboard treats as due — see <a href="#/sync">Sync</a> to move them to another device. ' +
-    'Keyboard: 1 day, 2 week, 3 month, arrows to move, T for today.';
+    'Keyboard: D for due, 1 day, 2 week, 3 month, arrows to move, T for today.';
 
   loadAll().then(function () {
     render();
