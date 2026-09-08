@@ -1,5 +1,13 @@
 {
   "semester": "Fall 2026",
-  "courses": [],
+  "courses": [
+    "courses/mgt-589-competition-economics-policy.json",
+    "courses/mgt-527-strategic-management-nonprofits.json",
+    "courses/mgt-531-interpersonal-group-dynamics.json",
+    "courses/mgt-632-housing-connecticut.json",
+    "courses/mgt-867-money-power-purpose.json",
+    "courses/art-1514-basic-drawing.json",
+    "courses/rel-8100-mission-driven-innovation.json"
+  ],
   "archive": []
 }

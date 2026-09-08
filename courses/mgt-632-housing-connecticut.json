@@ -1,0 +1,232 @@
+{
+  "courseId": "mgt-632-housing-connecticut",
+  "courseName": "MGT 632: Housing Connecticut — Developing Healthy and Sustainable Neighborhoods",
+  "professor": "Andrei Harwell (coordinating faculty), with Alan Plattus, Anika Singh Lemar, Kate Cooney, and Aicha Woods",
+  "section": "Management (Mgt 632) — cross-listed as Arch 8108 / Law 30254 / Env 969",
+  "semester": "Fall 2026",
+  "archived": false,
+
+  "definitions": {
+    "disciplineSpecificSessions": "The four schools have different academic calendars, so schedule conflicts are managed by making some class meetings discipline-specific. The schedule lists which disciplines are required to attend each meeting. Even if you are not required to attend a meeting, you may attend if you are available. Recorded or asynchronous sessions may be implemented if necessary. For a Management student, the sessions that are NOT required are 8/28 (LAW intro), 9/4 (ARC/ENV intro), 9/28 (ARC studio travel makeup), 10/23 (ARC and LAW project workshop), and 12/1 (LAW disciplinary workshop).",
+    "workingGroups": "Students are divided by lottery into three multi-disciplinary groups, each including Law, Management, Architecture, and Environment students. Each group sets up its own administrative procedures — weekly coordination meetings, file sharing protocols, and working standards — and models a real-world project development team with specific member roles.",
+    "standingMeetingTimes": "Each group must establish at least one standing meeting time outside of class when all group members are available to meet together.",
+    "assignments": "Detailed assignments, where indicated in the schedule, are described in class and released on Canvas. All assignments are to be done in your project group unless stated otherwise.",
+    "readings": "Readings are to be done in advance of the class meeting where they are listed. Each week, faculty highlight which readings are required for the next week and describe optional readings relevant to the next module. All readings are on Canvas, either through electronic reserve or the 'files' section. Questions on reading availability go to the TA.",
+    "finalProject": "Each student group produces a comprehensive project proposal including, at minimum: detailed narrative argument supported by data and mapping, legal framework, cost estimate, pro forma and proposed financing, and schematic architectural design and visualizations. More detailed component requirements are posted on Canvas sometime after the first week of classes.",
+    "aiPolicy": "AI tools may be used freely provided all use is attributed and documented. You remain fully responsible for accuracy, quality, and integrity of everything you submit, including errors, fabricated citations, or design flaws introduced by an AI tool. Each submission must include a brief statement of which tools you used and how, including tasks delegated and a representative sample of prompts. Fuller documentation must be provided on request. Undisclosed or undocumented use is treated as an academic integrity violation and referred to the Rules Committee.",
+    "clinicalExpectations": "Clinical work requires the highest level of professionalism. Punctual attendance is expected at all classes, supervision sessions, and client meetings. All client work is strictly confidential at the discretion of the project partner. Personal experiences shared in class or supervision remain confidential. No recording of classes, supervision, or client meetings without permission. Students are expected to check email at least four times per day and respond to client emails typically within twenty-four hours.",
+    "stylesheet": "Writing and citations shall conform to the Chicago Manual of Style, 17th Edition (2017)."
+  },
+
+  "gradingPolicy": "The syllabus does not state a numeric grading breakdown. Evaluation is described qualitatively through the clinical expectations and the Clinic's Evaluation Criteria: professionalism, punctual attendance at all classes, supervision sessions and client meetings, active participation in discussions and presentations, and engagement with the group project proposal. Confirm the grading basis with the coordinating faculty.",
+
+  "officeHours": {
+    "note": "No scheduled office hours listed in the syllabus. Faculty state they will 'be available to meet student needs'; contact instructors directly.",
+    "details": "Andrei Harwell (coordinating faculty, Architecture) — Yale Urban Design Workshop, 1221 Chapel Street. Alan Plattus (Architecture) — 710 Rudolph Hall. Anika Singh Lemar (Law) — LSO Room M72. Kate Cooney (Management) — Evans Hall 5218; she is the SOM-side instructor. Aicha Woods (Environment) — 301 Prospect Street Rm 101. TFs: Andrea Montejano (Architecture, Rudolph Hall) and Elise Celestin (Management). Email addresses and phone numbers are in the syllabus PDF and on Canvas."
+  },
+
+  "classSessions": [
+    { "date": "2026-08-28", "time": "09:00", "topic": "Week 0 — Intro Meeting: LAW", "note": "LAW students only — not required for Management. Falls before the SOM semester begins." },
+    { "date": "2026-09-04", "time": "09:00", "topic": "Week 0 — Intro Meeting: ARC/ENV", "note": "ARC and ENV only — not required for Management. Location: Rudolph Hall, 4th floor (not the usual Evans 4220)." },
+    { "date": "2026-09-11", "time": "09:00", "topic": "Week 1 — Housing CT Kick Off! Affordable Building Types: Case Studies", "note": "Required for MGT. First required session for Management students." },
+    { "date": "2026-09-18", "time": "09:00", "topic": "Week 2 — Evolution of Affordability", "note": "Required for MGT." },
+    { "date": "2026-09-25", "time": "09:00", "topic": "Week 3 — Via Verde Case Review and Finance Workshop", "note": "Required for LAW, MGT, ENV — architecture students are away for studio travel week and watch the recording the following Monday." },
+    { "date": "2026-09-28", "time": null, "topic": "Week 3 — Architects watch recording (Studio Travel Week Make Up Day)", "note": "ARC only, and a Monday rather than the usual Friday — not required for Management." },
+    { "date": "2026-10-02", "time": "09:00", "topic": "Week 4 — Codes, Codes, Codes!", "note": "Required for MGT." },
+    { "date": "2026-10-09", "time": "09:00", "topic": "Week 5 — External Review 1: Initial Project Concepts", "note": "Required for MGT. External review — outside critics attend." },
+    { "date": "2026-10-16", "time": "09:00", "topic": "Week 6 — Project Workshop", "note": "Required for LAW, MGT, ENV (not ARC)." },
+    { "date": "2026-10-23", "time": "09:00", "topic": "Week 7 — Project Workshop", "note": "ARC and LAW only — not required for Management." },
+    { "date": "2026-10-30", "time": "09:00", "topic": "Week 8 — Housing Crisis as Call to Action", "note": "Required for MGT." },
+    { "date": "2026-11-06", "time": "09:00", "topic": "Week 9 — External Review 2: Developed Project Concept", "note": "Required for MGT. External review — outside critics attend." },
+    { "date": "2026-11-13", "time": "09:00", "topic": "Week 10 — Supervision", "note": "Required for MGT." },
+    { "date": "2026-11-20", "time": "09:00", "topic": "Week 11 — Moot", "note": "Required for MGT." },
+    { "date": "2026-11-27", "time": null, "topic": "Week 12 — Thanksgiving Break – No Class", "note": "No class." },
+    { "date": "2026-12-01", "time": null, "topic": "Week 13 — LAW Disciplinary Workshop", "note": "LAW only, and a Tuesday rather than the usual Friday — not required for Management." },
+    { "date": "2026-12-04", "time": "09:00", "topic": "Week 13 — ARC, MGT, ENV Disciplinary Workshop", "note": "Required for MGT (not LAW). Discipline-specific sessions may meet somewhere other than Evans 4220 — watch Canvas announcements." },
+    { "date": "2026-12-11", "time": "09:00", "topic": "Week 14 — MGT and ENV Disciplinary Workshops", "note": "Required for MGT and ENV only. Discipline-specific sessions may meet somewhere other than Evans 4220 — watch Canvas announcements." },
+    { "date": "2026-12-18", "time": "09:00", "topic": "Week 15 — External Review 3: Final Presentations", "note": "Required for MGT. Location: Rudolph Hall (School of Architecture), not Evans 4220." }
+  ],
+
+  "items": [
+    {
+      "id": "w0-r1",
+      "type": "reading",
+      "date": "2026-09-04",
+      "time": null,
+      "summary": "Documentary on how housing policy has kept Connecticut segregated. Attached to the ARC/ENV intro, so optional for MGT.",
+      "verbatim": "Fighting For Home: How Housing Policy Keeps Connecticut Segregated, 2024. https://www.ctpublic.org/watch/local-programming/fighting-for-home",
+      "link": { "url": "https://www.ctpublic.org/watch/local-programming/fighting-for-home", "sourceType": "original", "note": null },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w0-r2",
+      "type": "reading",
+      "date": "2026-09-04",
+      "time": null,
+      "summary": "Kubey on housing for the common good. Attached to the ARC/ENV intro, so optional for MGT.",
+      "verbatim": "Kubey, Karen. \"Housing for the Common Good.\" In Housing as Intervention: Architecture Towards Social Equity, pp. 6-13. John Wiley & Sons, Incorporated, 2018.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w0-r3",
+      "type": "reading",
+      "date": "2026-09-04",
+      "time": null,
+      "summary": "Prior years' clinic publications. Attached to the ARC/ENV intro, so optional for MGT.",
+      "verbatim": "Yale Urban Design Workshop, Housing Clinic 2022 and 2023 publications.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w1-r1",
+      "type": "reading",
+      "date": "2026-09-11",
+      "time": null,
+      "summary": "The 'Market' chapter arguing homelessness is fundamentally a housing supply problem.",
+      "verbatim": "Colburn, Gregg and Clayton Page Aldern. \"Market\" in Homelessness is a Housing Problem, pp. 121-144. University of California Press, 2022",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w1-r2",
+      "type": "reading",
+      "date": "2026-09-11",
+      "time": null,
+      "summary": "The rise, decline, and possible revival of small-scale urban housing.",
+      "verbatim": "Podemski, Max. A paradise of small houses: the evolution, devolution, and potential rebirth of urban housing, pp. 11-34 and 136-154.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w1-r3",
+      "type": "reading",
+      "date": "2026-09-11",
+      "time": null,
+      "summary": "Who lives in affordable family housing, and what shapes its design.",
+      "verbatim": "Jones, Tom, William Pettus, and Michael Pyatok. \"Part One: Who Lives in Affordable Family Housing?\" and \"Part Two: Factors Influencing Affordable Family Housing Design.\" In Good Neighbors: Affordable Family Housing, pp. 13-59. New York: McGraw Hill, 1997.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section. Note on the quote: this citation straddles a page break inside a schedule table, so the raw PDF text interleaves the 'ARC, LAW, MGT, ENV' column value and the running page header in the middle of it. The citation is reproduced here as it reads in the document." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w2-r1",
+      "type": "reading",
+      "date": "2026-09-18",
+      "time": null,
+      "summary": "The core 'missing middle' text — chapter 7 on building small at scale.",
+      "verbatim": "Parolek, Daniel, and Arthur Nelson. Missing Middle Housing: Thinking Big and Building Small to Respond to Today's Housing Crisis. Washington, DC: Island Press, 2020. Chapter 7, 225–291.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w2-r2",
+      "type": "reading",
+      "date": "2026-09-18",
+      "time": null,
+      "summary": "Timber construction as long-term carbon storage — relevant to the clinic's CLT and prefab focus.",
+      "verbatim": "Churkina, Galina, Andrew Organschi, Christopher P. O. Reyer, et al. \"Buildings as a Global Carbon Sink.\" Nature Sustainability 3 (2020): 269–276.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section. Also published at doi.org/10.1038/s41893-019-0462-4." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w3-r1",
+      "type": "reading",
+      "date": "2026-09-25",
+      "time": null,
+      "summary": "Four chapters of Linneman & Kirsch on pro formas, cap rates, and development feasibility — the finance backbone for the project.",
+      "verbatim": "Linneman, Peter and Bruce Kirsch. Real Estate, Finance and Investments. Philadelphia: Linneman Associates, 2020. See especially: Chapter 5, \"Property Level Pro Forma Analysis,\" pp. 55-83; Chapter 9, \"The Use and Selection of Cap Rates,\" pp. 120-164; Chapter 10, \"Development Pro Forma Analysis,\" pp. 165-177; Chapter 11, \"Development Feasibility Analysis,\" pp. 178-193.",
+      "link": { "url": null, "sourceType": "none", "note": "On Canvas — readings are provided through electronic reserve or the course Files section." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w4-r1",
+      "type": "reading",
+      "date": "2026-10-02",
+      "time": null,
+      "summary": "Land use coordination in New Haven before zoning existed.",
+      "verbatim": "Cappel, Andrew J. \"A Walk Along Willow: Patterns of Land Use Coordination in Pre-Zoning New Haven 1870-1926.\" The Yale Law Journal Vol 101, no. 3 1991p.617 - 642. doi:10.2307/796868. http://www.jstor.org.yale.idm.oclc.org/stable/796868.",
+      "link": { "url": "http://www.jstor.org.yale.idm.oclc.org/stable/796868", "sourceType": "original", "note": null },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "w4-r2",
+      "type": "reading",
+      "date": "2026-10-02",
+      "time": null,
+      "summary": "Rethinking the local regulations that constrain housing production.",
+      "verbatim": "Ellen, Ingrid Gould, Yonah Freemark, and Jenny Schuetz. \"Rethinking Local Regulations Governing Housing Production.\" In A Research Agenda for US Land Use and Planning Law, edited by Joseph R. Nolon, 119-137. Edward Elgar Publishing,2023. https://doi.org/10.4337/9781803928203.00015.",
+      "link": { "url": "https://doi.org/10.4337/9781803928203.00015", "sourceType": "original", "note": null },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "external-review-1",
+      "type": "deliverable",
+      "date": "2026-10-09",
+      "time": "09:00",
+      "summary": "External Review 1 — present initial project concepts to outside reviewers.",
+      "verbatim": "External Review 1: Initial Project Concepts",
+      "link": { "url": null, "sourceType": "none", "note": "Detailed assignment requirements are described in class and released on Canvas." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "external-review-2",
+      "type": "deliverable",
+      "date": "2026-11-06",
+      "time": "09:00",
+      "summary": "External Review 2 — present the developed project concept to outside reviewers.",
+      "verbatim": "External Review 2: Developed Project Concept",
+      "link": { "url": null, "sourceType": "none", "note": "Detailed assignment requirements are described in class and released on Canvas." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "moot",
+      "type": "deliverable",
+      "date": "2026-11-20",
+      "time": "09:00",
+      "summary": "Moot — rehearsal of the project ahead of final presentations.",
+      "verbatim": "Moot",
+      "link": { "url": null, "sourceType": "none", "note": "Detailed assignment requirements are described in class and released on Canvas." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "final-project-proposal",
+      "type": "project",
+      "date": "2026-12-18",
+      "time": "09:00",
+      "summary": "Final group project proposal and External Review 3 presentation at Rudolph Hall — narrative, mapping, legal framework, cost estimate, pro forma, financing, and schematic design.",
+      "verbatim": "Each student group will be responsible for producing a comprehensive project proposal. Proposals will include, at a minimum, detailed narrative argument supported by data and mapping, legal framework, cost estimate, pro forma and proposed financing, and schematic architectural design and visualizations. More detailed descriptions of the required components of this proposal will be posted on canvas sometime following the first week of classes.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived: the syllabus does not state a separate submission deadline for the proposal. It is dated here to External Review 3: Final Presentations (12.18.26, Rudolph Hall), the last meeting of the semester. Confirm the actual submission deadline on Canvas." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    }
+  ]
+}

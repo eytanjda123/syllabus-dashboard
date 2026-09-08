@@ -1,0 +1,199 @@
+{
+  "courseId": "mgt-531-interpersonal-group-dynamics",
+  "courseName": "MGT 531: Interpersonal & Group Dynamics (IPD)",
+  "professor": "Heidi Brooks",
+  "section": null,
+  "semester": "Fall 2026",
+  "archived": false,
+
+  "definitions": {
+    "class": "The weekly three-hour class session, Tuesdays 2:35-5:35pm in Evans 4220. The first portion introduces concepts through interpersonal exercises, short lectures, and video; the second portion is often spent in interaction with smaller groups, including your lab. Attendance is required at the first two classes to retain a place in the course or on the waiting list. Because of the heavy experiential orientation, you have to be there to learn — you won't get much out of someone else's notes.",
+    "lab": "A mandatory three-hour weekly lab meeting, Tuesdays 6:30-9:30pm, held most weeks of the course. In the Lab you work on your personal learning goals and contribute to creating a learning environment. Experienced facilitators are assigned to the group, but it is not their responsibility to make things happen — it is yours. Lab group meeting times are not to be rescheduled. 'Detached observers' gain relatively little from this course.",
+    "retreat": "A mandatory off-campus weekend retreat at Wisdom House, Litchfield CT, Friday-Sunday November 6-8. It provides an immersive learning environment to go more deeply into interpersonal relationships. Without an excused absence from the Office of Student Affairs, it is not possible to miss the retreat and pass the course. No exceptions are made for recruiting trips.",
+    "assignments": "Written work type 1. Primarily reflection questions in preparation for class. Must be submitted electronically through Canvas prior to the beginning of class in order to receive credit. Since you may use this material in class activities, you may wish to have a device with you in class to access them. The syllabus does not enumerate individual assignment due dates — watch Canvas.",
+    "reflectionJournal": "Written work type 2. A weekly entry helping you reflect on that week's Lab and derive learning from the experience. Each entry answers four week-in-review questions: DO (what happened — 1-3 meaningful moments as 'data points', especially risks taken or considered), REFLECT part 1 (your internal and external responses — what you felt/said/did, what you held back and why, what assumptions you made, how the group responded), REFLECT part 2 (what you are learning about yourself, your impact, group behavior, and how it connects to readings and your learning goal), and APPLY (what's next — what you'll try, what interpersonal risk you want to take). Due 48 hours after the end of Lab, submitted through Canvas. Graded on quality, timeliness, and thoroughness — quality not quantity; the factual summary should be the shortest portion. Only the course faculty and reader-coach read it. You get it back with comments at least once, roughly halfway through the course.",
+    "contract": "By enrolling you make an explicit contract to be actively involved, treated as seriously as any other contract, between you, the course faculty, and your fellow classmates. You are expected to attend every class, all Lab meetings and the weekend retreat, to be contributing and punctual, to come fully prepared, and to take risks in service of your own and others' learning.",
+    "gradeLevels": "HH: exceptional performance in pushing yourself, takes a lot of risks, one of the key people making the group successful, excellent thoughtful written work. H: high involvement, consistently raises issues and takes risks, thorough and timely on all written work. PR: moderate involvement, may periodically raise issues but doesn't consistently take risks, adequate and timely written work. P: low involvement — taking one 'big risk' in one session is a P, not PR — inadequate and untimely written work. F: cumulative result of absence and non-involvement, significant missing written work, doing the bare minimum.",
+    "attendancePenalty": "Missing class, a Lab session, or being late for several classes drops your grade down one level, for each absence. Several LATE arrivals count as an absence.",
+    "notTherapy": "Although the course can be intense and at times involves strong emotions, it is not therapy. It deals with interpersonal issues, not intrapersonal. If you are in therapy, check the advisability of taking this course with your therapist."
+  },
+
+  "gradingPolicy": "One third of the grade is the quality of your written work (Assignments & Reflection Journal); one third is your personal risk-taking in the Lab; one third is the extent to which you help the group develop and others learn. At the end of the semester you evaluate your own risk-taking and peers evaluate your contributions to the lab; this is combined with faculty impressions and facilitator input. Penalties for tardiness and absences are then deducted. Missing class, a Lab session, or being late for several classes drops your grade one level per absence. Yale SOM Grading Policy: http://portal.som.yale.edu/page/grading-policy",
+
+  "officeHours": {
+    "note": "By appointment.",
+    "details": "Prof. Heidi Brooks, Evans Hall 5212. Reader/Coach: Brandon Hutchinson. Course Support: Rhona Ceppos. Class meets Tuesdays 2:35-5:35pm in Evans 4220, with the required lab Tuesdays 6:30-9:30pm. Email addresses and phone numbers are in the syllabus PDF and on Canvas."
+  },
+
+  "classSessions": [
+    { "date": "2026-09-08", "time": "14:35", "topic": "Session 1 — Getting Started: course overview, hopes and fears about IPD, introductory experiential exercise, debrief", "note": "NO LAB this week — labs begin next week. Attendance is required at the first two classes to retain a place in the course or on the waiting list." },
+    { "date": "2026-09-15", "time": "14:35", "topic": "Session 2 — Learning through Experience: learning in IPD, prep for 1st Lab, first lab review exercise, how to journal for IPD", "note": "Attendance required to retain a place in the course or on the waiting list." },
+    { "date": "2026-09-15", "time": "18:30", "topic": "LAB — first lab meeting", "note": "First Lab of the semester." },
+    { "date": "2026-09-22", "time": "14:35", "topic": "Session 3 — Interpersonal Communication: toxic & masterful interpersonal interactions, listening skills, communication exercise", "note": "Listen to/read the material in advance and come ready to practice." },
+    { "date": "2026-09-22", "time": "18:30", "topic": "LAB", "note": null },
+    { "date": "2026-09-29", "time": "14:35", "topic": "Session 4 — The Power of Vulnerability: self-disclosure, Ramone/Lab video, index card exercise", "note": null },
+    { "date": "2026-09-29", "time": "18:30", "topic": "LAB", "note": null },
+    { "date": "2026-10-06", "time": "14:35", "topic": "Session 5 — Feelings and Feedback: small group discussions by emotion cluster, Tapping Exercise, building psychological safety, emotional agility, mood meter and self-regulation", "note": null },
+    { "date": "2026-10-06", "time": "18:30", "topic": "LAB", "note": null },
+    { "date": "2026-10-13", "time": "14:35", "topic": "Session 6 — Courageous Conversation: Mark and Nancy/Lab video, courageous conversation", "note": "Last session before the October break." },
+    { "date": "2026-10-13", "time": "18:30", "topic": "LAB", "note": null },
+    { "date": "2026-10-27", "time": "14:35", "topic": "Session 7 — Connecting Across Difference: impact of demographics, perspective-taking and perspective-giving, othering and belonging, cross demographic group meetings", "note": "First session back — no class or lab the week of Oct 19-23." },
+    { "date": "2026-10-27", "time": "18:30", "topic": "LAB", "note": null },
+    { "date": "2026-11-03", "time": "14:35", "topic": "Session 8 — Power, Influence & Authority: power & authority, Support Group Formation Exercise, support group meeting", "note": null },
+    { "date": "2026-11-03", "time": "18:30", "topic": "LAB", "note": null },
+    { "date": "2026-11-06", "time": "17:30", "topic": "Session 9 — IPD Retreat, Day 1: Group Roles and Dynamics", "note": "MANDATORY off-campus weekend retreat at Wisdom House, Litchfield CT — not the usual Tuesday pattern. Friday dinner 5:30-6:30pm; program starts at 7pm. Without an excused absence from the Office of Student Affairs it is not possible to miss the retreat and pass the course." },
+    { "date": "2026-11-07", "time": "09:00", "topic": "Session 9 — IPD Retreat, Day 2 (class, small group and LAB)", "note": "Retreat at Wisdom House, Litchfield CT. Saturday 9-12, 2-5, and 7-10." },
+    { "date": "2026-11-08", "time": "09:00", "topic": "Session 9 — IPD Retreat, Day 3 (LAB and retreat closing)", "note": "Retreat at Wisdom House, Litchfield CT. Sunday 9-12 and 1-3." },
+    { "date": "2026-11-10", "time": "18:30", "topic": "Session 10 — LAB only: last OPEN FORMAT LAB", "note": "NO CLASS this week — lab only. OK to begin FINAL FEEDBACK in LAB." },
+    { "date": "2026-11-17", "time": "14:35", "topic": "Session 11 — Transferring Across Contexts: real life cases, alumni guest visitor", "note": "Alumni guest visitor. Last session before the break." },
+    { "date": "2026-11-17", "time": "18:30", "topic": "LAB — Lab Closure & Final Feedback", "note": "Final Lab of the semester — lab closure and final feedback." },
+    { "date": "2026-12-08", "time": "14:35", "topic": "Session 12 — Synthesis & Course Close: post-IPD options, key learning, closing circle", "note": "NO LAB. Final session — no class or lab the weeks of Nov 23-Dec 4." }
+  ],
+
+  "items": [
+    {
+      "id": "journal-w2",
+      "type": "deliverable",
+      "date": "2026-09-17",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Sept 15 Lab — DO, REFLECT (x2), APPLY.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: Lab runs Tuesdays 6:30-9:30pm, so 48 hours after the Sept 15 Lab ends is Thursday Sept 17 at 9:30pm." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w3",
+      "type": "deliverable",
+      "date": "2026-09-24",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Sept 22 Lab.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Sept 22 Lab ends at 9:30pm." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w4",
+      "type": "deliverable",
+      "date": "2026-10-01",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Sept 29 Lab.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Sept 29 Lab ends at 9:30pm." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w5",
+      "type": "deliverable",
+      "date": "2026-10-08",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Oct 6 Lab.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Oct 6 Lab ends at 9:30pm." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w6",
+      "type": "deliverable",
+      "date": "2026-10-15",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Oct 13 Lab — last one before the October break.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Oct 13 Lab ends at 9:30pm." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w7",
+      "type": "deliverable",
+      "date": "2026-10-29",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Oct 27 Lab.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Oct 27 Lab ends at 9:30pm." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w8",
+      "type": "deliverable",
+      "date": "2026-11-05",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Nov 3 Lab — due the day before the retreat starts.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Nov 3 Lab ends at 9:30pm. Note this lands the evening before the Friday Nov 6 retreat departure." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-retreat",
+      "type": "deliverable",
+      "date": "2026-11-10",
+      "time": "15:00",
+      "summary": "Reflection Journal for the retreat weekend — timing uncertain, confirm with faculty.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived and uncertain. The syllabus does not say whether the retreat generates its own journal entry. If it does, the retreat's final LAB block ends Sunday Nov 8 at 3pm, putting 48 hours later at Tuesday Nov 10 at 3pm — which collides with the Nov 10 open-format Lab. Confirm with faculty whether a separate retreat journal is expected." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w10",
+      "type": "deliverable",
+      "date": "2026-11-12",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Nov 10 open-format Lab.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Nov 10 Lab ends at 9:30pm. There is no class that week, but there is a Lab." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "journal-w11",
+      "type": "deliverable",
+      "date": "2026-11-19",
+      "time": "21:30",
+      "summary": "Reflection Journal for the Nov 17 Lab — the final Lab of the semester.",
+      "verbatim": "Each week's Journal entry is due 48 hours after the end of Lab. Journal entries must be submitted through Canvas.",
+      "link": { "url": null, "sourceType": "none", "note": "Date derived, not stated in the syllabus: 48 hours after the Nov 17 Lab ends at 9:30pm. This is the last Lab, so likely the last journal entry — Session 12 on Dec 8 has NO LAB." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "retreat",
+      "type": "other",
+      "date": "2026-11-06",
+      "time": "17:30",
+      "summary": "Mandatory weekend retreat at Wisdom House, Litchfield CT — you cannot pass the course without it.",
+      "verbatim": "It is a course requirement that you attend our Course Retreat in Litchfield, CT.",
+      "link": { "url": null, "sourceType": "none", "note": "The schedule detail appears separately in the Session 9 row: \"Please reserve the weekend - offsite: Wisdom House, Litchfield CT\" and \"DRAFT RETREAT SCHEDULE: Friday dinner 5:30-6:30pm. Program starts at 7p / Saturday 9-12; 2-5; 7-10. (Class, small group and LAB) / Sunday 9-12; 1-3 (LAB and retreat closing)\"." },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "podcast-subscribe",
+      "type": "reading",
+      "date": "2026-09-08",
+      "time": null,
+      "summary": "Subscribe to the Learning through Experience podcast and get the IPD Reader on Canvas.",
+      "verbatim": "Textbook(s): IPD Reader as assigned on CANVAS; subscribe to the Learning through Experience podcast",
+      "link": { "url": "https://insights.som.yale.edu/podcasts/learning-through-experience", "sourceType": "original", "note": null },
+      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "completed": false,
+      "poolSelected": false
+    }
+  ]
+}

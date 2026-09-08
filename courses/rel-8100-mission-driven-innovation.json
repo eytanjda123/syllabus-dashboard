@@ -1,0 +1,622 @@
+{
+  "courseId": "rel-8100-mission-driven-innovation",
+  "courseName": "REL 8100: Mission-Driven Innovation (GLBL 6539 / MGT 660)",
+  "professor": "Sarah Drummond, PhD and Teresa Chahine, ScD",
+  "section": "01",
+  "semester": "Fall 2026",
+  "archived": false,
+  "definitions": {
+    "engagedParticipation": "Worth 30%. Includes active listening as well as contributions to class discussion that demonstrate thoughtfulness, build on others' contributions, and draw on course readings and conversations. Students are asked to be fully present and engaged during class, in both discussions and in-class exercises. Students are also encouraged to post on the Canvas discussion forum to share resources, reflections, and ideas between classes. Multi-tasking during class is strictly prohibited — if you have other things to do, do them elsewhere; multi-tasking contributes negatively to collective learning and is reflected in participation scoring.",
+    "writtenAssignments": "Four written assignments that build on each other as students progress along the ten-stage framework in the social entrepreneurship textbook. The essay on personal framing is a personal reflection requiring no outside research. The problem statement and logic model require research per the textbook guidelines. The final reflection synthesizes course learnings including previous assignments, readings, in-class exercises, and discussions. Further details, guidelines, and rubrics for each assignment are posted on Canvas. All assignments must be uploaded on Canvas at least one calendar date before class.",
+    "fourModules": "The course develops the innovation mindset and skillset across four modules: Problem, People, Project, and Policy. It refers to the ten-stage framework in the textbook 'Social Entrepreneurship: Building Impact Step by Step' and other social innovation frameworks. There are no prerequisites.",
+    "aiPolicy": "The purpose of the assignments is for students to apply their own critical thinking and synthesis skills; therefore, USE OF AI IS NOT PERMITTED IN THIS COURSE. Students must write papers independently from one another and cite sources consulted using Chicago Manual of Style guidelines. Students may refer to material from course sessions using parenthetical citations (example: 'Course Meeting, November 5, 2026'). Students must cite any ideas taken from another source, published or not. Failure to comply is considered a serious disciplinary matter.",
+    "textbooks": "Chahine, T. Social Entrepreneurship: Building Impact Step by Step. Routledge (2023). Drummond, S. Holy Clarity: The Practice of Planning and Evaluation. Rowman & Littlefield (2009). All readings can be found in the Course Reserves tab in Canvas.",
+    "arrivalLogistics": "If you are coming from another part of campus, arrive at Yale Divinity School around 1pm, or 1:15 at the latest, to get your bearings and get settled by the time class starts. One of the instructors will meet students at the YDS main entrance — between the Living Village and the exterior of Sterling Divinity Quad — to direct them to SG58 between 1-1:15 before the first two sessions."
+  },
+  "gradingPolicy": "Engaged Participation 30%; Essay on Personal Framing (due Sept 16, 500 word limit) 15%; Problem Statement (due Sept 30, 800 word limit) 15%; Logic Model (due Nov 18, tabular/visual template provided in textbook) 20%; Final reflection (due Dec 9, 1000 word limit) 20%.",
+  "officeHours": {
+    "note": "Office hours upon request — email the instructor or TA.",
+    "details": "Instructors: Sarah Drummond, PhD and Teresa Chahine, ScD. TA: Arunima Gupta. Room SG58 at the Divinity School, Sterling Divinity Quadrangle. Course is co-hosted by Yale Divinity School and Yale Jackson School of Global Affairs and cross-listed at Yale School of Management."
+  },
+  "classSessions": [
+    {
+      "date": "2026-09-03",
+      "time": "13:30",
+      "topic": "Session One. Introduction",
+      "note": "First class. An instructor will meet students at the YDS main entrance between 1:00-1:15 to direct them to SG58."
+    },
+    {
+      "date": "2026-09-10",
+      "time": "13:30",
+      "topic": "Session Two. Framing",
+      "note": "An instructor will meet students at the YDS main entrance between 1:00-1:15 — the second and last session with this escort."
+    },
+    {
+      "date": "2026-09-17",
+      "time": "13:30",
+      "topic": "Session Three. Formulating a Problem Statement",
+      "note": "In-class exercise: problem statement and root cause analysis."
+    },
+    {
+      "date": "2026-09-24",
+      "time": "13:30",
+      "topic": "Session Four. Group Exercise, \"World Café\" Workshop",
+      "note": "In-class exercise: group \"World Café\" workshop."
+    },
+    {
+      "date": "2026-10-01",
+      "time": "13:30",
+      "topic": "Session Five. Listening and Sensing in Social Innovation",
+      "note": "In-class exercise: Full Self Listening."
+    },
+    {
+      "date": "2026-10-08",
+      "time": "13:30",
+      "topic": "Session Six. Stakeholder Analysis and Systems Mapping",
+      "note": "In-class exercise: Systems Mapping. Readings for this session may be updated as it gets closer."
+    },
+    {
+      "date": "2026-10-15",
+      "time": "13:30",
+      "topic": "Session Seven. Community Building and Relationship Building",
+      "note": "Last class before the October break — there is no October 22 session."
+    },
+    {
+      "date": "2026-10-29",
+      "time": "13:30",
+      "topic": "Session Eight. Design Hackathon",
+      "note": "In-class exercise: Ideation Hackathon. Post your ideas from the hackathon on the Canvas discussion forum by Nov 4."
+    },
+    {
+      "date": "2026-11-05",
+      "time": "13:30",
+      "topic": "Session Nine. Planning and Evaluation",
+      "note": "In-class exercise: Logic Model. Post your ideas on the Canvas discussion forum the day before class and comment on each other's ideas."
+    },
+    {
+      "date": "2026-11-12",
+      "time": "13:30",
+      "topic": "Session Ten. Revenue & Financing",
+      "note": null
+    },
+    {
+      "date": "2026-11-19",
+      "time": "13:30",
+      "topic": "Session Eleven. Governance",
+      "note": "Last class before Thanksgiving — there is no November 26 session."
+    },
+    {
+      "date": "2026-12-03",
+      "time": "13:30",
+      "topic": "Session Twelve. Wrap-up, Implications and Next Steps",
+      "note": "Final class of the semester — the syllabus states class meets September 3 through December 3."
+    }
+  ],
+  "items": [
+    {
+      "id": "s1-r1",
+      "type": "reading",
+      "date": "2026-09-03",
+      "time": null,
+      "summary": "Introduction to the Social Entrepreneurship textbook.",
+      "verbatim": "1- Introduction, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://yale.instructure.com/courses/121243/files/12971900?wrap=1",
+        "sourceType": "original",
+        "note": "Canvas file link. Also available under Course Reserves, or via the Yale library at https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine"
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s1-r2",
+      "type": "reading",
+      "date": "2026-09-03",
+      "time": null,
+      "summary": "Battilana and Casciaro on agitating, innovating, and orchestrating change.",
+      "verbatim": "2- Battilana, J., Casciaro, T. Power, for All. Simon & Schuster (2021). Chapter 6 \"Agitate, Innovate, Orchestrate.\"",
+      "link": {
+        "url": "https://yale.instructure.com/courses/121243/files/12971891?wrap=1",
+        "sourceType": "original",
+        "note": "Canvas file link. Also available through the Course Reserves tab in Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s2-r1",
+      "type": "reading",
+      "date": "2026-09-10",
+      "time": null,
+      "summary": "Drummond on how we think about change.",
+      "verbatim": "Drummond, S. Dynamic Discernment. The Pilgrim Press (2019). Chapter 1 \"How We Think About Change.\"",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Available through the Course Reserves tab in Canvas. (The syllabus links straight to Yale's Ares reserves, but those URLs embed a personal library session token, so the bare link is not reproduced here.)"
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s2-r2",
+      "type": "reading",
+      "date": "2026-09-10",
+      "time": null,
+      "summary": "Drummond revisiting dynamic discernment in a leadership frame.",
+      "verbatim": "Drummond, S. Intentional Leadership. The Pilgrim Press (2022) Chapter 7 \"Dynamic Discernment Revisited.\"",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Available through the Course Reserves tab in Canvas. (The syllabus links straight to Yale's Ares reserves, but those URLs embed a personal library session token, so the bare link is not reproduced here.)"
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "assignment-1-personal-framing",
+      "type": "assignment",
+      "date": "2026-09-16",
+      "time": "23:59",
+      "summary": "Written Assignment #1 (15%) — 500-word essay on personal framing. A personal reflection; no outside research needed.",
+      "verbatim": "Essay on Personal Framing due Sept 16 (15%) word limit 500 words",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Quoted from the Course Deliverables list. The Canvas assignment block states separately: \"Written Assignment #1: Essay on Personal Framing — Due Sep 16 by 11:59pm — Points 15 — Submitting a file upload\". Instructions were pending at the time the syllabus was captured (\"We will post these instructions tomorrow\") — check Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s3-r1",
+      "type": "reading",
+      "date": "2026-09-17",
+      "time": null,
+      "summary": "Chapter One of the Social Entrepreneurship textbook, ahead of the root cause analysis exercise.",
+      "verbatim": "Chapter One, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s4-r1",
+      "type": "reading",
+      "date": "2026-09-24",
+      "time": null,
+      "summary": "First 50 pages of adrienne maree brown's Emergent Strategy.",
+      "verbatim": "Emergent Strategy, adrienne maree brown, p. 1-50",
+      "link": {
+        "url": "https://ebookcentral-proquest-com.yale.idm.oclc.org/lib/yale-ebooks/reader.action?docID=4548573&c=RVBVQg&ppg=1",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s4-r2",
+      "type": "reading",
+      "date": "2026-09-24",
+      "time": null,
+      "summary": "Watch Sugata Mitra's TED talk on self-organized learning.",
+      "verbatim": "Watch: Sugata Mitra TEDx talk",
+      "link": {
+        "url": "https://www.ted.com/talks/sugata_mitra_build_a_school_in_the_cloud",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "assignment-2-problem-statement",
+      "type": "assignment",
+      "date": "2026-09-30",
+      "time": "23:59",
+      "summary": "Written Assignment #2 (15%) — 800-word problem statement. Requires research per the textbook guidelines.",
+      "verbatim": "Problem Statement, due Sept 30 (15%) word limit 800 words",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Quoted from the Course Deliverables list. The Canvas assignment block states separately: \"Written Assignment #2: Problem Statement — Due Sep 30 by 11:59pm — Points 15 — Submitting a file upload\". Instructions were pending at the time the syllabus was captured (\"Instructions will be posted soon.\") — check Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s5-r1",
+      "type": "reading",
+      "date": "2026-10-01",
+      "time": null,
+      "summary": "Chapter two of the Social Entrepreneurship textbook, ahead of the Full Self Listening exercise.",
+      "verbatim": "Chapter two, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s6-r1",
+      "type": "reading",
+      "date": "2026-10-08",
+      "time": null,
+      "summary": "Chapter One of Design Justice.",
+      "verbatim": "Chapter One, Design Justice book",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "The syllabus embeds a Silverchair watermark URL containing a single-use access token that will not work for anyone else and expires — deliberately not reproduced here. Use the Canvas Course Reserves tab. Readings for this session may be updated as it gets closer."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s6-r2",
+      "type": "reading",
+      "date": "2026-10-08",
+      "time": null,
+      "summary": "The six fundamental concepts of systems thinking.",
+      "verbatim": "Tools for Systems Thinkers: The 6 Fundamental Concepts of Systems Thinking",
+      "link": {
+        "url": "https://medium.com/disruptive-design/tools-for-systems-thinkers-the-6-fundamental-concepts-of-systems-thinking-379cdac3dc6a",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s6-r3",
+      "type": "reading",
+      "date": "2026-10-08",
+      "time": null,
+      "summary": "Systems dynamics and stock-and-flow (bathtub) thinking.",
+      "verbatim": "Tools for Systems Thinkers: Getting into Systems Dynamics… and Bathtubs",
+      "link": {
+        "url": "https://medium.com/disruptive-design/tools-for-systems-thinkers-getting-into-systems-dynamics-and-bathtubs-1f961f7c4073",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s6-r4",
+      "type": "reading",
+      "date": "2026-10-08",
+      "time": null,
+      "summary": "How to build a systems map — directly feeds the in-class exercise.",
+      "verbatim": "Tools for Systems Thinkers: Systems Mapping",
+      "link": {
+        "url": "https://medium.com/disruptive-design/tools-for-systems-thinkers-systems-mapping-2db5cf30ab3a",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s6-r5",
+      "type": "reading",
+      "date": "2026-10-08",
+      "time": null,
+      "summary": "Donella Meadows Project systems thinking resource collection.",
+      "verbatim": "Systems Thinking Resources: The Donella Meadows Project",
+      "link": {
+        "url": "https://donellameadows.org/systems-thinking-resources/",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s7-r1",
+      "type": "reading",
+      "date": "2026-10-15",
+      "time": null,
+      "summary": "Chapters One and Three of Drummond's planning and evaluation textbook.",
+      "verbatim": "Chapter One, \"The Practice of Planning and Evaluation\" textbook",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Session Seven assigns two chapters as separate bullets; the second reads \"Chapter Three, 'The Practice of Planning and Evaluation' textbook\" and points at the same reserve item. Available through the Course Reserves tab in Canvas. (The syllabus links straight to Yale's Ares reserves, but those URLs embed a personal library session token, so the bare link is not reproduced here.)"
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s8-r1",
+      "type": "reading",
+      "date": "2026-10-29",
+      "time": null,
+      "summary": "Chapter 3 of the Social Entrepreneurship textbook, ahead of the ideation hackathon.",
+      "verbatim": "Chapter 3, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "hackathon-post",
+      "type": "deliverable",
+      "date": "2026-11-04",
+      "time": null,
+      "summary": "Post your ideas from the design hackathon on the Canvas discussion forum, then comment on each other's before the Nov 5 class.",
+      "verbatim": "Note: post your ideas from the hackathon on Canvas discussion forum by Nov 4",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Session Nine restates this as \"Remember to post your ideas on Canvas discussion forum the day before class, and comment on each others' ideas\" — the day before the Nov 5 class is Nov 4, so the two instructions agree."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s9-r1",
+      "type": "reading",
+      "date": "2026-11-05",
+      "time": null,
+      "summary": "Chapters 4 & 5 of the planning and evaluation textbook, ahead of the logic model exercise.",
+      "verbatim": "Chapters 4&5 \"Practice of Planning and Evaluation\" textbook",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Available through the Course Reserves tab in Canvas. (The syllabus links straight to Yale's Ares reserves, but those URLs embed a personal library session token, so the bare link is not reproduced here.)"
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s9-r2",
+      "type": "reading",
+      "date": "2026-11-05",
+      "time": null,
+      "summary": "Chapters 4 & 5 of the Social Entrepreneurship textbook.",
+      "verbatim": "Chapters 4&5, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s10-r1",
+      "type": "reading",
+      "date": "2026-11-12",
+      "time": null,
+      "summary": "Chapters 6 & 7 of the Social Entrepreneurship textbook, on revenue and financing.",
+      "verbatim": "Chapter 6 & 7, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "assignment-3-logic-model",
+      "type": "assignment",
+      "date": "2026-11-18",
+      "time": "23:59",
+      "summary": "Written Assignment #3 (20%) — Logic Model, using the tabular/visual template from the textbook or your own.",
+      "verbatim": "You have the option of using the tabular/visual template provided in the textbook; or if you have another template you prefer, feel free to use it and share where you got it from.",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Quoted from the Canvas assignment description. Its header reads separately: \"Written Assignment #3: Logic Model — Due Nov 18 by 11:59pm — Points 20 — Submitting a file upload\", and the Course Deliverables list reads \"Logic Model, due Nov 18 (20%) tabular/visual template provided in textbook\"."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s11-r1",
+      "type": "reading",
+      "date": "2026-11-19",
+      "time": null,
+      "summary": "Chapters 8 & 9 of the Social Entrepreneurship textbook, on governance.",
+      "verbatim": "Chapter 8&9, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "s12-r1",
+      "type": "reading",
+      "date": "2026-12-03",
+      "time": null,
+      "summary": "Chapter 10 of the Social Entrepreneurship textbook, for the wrap-up session.",
+      "verbatim": "Chapter 10, Social Entrepreneurship Textbook",
+      "link": {
+        "url": "https://www-taylorfrancis-com.yale.idm.oclc.org/books/mono/10.4324/9781003094715/social-entrepreneurship-teresa-chahine",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "final-reflection",
+      "type": "assignment",
+      "date": "2026-12-09",
+      "time": "23:59",
+      "summary": "Final reflection paper (20%) — 1,000 words synthesizing the course. Upload any time between Dec 2 and Dec 9.",
+      "verbatim": "Please upload your final reflection paper anytime between Dec 2 and Dec 9. Thank you! We'll post more detailed instructions here.",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Quoted from the Canvas assignment description. Its header reads separately: \"Final Assignment — Due Dec 9 by 11:59pm — Points 20 — Submitting a file upload\", and the Course Deliverables list reads \"Final reflection, due Dec 9 (20%) word limit 1000 words\". Detailed instructions were still pending when the syllabus was captured — check Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    }
+  ]
+}
