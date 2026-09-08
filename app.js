@@ -735,7 +735,11 @@
     html += '<header class="coursehead"><h2>' + esc(c.courseName) + '</h2>';
     html += '<p class="who">' + esc(c.professor || '') +
       (c.section ? ', ' + esc(c.section) : '') +
-      (c.semester ? ', ' + esc(c.semester) : '') + '</p></header>';
+      (c.semester ? ', ' + esc(c.semester) : '') + '</p>';
+    if (c.syllabusLink) {
+      html += '<p class="source-link"><a href="' + attr(c.syllabusLink) + '" target="_blank" rel="noopener noreferrer">Original syllabus (PDF) ↗</a></p>';
+    }
+    html += '</header>';
 
     poolIdsFor(c).forEach(function (pid) {
       var st = poolStats(c, pid);
@@ -765,32 +769,38 @@
   function renderReference() {
     var html = '<h2 class="section-head">Office hours and grading</h2>';
     html += '<p class="empty" style="font-style:normal;font-family:inherit;font-size:.85rem;padding-top:0">' +
-            'Reference material, kept out of the daily feed.</p>';
+            'Reference material, kept out of the daily feed. Tap a course to open it.</p>';
     if (!state.courses.length) return html + '<p class="empty">No active courses loaded.</p>';
 
     state.courses.forEach(function (c) {
-      html += '<section class="refblock">';
-      html += '<h3>' + esc(c.courseName) + '</h3>';
-      html += '<p class="who">' + esc(c.professor || '') + (c.section ? ', ' + esc(c.section) : '') + '</p>';
+      html += '<details class="refcourse">';
+      html += '<summary><span class="rc-name">' + esc(c.courseName) + '</span>' +
+        '<span class="rc-who">' + esc(c.professor || '') + (c.section ? ', ' + esc(c.section) : '') + '</span></summary>';
+      html += '<div class="rc-body">';
+
+      if (c.syllabusLink) {
+        html += '<p class="rc-source"><a href="' + attr(c.syllabusLink) + '" target="_blank" rel="noopener noreferrer">Original syllabus (PDF) ↗</a></p>';
+      }
 
       var oh = c.officeHours || {};
-      html += '<h4>Office hours</h4>';
+      html += '<div class="rc-card"><h4>Office hours</h4>';
       html += '<p>' + esc(oh.note || 'Not listed in the syllabus.') + '</p>';
       if (oh.details) html += '<p>' + esc(oh.details) + '</p>';
+      html += '</div>';
 
       html += '<h4>Grading</h4>';
-      html += '<p>' + esc(c.gradingPolicy || 'Not listed in the syllabus.') + '</p>';
+      html += '<p>' + boldPercents(c.gradingPolicy || 'Not listed in the syllabus.') + '</p>';
 
       var defs = c.definitions || {};
       var keys = Object.keys(defs).filter(function (k) { return k !== '...' && defs[k]; });
       if (keys.length) {
         html += '<h4>What the terms mean in this course</h4><dl class="defs">';
         keys.forEach(function (k) {
-          html += '<dt>' + esc(humanizeKey(k)) + '</dt><dd>' + esc(defs[k]) + '</dd>';
+          html += '<div class="def-row"><dt>' + esc(humanizeKey(k)) + '</dt><dd>' + esc(defs[k]) + '</dd></div>';
         });
         html += '</dl>';
       }
-      html += '</section>';
+      html += '</div></details>';
     });
     return html;
   }
@@ -798,6 +808,10 @@
   function humanizeKey(k) {
     var s = String(k).replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[_-]+/g, ' ');
     return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  function boldPercents(text) {
+    return esc(text || '').replace(/(\d+(?:\.\d+)?%)/g, '<strong>$1</strong>');
   }
 
   /* --------------------------------------------------------------- sync page */

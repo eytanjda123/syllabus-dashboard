@@ -5,7 +5,7 @@
   "section": "03",
   "semester": "Fall 2026",
   "archived": false,
-
+  "syllabusLink": null,
   "definitions": {
     "attendanceAndParticipation": "Worth 40% — a significant fraction of the grade. The course requires substantial reading. Visiting guests from the field of philanthropy attend most sessions, and it is essential that students are well-prepared for and actively engage in those conversations. Academic integrity extends to participation: it is obvious to peers and instructors when you are multitasking, and if you cannot be fully present for the duration of the seminar each week you should not select this elective.",
     "assignment1PartOneReflection": "Worth 15%. A 2-3 page individual reflection (max 1,000 words) due Sunday September 27 by 11:59pm, responding to the prompt: consider a specific philanthropist or philanthropic organization, describe how themes from the first section of the course apply to their giving strategy, and recommend shifts to their approach.",
@@ -15,32 +15,103 @@
     "devicePolicy": "We are analog in the classroom — no laptops, phones, or other electronic devices during class. Pen and paper are provided for anyone who doesn't carry them. There is a break between the two sessions if you need to check your phone.",
     "aiPolicy": "All submitted work must be your own; language, data, and ideas from other sources must be documented. Use of ChatGPT or other AI composition software is discouraged, but if you use it you must share the prompt you used to generate the response."
   },
-
   "gradingPolicy": "Attendance and Participation: 40%; Assignment 1: Part 1 Reflection: 15%; Assignment 2: Areas for Investment and Guiding Principles: 5%; Assignment 3: 2 Case Videos: 10%; Assignment 4: Final Project Video and Memo: 30%.",
-
   "officeHours": {
     "note": "No scheduled office hours listed in the syllabus — contact the instructors directly.",
     "details": "Paige MacLean (philanthropic advisor) and Professor Judy Chevalier (economics). Class meets Thursdays 2:35pm-5:35pm in Room 4420, Farr Classroom. Email addresses are in the syllabus PDF and on Canvas."
   },
-
   "classSessions": [
-    { "date": "2026-09-03", "time": null, "topic": "NO CLASS", "note": "The course does not hold a session on September 3." },
-    { "date": "2026-09-10", "time": "14:35", "topic": "Session 1a: Course Introduction and Overview; Building Context in the Nonprofit and Philanthropic Sector — and Session 1b: From Generosity to Justice: Historical to Modern Perspectives on Philanthropy", "note": "First class of the semester." },
-    { "date": "2026-09-17", "time": "14:35", "topic": "Session 2a: Current Critiques of Philanthropy (and Responses to Them) — and Session 2b: Sourcing and Due Diligence", "note": null },
-    { "date": "2026-09-24", "time": "14:35", "topic": "Session 3a: The 30/30 Simulation — and Session 3b: The \"How\" of Philanthropy: Options for Giving", "note": "Session 3a is a 90-minute interactive virtual simulation of economic hardship, with facilitated discussion, small-group conversation, and live polling." },
-    { "date": "2026-10-01", "time": "14:35", "topic": "Session 4a: Trust-Based Philanthropy: Case Discussion RIP Medical Debt — and Session 4b: Options for Organizational Form", "note": "In-person guest: Ravneeta Consul '06, COO, Undue Medical Debt. Case reflection video opportunity." },
-    { "date": "2026-10-08", "time": "14:35", "topic": "Session 5a: Legacy Foundation / funding science — and Session 5b: Marriage Equality", "note": "In-person guest speaker: Stacie Bloom, joined by the President of the Alfred P. Sloan Foundation. Case reflection video opportunity on the Marriage Equality session." },
-    { "date": "2026-10-15", "time": "14:35", "topic": "Session 6a: Understanding Donor Motivation — and Session 6b: Community Foundations and Place-based Philanthropy", "note": "In-person guest speaker: Alex Johnston, Founder and President, Building Impact. Last class before fall recess; readings for 6b are marked TBD." },
-    { "date": "2026-10-29", "time": "14:35", "topic": "Session 7a: The Effective Altruism Movement — and Session 7b: Additional guidance on final project and guiding principles", "note": "First class back after fall recess — there is no October 22 session." },
-    { "date": "2026-11-05", "time": "14:35", "topic": "Session 8a: Direct Cash Transfers — and Session 8b: Donor Collaboratives", "note": null },
-    { "date": "2026-11-12", "time": "14:35", "topic": "Session 9a, b: Shifting Power and Perspective in Philanthropy", "note": "In-person guest speakers: Liz Thompson, co-founder and CEO, and Tiffany Thompson, Chief Impact Officer, The CAFE Group. Single topic across both halves of the session." },
-    { "date": "2026-11-19", "time": "14:35", "topic": "Session 10a: Corporate Philanthropy: Google Case — and Strategic Lifespan: The Pros and Cons of Spend-Down Foundations", "note": "Case reflection video opportunity on the Google case. Note: the syllabus mislabels the second half of this session as 'SESSION 5b' — it is the spend-down foundations topic, not a repeat of the October 8 Marriage Equality session." },
-    { "date": "2026-11-26", "time": null, "topic": "THANKSGIVING — no class", "note": "No class." },
-    { "date": "2026-12-03", "time": "14:35", "topic": "Session 11a, b: Competitions: X Prize", "note": "Virtual guest speaker: Cecilia Conrad, CEO Lever for Change. Case reflection video opportunity." },
-    { "date": "2026-12-10", "time": "14:35", "topic": "Session 12a, b: Impact Investing", "note": "Case reflection video opportunity. Examines the evolving impact investment strategies of the Robert Wood Johnson Foundation." },
-    { "date": "2026-12-17", "time": "14:35", "topic": "Session 13: Discuss and Debate Final Projects", "note": "Final class — this is the designated date for Thursday-only Fall-2 classes. You must be present for the final class." }
+    {
+      "date": "2026-09-03",
+      "time": null,
+      "topic": "NO CLASS",
+      "note": "The course does not hold a session on September 3."
+    },
+    {
+      "date": "2026-09-10",
+      "time": "14:35",
+      "topic": "Session 1a: Course Introduction and Overview; Building Context in the Nonprofit and Philanthropic Sector — and Session 1b: From Generosity to Justice: Historical to Modern Perspectives on Philanthropy",
+      "note": "First class of the semester."
+    },
+    {
+      "date": "2026-09-17",
+      "time": "14:35",
+      "topic": "Session 2a: Current Critiques of Philanthropy (and Responses to Them) — and Session 2b: Sourcing and Due Diligence",
+      "note": null
+    },
+    {
+      "date": "2026-09-24",
+      "time": "14:35",
+      "topic": "Session 3a: The 30/30 Simulation — and Session 3b: The \"How\" of Philanthropy: Options for Giving",
+      "note": "Session 3a is a 90-minute interactive virtual simulation of economic hardship, with facilitated discussion, small-group conversation, and live polling."
+    },
+    {
+      "date": "2026-10-01",
+      "time": "14:35",
+      "topic": "Session 4a: Trust-Based Philanthropy: Case Discussion RIP Medical Debt — and Session 4b: Options for Organizational Form",
+      "note": "In-person guest: Ravneeta Consul '06, COO, Undue Medical Debt. Case reflection video opportunity."
+    },
+    {
+      "date": "2026-10-08",
+      "time": "14:35",
+      "topic": "Session 5a: Legacy Foundation / funding science — and Session 5b: Marriage Equality",
+      "note": "In-person guest speaker: Stacie Bloom, joined by the President of the Alfred P. Sloan Foundation. Case reflection video opportunity on the Marriage Equality session."
+    },
+    {
+      "date": "2026-10-15",
+      "time": "14:35",
+      "topic": "Session 6a: Understanding Donor Motivation — and Session 6b: Community Foundations and Place-based Philanthropy",
+      "note": "In-person guest speaker: Alex Johnston, Founder and President, Building Impact. Last class before fall recess; readings for 6b are marked TBD."
+    },
+    {
+      "date": "2026-10-29",
+      "time": "14:35",
+      "topic": "Session 7a: The Effective Altruism Movement — and Session 7b: Additional guidance on final project and guiding principles",
+      "note": "First class back after fall recess — there is no October 22 session."
+    },
+    {
+      "date": "2026-11-05",
+      "time": "14:35",
+      "topic": "Session 8a: Direct Cash Transfers — and Session 8b: Donor Collaboratives",
+      "note": null
+    },
+    {
+      "date": "2026-11-12",
+      "time": "14:35",
+      "topic": "Session 9a, b: Shifting Power and Perspective in Philanthropy",
+      "note": "In-person guest speakers: Liz Thompson, co-founder and CEO, and Tiffany Thompson, Chief Impact Officer, The CAFE Group. Single topic across both halves of the session."
+    },
+    {
+      "date": "2026-11-19",
+      "time": "14:35",
+      "topic": "Session 10a: Corporate Philanthropy: Google Case — and Strategic Lifespan: The Pros and Cons of Spend-Down Foundations",
+      "note": "Case reflection video opportunity on the Google case. Note: the syllabus mislabels the second half of this session as 'SESSION 5b' — it is the spend-down foundations topic, not a repeat of the October 8 Marriage Equality session."
+    },
+    {
+      "date": "2026-11-26",
+      "time": null,
+      "topic": "THANKSGIVING — no class",
+      "note": "No class."
+    },
+    {
+      "date": "2026-12-03",
+      "time": "14:35",
+      "topic": "Session 11a, b: Competitions: X Prize",
+      "note": "Virtual guest speaker: Cecilia Conrad, CEO Lever for Change. Case reflection video opportunity."
+    },
+    {
+      "date": "2026-12-10",
+      "time": "14:35",
+      "topic": "Session 12a, b: Impact Investing",
+      "note": "Case reflection video opportunity. Examines the evolving impact investment strategies of the Robert Wood Johnson Foundation."
+    },
+    {
+      "date": "2026-12-17",
+      "time": "14:35",
+      "topic": "Session 13: Discuss and Debate Final Projects",
+      "note": "Final class — this is the designated date for Thursday-only Fall-2 classes. You must be present for the final class."
+    }
   ],
-
   "items": [
     {
       "id": "s1a-r1",
@@ -49,8 +120,17 @@
       "time": null,
       "summary": "No required readings for the opening session.",
       "verbatim": "Readings: None",
-      "link": { "url": null, "sourceType": "none", "note": "Four optional/reference items are listed for Session 1a: The Givers by David Callahan (Prologue); How Billionaires Explain Their Philanthropy: A Mixed-Method Analysis of the Giving Pledge Letters; Overview of the US Social Sector; and Foundation Basics, Council on Foundations." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Four optional/reference items are listed for Session 1a: The Givers by David Callahan (Prologue); How Billionaires Explain Their Philanthropy: A Mixed-Method Analysis of the Giving Pledge Letters; Overview of the US Social Sector; and Foundation Basics, Council on Foundations."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -61,8 +141,17 @@
       "time": null,
       "summary": "Carnegie's founding text of American philanthropy.",
       "verbatim": "The Gospel of Wealth, Andrew Carnegie.",
-      "link": { "url": "https://www.carnegie.org/publications/the-gospel-of-wealth/", "sourceType": "claude-found", "note": "Referenced by title only. Searched for the 1889 essay; Carnegie Corporation of New York hosts the full text free. Also on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.carnegie.org/publications/the-gospel-of-wealth/",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched for the 1889 essay; Carnegie Corporation of New York hosts the full text free. Also on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -73,8 +162,17 @@
       "time": null,
       "summary": "Darren Walker's answer to Carnegie, reframing philanthropy around justice.",
       "verbatim": "Towards a New Gospel of Wealth, Ford Foundation blogpost, October 2015.",
-      "link": { "url": "https://www.fordfoundation.org/news-and-stories/stories/toward-a-new-gospel-of-wealth/", "sourceType": "claude-found", "note": "Referenced by title only. Searched for the October 2015 Ford Foundation post; the published title is 'Toward a new gospel of wealth' (singular 'Toward')." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.fordfoundation.org/news-and-stories/stories/toward-a-new-gospel-of-wealth/",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched for the October 2015 Ford Foundation post; the published title is 'Toward a new gospel of wealth' (singular 'Toward')."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -85,8 +183,17 @@
       "time": null,
       "summary": "Giridharadas on elite philanthropy — prologue, selected pages of ch. 6, epilogue.",
       "verbatim": "Winners Take All, Prologue, Chapter 6 pp 171-176 and pp 189-200, Epilogue pp 255-263.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -97,8 +204,17 @@
       "time": null,
       "summary": "Villanueva on colonial dynamics in philanthropy — intro and chapter 4.",
       "verbatim": "Decolonizing Wealth, By Edgar Villanueva, Introduction, pp 2-5 (ending at \"Part 1\") and Chapter 4",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -109,8 +225,17 @@
       "time": null,
       "summary": "Reich on foundations as institutional oddities in a democracy.",
       "verbatim": "Just Giving, Chapter 4 pp 144 - 152 (Foundations as Institutional Oddities to the first paragraph of The Case for Foundations)",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -121,8 +246,17 @@
       "time": null,
       "summary": "CEP interview weighing the critiques against philanthropy's contribution.",
       "verbatim": "In Conversation: Phil Buchanan interviews Dr. Beth Breeze, Center for Effective Philanthropy, 2021",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -133,8 +267,17 @@
       "time": null,
       "summary": "Bridgespan's equity-oriented approach to sourcing and due diligence.",
       "verbatim": "The Bridgespan Group, Philanthropic Sourcing, Diligence, and Decision Making: An Equity-Oriented Approach.",
-      "link": { "url": "https://www.bridgespan.org/getmedia/a9ef41b0-10ff-4c0a-9c5f-153a8b4b0a55/equity-oriented-philanthropic-sourcing-diligence.pdf", "sourceType": "claude-found", "note": "Referenced by title only. Searched bridgespan.org; this is the free PDF." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.bridgespan.org/getmedia/a9ef41b0-10ff-4c0a-9c5f-153a8b4b0a55/equity-oriented-philanthropic-sourcing-diligence.pdf",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched bridgespan.org; this is the free PDF."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -145,8 +288,17 @@
       "time": null,
       "summary": "Stanford PACS chapter on vetting and evaluating grantee organizations.",
       "verbatim": "Due Diligence: Vetting and Evaluating Organizations, Chapter 8, Stanford PACS Guide to Effective Philanthropy.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas. An optional companion piece is listed: The Bridgespan Group, Due-Diligence Guide to Support Systems-Change Leaders." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas. An optional companion piece is listed: The Bridgespan Group, Due-Diligence Guide to Support Systems-Change Leaders."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -157,8 +309,17 @@
       "time": null,
       "summary": "No readings — the 30/30 simulation is the session.",
       "verbatim": "Readings: None",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -169,8 +330,17 @@
       "time": null,
       "summary": "Buchanan on how funders should actually give.",
       "verbatim": "Giving Done Right, Chapter 4, Phil Buchanan.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -181,8 +351,17 @@
       "time": null,
       "summary": "The six practices that define trust-based grantmaking.",
       "verbatim": "The 6 Grantmaking Practices of Trust-Based Philanthropy, from Trust-Based Philanthropy Project.",
-      "link": { "url": "https://www.trustbasedphilanthropy.org/tools-resources/grantmaking-practices", "sourceType": "claude-found", "note": "Referenced by title only. Searched trustbasedphilanthropy.org; this is the free resource page. Optional companion readings listed: MacKenzie Scott's Giving Pledge letter (2019), her Medium post '116 Organizations Driving Change' (2020), the SSIR 'Strategic Philanthropy for a Complex World' debate (2014), Paul Brest's 'Strategic Philanthropy and Its Discontents' (2015), and the Hill-Snowdon Foundation piece." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.trustbasedphilanthropy.org/tools-resources/grantmaking-practices",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched trustbasedphilanthropy.org; this is the free resource page. Optional companion readings listed: MacKenzie Scott's Giving Pledge letter (2019), her Medium post '116 Organizations Driving Change' (2020), the SSIR 'Strategic Philanthropy for a Complex World' debate (2014), Paul Brest's 'Strategic Philanthropy and Its Discontents' (2015), and the Hill-Snowdon Foundation piece."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -193,8 +372,17 @@
       "time": "23:59",
       "summary": "Assignment 1 (15%) — 2-3 page reflection applying course themes to a real philanthropist's giving strategy.",
       "verbatim": "Assignment Due Sunday, September 27 by 11:59pm   Submit a 2-3 page reflection (max 1,000 words) responding to the prompt: Consider a specific philanthropist or philanthropic organization. Describe ways in which themes or insights from the first section of the course apply to their current giving strategy and what shifts to their approach you would recommend.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -205,8 +393,17 @@
       "time": "23:59",
       "summary": "Case video option 1 of 5 — how should Undue Medical Debt spend MacKenzie Scott's windfall, and would you have restricted it?",
       "verbatim": "Case reflection prompt: Undue Medical Debt (the new name for RIP Medical Debt) has an interesting philanthropic model of soliciting donor funds and buying medical debt. How do you think they should spend a large infusion of cash from Mackenzie Scott? Would you have, as a donor, put more restrictions on the donation than Ms. Scott did?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: the case is discussed October 1 and videos are due by 11:59pm on the Wednesday before that session." },
-      "pool": { "isPool": true, "poolId": "case-reflection-videos", "requiredCount": 2, "totalOptions": 5 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: the case is discussed October 1 and videos are due by 11:59pm on the Wednesday before that session."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "case-reflection-videos",
+        "requiredCount": 2,
+        "totalOptions": 5
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -217,8 +414,17 @@
       "time": null,
       "summary": "Yale SOM case on RIP Medical Debt's response to a MacKenzie Scott windfall.",
       "verbatim": "\"RIP Medical Debt\" - Yale SOM case, 2022",
-      "link": { "url": null, "sourceType": "none", "note": "Yale SOM case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Yale SOM case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -229,8 +435,17 @@
       "time": null,
       "summary": "Primer on the legal forms philanthropy can take.",
       "verbatim": "Philanthropic Form Primer.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -241,8 +456,17 @@
       "time": null,
       "summary": "Argument that for-profit philanthropy erodes charitable law.",
       "verbatim": "\"For-Profit Philanthropy is Eroding the Legal Foundations of Charitable Giving\", Inside Philanthropy, January 24, 2023, Dana Brakman Reiser and Steven A Dean.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas. Optional companion: Immortality and the Law: The Rising Power of the American Dead, Ray D. Madoff." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas. Optional companion: Immortality and the Law: The Rising Power of the American Dead, Ray D. Madoff."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -253,8 +477,17 @@
       "time": "23:59",
       "summary": "Case video option 2 of 5 — would the marriage equality campaign's lessons transfer to an issue you care about?",
       "verbatim": "Case reflection prompt: Consider a social issue of importance to you and discuss in what ways the lessons from the Marriage Equality campaign would and would not apply to bringing about a desired change for the issue you care about.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: the case is discussed October 8 and videos are due by 11:59pm on the Wednesday before that session." },
-      "pool": { "isPool": true, "poolId": "case-reflection-videos", "requiredCount": 2, "totalOptions": 5 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: the case is discussed October 8 and videos are due by 11:59pm on the Wednesday before that session."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "case-reflection-videos",
+        "requiredCount": 2,
+        "totalOptions": 5
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -265,8 +498,17 @@
       "time": null,
       "summary": "Sloan Foundation leaders on the future of science philanthropy.",
       "verbatim": "Michelson, E. S., & Falk, A. F. (2021, November 9). A vision for the future of science philanthropy. Issues in Science and Technology. https://issues.org/future-science-philanthropy-sloan-michelson-falk/",
-      "link": { "url": "https://issues.org/future-science-philanthropy-sloan-michelson-falk/", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://issues.org/future-science-philanthropy-sloan-michelson-falk/",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -277,8 +519,17 @@
       "time": null,
       "summary": "Background on Alfred P. Sloan Jr., the foundation's original donor.",
       "verbatim": "Sloan biography: https://sloan.org/about/who-was-alfred-p-sloan-jr",
-      "link": { "url": "https://sloan.org/about/who-was-alfred-p-sloan-jr", "sourceType": "original", "note": "The PDF's embedded link was wrapped in an Outlook safelinks redirect; this is the underlying sloan.org URL, unchanged." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://sloan.org/about/who-was-alfred-p-sloan-jr",
+        "sourceType": "original",
+        "note": "The PDF's embedded link was wrapped in an Outlook safelinks redirect; this is the underlying sloan.org URL, unchanged."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -289,8 +540,17 @@
       "time": null,
       "summary": "Skim the Sloan Foundation's latest annual report highlights.",
       "verbatim": "Skim the Sloan Foundation annual report: https://sloan.org/storage/app/media/files/annual_reports/2025_Highlights.pdf",
-      "link": { "url": "https://sloan.org/storage/app/media/files/annual_reports/2025_Highlights.pdf", "sourceType": "original", "note": "The PDF's embedded link was wrapped in an Outlook safelinks redirect; this is the underlying sloan.org URL, unchanged." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://sloan.org/storage/app/media/files/annual_reports/2025_Highlights.pdf",
+        "sourceType": "original",
+        "note": "The PDF's embedded link was wrapped in an Outlook safelinks redirect; this is the underlying sloan.org URL, unchanged."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -301,8 +561,17 @@
       "time": null,
       "summary": "Proteus Fund's account of the funder coalition behind marriage equality.",
       "verbatim": "Hearts and Minds, Proteus Fund",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas. Optional companions: Movement+Strategy+Campaign (Evan Wolfson, in Love Unites Us); Winning Marriage Concept Paper; 'Why the Marriage-Equality Movement Succeeded' (New Yorker, June 2021); The Plan to Win Marriage (Matt Coles, in Love Unites Us)." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas. Optional companions: Movement+Strategy+Campaign (Evan Wolfson, in Love Unites Us); Winning Marriage Concept Paper; 'Why the Marriage-Equality Movement Succeeded' (New Yorker, June 2021); The Plan to Win Marriage (Matt Coles, in Love Unites Us)."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -313,8 +582,17 @@
       "time": null,
       "summary": "Alex Johnston on helping donors clarify what they care about — ahead of his guest visit.",
       "verbatim": "Money with Meaning: Finding Joy and Impact in Philanthropy, by Alex Johnston, Chapter 4",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas. Optional companion: The Givers by David Callahan, Chapter 2 – pg. 43." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas. Optional companion: The Givers by David Callahan, Chapter 2 – pg. 43."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -325,8 +603,17 @@
       "time": null,
       "summary": "Readings for the community foundations session are not yet assigned.",
       "verbatim": "Readings: TBD",
-      "link": { "url": null, "sourceType": "none", "note": "Marked TBD in the syllabus — watch Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Marked TBD in the syllabus — watch Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -337,8 +624,17 @@
       "time": null,
       "summary": "MacAskill's case for effective altruism — chapters 1-5.",
       "verbatim": "Doing Good Better: How Effective Altruism Can Help You Help Others, Do Work that Matters, and Make Smarter Choices about Giving Back, William Macaskill, Chapters 1-5.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -349,8 +645,17 @@
       "time": null,
       "summary": "Browse GiveWell's research section for how EA charity evaluation works in practice.",
       "verbatim": "Givewell website research section",
-      "link": { "url": null, "sourceType": "none", "note": "Public website; not linked because the syllabus names a section rather than a specific page. Optional companions: 'How & How Not to Be Good' (John Gray, NYRB, May 2015); 'Misconceptions About Effective Altruism' (Benjamin Todd, 80,000 Hours, Aug 2020); Donovan, 'The rise of the randomistas' (Economy and Society, 2018)." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Public website; not linked because the syllabus names a section rather than a specific page. Optional companions: 'How & How Not to Be Good' (John Gray, NYRB, May 2015); 'Misconceptions About Effective Altruism' (Benjamin Todd, 80,000 Hours, Aug 2020); Donovan, 'The rise of the randomistas' (Economy and Society, 2018)."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -361,8 +666,17 @@
       "time": null,
       "summary": "Explore GiveDirectly's site — About, What We Do, and Evidence for Cash Transfers.",
       "verbatim": "Visit the website of GiveDirectly, focus on the About, What We Do, and Evidence for Cash Transfers sections.",
-      "link": { "url": null, "sourceType": "none", "note": "Public website; not linked because the syllabus names sections rather than specific pages." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Public website; not linked because the syllabus names sections rather than specific pages."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -373,8 +687,17 @@
       "time": null,
       "summary": "NYT on the city-by-city spread of guaranteed income pilots.",
       "verbatim": "\"Guaranteed Income Program Spread, City by City\", by Kurtis Lee, The New York Times, September 13, 2022.",
-      "link": { "url": null, "sourceType": "none", "note": "Paywalled New York Times article; on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Paywalled New York Times article; on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -385,8 +708,17 @@
       "time": null,
       "summary": "Bridgespan on funder collaboratives as an asset class.",
       "verbatim": "Dalal,N.,Tripp, K.D., & Powell, A. (2026, April 20). Collaboratives as a Philanthropic Asset Class. Bridespan.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas. The syllabus misspells the publisher as 'Bridespan' (The Bridgespan Group). Optional companion: 'How Philanthropic Collaborations Succeed, and Why They Fail' (Powell, Ditkoff & Twersky, SSIR, July 2019)." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas. The syllabus misspells the publisher as 'Bridespan' (The Bridgespan Group). Optional companion: 'How Philanthropic Collaborations Succeed, and Why They Fail' (Powell, Ditkoff & Twersky, SSIR, July 2019)."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -397,8 +729,17 @@
       "time": "23:59",
       "summary": "Assignment 2 (5%) — 1-2 page draft of your final project focus area, rationale, and guiding principles.",
       "verbatim": "Assignment Due Sunday, November 8th by 11:59pm Submit a 1-2 page draft of your final project focus area(s). Outline the primary area for investment and rationale for that choice. Outline the guiding principles or values for giving.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -409,8 +750,17 @@
       "time": null,
       "summary": "Watch the Echoing Green film on Black innovation ahead of the CAFE Group guests.",
       "verbatim": "Watch: Unwavering: The Power of Black Innovation",
-      "link": { "url": "https://youtu.be/eTARHULM_dE", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://youtu.be/eTARHULM_dE",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -421,8 +771,17 @@
       "time": null,
       "summary": "Bridgespan/Echoing Green data on funding disparities for leaders of color.",
       "verbatim": "Racial Equity and Funding: Disparities in Funding for Leaders of Color Leave Impact on the Table, The Bridgespan Group and Echoing Green, May 2020.",
-      "link": { "url": "https://www.bridgespan.org/insights/disparities-nonprofit-funding-for-leaders-of-color", "sourceType": "claude-found", "note": "Referenced by title only. Searched bridgespan.org; this is the free article page (published title uses 'Racial Equity and Philanthropy'). Optional companions: Black Voices, Black Spaces (Echoing Green and Equivolve, Aug 2022); 'The Need for Black Rage in Philanthropy' (Rodney Foxworth, Medium, Aug 2016)." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.bridgespan.org/insights/disparities-nonprofit-funding-for-leaders-of-color",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched bridgespan.org; this is the free article page (published title uses 'Racial Equity and Philanthropy'). Optional companions: Black Voices, Black Spaces (Echoing Green and Equivolve, Aug 2022); 'The Need for Black Rage in Philanthropy' (Rodney Foxworth, Medium, Aug 2016)."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -433,8 +792,17 @@
       "time": "23:59",
       "summary": "Case video option 3 of 5 — is Google.org's shifting model a strength or weakness, and has 'the best of Google' worked?",
       "verbatim": "Case reflection prompt: The Google.org model has undergone several iterations since the philanthropic initiative was founded in 2005.  Is this dynamic across cause areas a strength or a weakness? One constant of the model is the goal of leveraging \"the best of Google,\" Google's unique engineering and other talents. Has this succeeded?  Would you recommend Google continue its criterion for choosing projects?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: the case is discussed November 19 and videos are due by 11:59pm on the Wednesday before that session." },
-      "pool": { "isPool": true, "poolId": "case-reflection-videos", "requiredCount": 2, "totalOptions": 5 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: the case is discussed November 19 and videos are due by 11:59pm on the Wednesday before that session."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "case-reflection-videos",
+        "requiredCount": 2,
+        "totalOptions": 5
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -445,8 +813,17 @@
       "time": null,
       "summary": "Porter and Kramer's business case for corporate philanthropy.",
       "verbatim": "Summary of The Competitive Advantage of Corporate Philanthropy, Michael Porter and Mike Kramer, Harvard Business Review, December 2002.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -457,8 +834,17 @@
       "time": null,
       "summary": "Both the SSIR piece and the HBS Google.org case — read both for the discussion.",
       "verbatim": "For this case discussion, read both \"Do No Evil,\" Susie Boss, SSIR, Fall 2010 and the Google.org, HBS Case 2012.",
-      "link": { "url": null, "sourceType": "none", "note": "HBS case distributed through the course; SSIR article on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "HBS case distributed through the course; SSIR article on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -469,8 +855,17 @@
       "time": null,
       "summary": "Rockefeller Philanthropy Advisors on choosing a foundation's lifespan.",
       "verbatim": "\"Setting a Time Horizon: How Long Should Your Foundation or Giving Program Last?\" Rockefeller Philanthropy Advisors, May 2014.",
-      "link": { "url": "https://www.rockpa.org/wp-content/uploads/2017/08/Setting-a-Time-Horizon.pdf", "sourceType": "claude-found", "note": "Referenced by title only. Searched rockpa.org; this is the free PDF of the Philanthropy Roadmap guide. Note some sources date the guide 2012 rather than May 2014." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.rockpa.org/wp-content/uploads/2017/08/Setting-a-Time-Horizon.pdf",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched rockpa.org; this is the free PDF of the Philanthropy Roadmap guide. Note some sources date the guide 2012 rather than May 2014."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -481,8 +876,17 @@
       "time": null,
       "summary": "LaMarche's defense of spending a foundation down to zero.",
       "verbatim": "\"Why on Earth Would a Foundation Try to Get Rid of All of its Money?\" Gara LaMarche, Atlanticphilanthropies.org, January 8, 2009.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -493,8 +897,17 @@
       "time": null,
       "summary": "Interview with Laurie Dachs on the practice of spending down.",
       "verbatim": "\"Spending Down,\" Interview with Laurie Dachs, National Center for Family Philanthropy, October 2020.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -505,8 +918,17 @@
       "time": "23:59",
       "summary": "Case video option 4 of 5 — how effective is the prize/challenge model at spurring space flight innovation?",
       "verbatim": "Case reflection prompt: Based on your reading of the case, how would you evaluate the efficacy of the contest/challenge approach in stimulating technological advances in space flight?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: the case is discussed December 3 and videos are due by 11:59pm on the Wednesday before that session." },
-      "pool": { "isPool": true, "poolId": "case-reflection-videos", "requiredCount": 2, "totalOptions": 5 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: the case is discussed December 3 and videos are due by 11:59pm on the Wednesday before that session."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "case-reflection-videos",
+        "requiredCount": 2,
+        "totalOptions": 5
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -517,8 +939,17 @@
       "time": null,
       "summary": "Final project video pitch due — max 6-8 minutes, advising your donor on a $100M philanthropic strategy.",
       "verbatim": "Final Project: Video Due December 4th; Memo due December 21st",
-      "link": { "url": null, "sourceType": "none", "note": "The assignment detail appears separately on the next page: \"The final project consists of 2 parts: a maximum 6-8-minute video pitch, due December 4th, and a final memo, which summarizes your pitch. Both the pitch and the memo should be directed to your donor.\" The syllabus gives no time of day for the video deadline; treated as end of day. December 4 is a Friday." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "The assignment detail appears separately on the next page: \"The final project consists of 2 parts: a maximum 6-8-minute video pitch, due December 4th, and a final memo, which summarizes your pitch. Both the pitch and the memo should be directed to your donor.\" The syllabus gives no time of day for the video deadline; treated as end of day. December 4 is a Friday."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -529,8 +960,17 @@
       "time": null,
       "summary": "Conrad on how competitions can level the playing field.",
       "verbatim": "\"Why Competitions Can Actually Level the Playing Field\", by Cecilia Conrad, Chronicle of Philanthropy, October 25, 2023.",
-      "link": { "url": null, "sourceType": "none", "note": "On Canvas; the author is the session's guest speaker." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "On Canvas; the author is the session's guest speaker."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -541,8 +981,17 @@
       "time": null,
       "summary": "Stanford case on the XPrize Foundation's competition model.",
       "verbatim": "\"XPrize Foundation: Revolution through Competition\", Stanford Case",
-      "link": { "url": null, "sourceType": "none", "note": "Purchased Stanford case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Purchased Stanford case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -553,8 +1002,17 @@
       "time": "23:59",
       "summary": "Case video option 5 of 5 — was RWJF right to adopt impact investing, and should every foundation?",
       "verbatim": "Case reflection prompt: Do you agree with RWJF's decision to adopt impact investing? Is their approach additive to their granting? Should every foundation adopt an impact investing approach? Why or why not?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: the case is discussed December 10 and videos are due by 11:59pm on the Wednesday before that session." },
-      "pool": { "isPool": true, "poolId": "case-reflection-videos", "requiredCount": 2, "totalOptions": 5 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: the case is discussed December 10 and videos are due by 11:59pm on the Wednesday before that session."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "case-reflection-videos",
+        "requiredCount": 2,
+        "totalOptions": 5
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -565,8 +1023,17 @@
       "time": null,
       "summary": "Stanford case on the Heron Foundation's shift to a fully mission-aligned portfolio.",
       "verbatim": "Stanford Business School Case, \"Heron Foundation\"",
-      "link": { "url": null, "sourceType": "none", "note": "Purchased Stanford case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Purchased Stanford case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -577,8 +1044,17 @@
       "time": null,
       "summary": "Robert Wood Johnson Foundation's own impact investing materials.",
       "verbatim": "RWJF website links",
-      "link": { "url": null, "sourceType": "none", "note": "Links to be provided by the instructors; watch Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Links to be provided by the instructors; watch Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -589,8 +1065,17 @@
       "time": "14:35",
       "summary": "Watch the other teams' pitches and bring glows, grows, and questions for each team.",
       "verbatim": "Assignment: Please watch the pitches from the other teams in your group and come to Session 13 with feedback (glows and grows) and questions to discuss for each team.",
-      "link": { "url": null, "sourceType": "none", "note": "Due at the start of the final class. You must be present for the final class." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Due at the start of the final class. You must be present for the final class."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -601,8 +1086,17 @@
       "time": "23:59",
       "summary": "Final project memo due — max 8 pages double-spaced (~2,000 words), addressed to your donor.",
       "verbatim": "Your memo should be a maximum 8-page, double-spaced document (~2,000 words), which can be submitted when you submit your video pitch, or after discussion of projects during our final class if you would like to fine-tune your pitch based on feedback. If you choose the second option, memos should be turned in no later than 11:59 pm on Dec 21st.",
-      "link": { "url": null, "sourceType": "none", "note": "This is the later of two options — you may instead submit the memo alongside the December 4 video pitch." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "This is the later of two options — you may instead submit the memo alongside the December 4 video pitch."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     }

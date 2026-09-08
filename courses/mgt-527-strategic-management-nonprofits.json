@@ -5,7 +5,7 @@
   "section": null,
   "semester": "Fall 2026",
   "archived": false,
-
+  "syllabusLink": null,
   "definitions": {
     "individualExercise": "Many individual exercises are listed throughout the syllabus, attached to specific lectures. They are prompts to think through before class — you do not submit all of them. Four of them must be submitted as videos over the course of the semester, and which four is your choice. If you prepare a video for a given class, you should be prepared to discuss it in class.",
     "individualExerciseVideos": "Four required video submissions, chosen by you from the exercises marked in the syllabus. Each video is a maximum of three minutes and answers that lecture's individual exercise question. Record with Zoom or any simple platform. Videos must be submitted on Canvas by 9:00 p.m. the evening prior to that class. Submit as a video file or Zoom cloud recording link. Speaking directly to the camera is sufficient; you may briefly share a screen or hold up a figure, and may upload a supplementary exhibit to Canvas. AI tools may be used in preparation, but the video itself must show you, an actual human, speaking to the camera. Strongest videos draw on specifics from the case. Worth 45% of the grade.",
@@ -14,43 +14,169 @@
     "classParticipation": "Students are expected to come to class prepared and to actively engage, bringing their own experiences to the course material. Worth 20%.",
     "aiPolicy": "You may use AI outside of class as much as is helpful. The classroom is device free — all devices put away. For video assignments, you should look like a human speaking conversationally to the camera; explaining something in your own words is the point, and reading aloud makes for a painful video."
   },
-
   "gradingPolicy": "Class Participation: 20%; Projects: 35%; Individual Exercise Videos: 45%. The syllabus is marked 'Draft and Subject to Change' and notes that visitor schedules in particular may change.",
-
   "officeHours": {
     "note": "Scheduled weekly office hour.",
     "details": "Thursdays 11:00 AM – 12:00 PM in the Evans Hall office, or via Zoom if arranged in advance (the Zoom room name is in the syllabus PDF). TA: Veronica Leifer."
   },
-
   "classSessions": [
-    { "date": "2026-09-03", "time": "08:30", "topic": "Lecture 1: Introduction to the Course and the Sector", "note": null },
-    { "date": "2026-09-08", "time": "08:30", "topic": "Lecture 2: Defining the Mission. Exploring the Relationship Between Mission and Sustainability I", "note": null },
-    { "date": "2026-09-10", "time": "08:30", "topic": "Lecture 3: Public Policy Toward Nonprofits", "note": null },
-    { "date": "2026-09-15", "time": "08:30", "topic": "Lecture 4: Industry Analysis and Competitive Advantage in the Nonprofit Sector", "note": null },
-    { "date": "2026-09-17", "time": "08:30", "topic": "Lecture 5: Competing in a Mature Nonprofit Industry", "note": null },
-    { "date": "2026-09-22", "time": "08:30", "topic": "Lecture 6: Partnering with the For-Profit Sector (Fortify Health)", "note": "Guest via Zoom: Tony Senanayake '20, founder of Fortify Health." },
-    { "date": "2026-09-24", "time": "08:30", "topic": "Lecture 7: Partnering with the For-Profit Sector (AEP / The Nature Conservancy)", "note": null },
-    { "date": "2026-09-29", "time": "08:30", "topic": "Lecture 8: Competing with the For-Profit Sector", "note": null },
-    { "date": "2026-10-01", "time": "08:30", "topic": "Lecture 9: Substituting for the Public Sector", "note": null },
-    { "date": "2026-10-06", "time": "08:30", "topic": "Lecture 10: Content Creator Nonprofit Fundraising Strategies", "note": "Guest: LJ Jukowski '00." },
-    { "date": "2026-10-08", "time": "08:30", "topic": "Lecture 11: Boundaries of the Organization: Exit, Mergers, and Acquisitions Among Nonprofits", "note": "Guest: Sarah Drummond, Dean of Andover Newton Theological Seminary at Yale Divinity School." },
-    { "date": "2026-10-13", "time": "08:30", "topic": "Lecture 12: Measuring Impact: Project Evaluation", "note": null },
-    { "date": "2026-10-15", "time": "08:30", "topic": "Lecture 13: Expansion, Affiliation, and Franchising", "note": "Last class before Fall Recess (Monday October 19 – Thursday October 22)." },
-    { "date": "2026-10-27", "time": "08:30", "topic": "Lecture 14: Nonprofit Financials: What Numbers Do We Look At?", "note": "First class back after Fall Recess." },
-    { "date": "2026-10-29", "time": "08:30", "topic": "Lecture 15: Pricing and Earned Income Ventures", "note": null },
-    { "date": "2026-11-03", "time": "08:30", "topic": "Lecture 16: Case Study of Beast Philanthropy", "note": null },
-    { "date": "2026-11-05", "time": "08:30", "topic": "Lecture 17: Pricing as an Allocation Mechanism", "note": null },
-    { "date": "2026-11-10", "time": "08:30", "topic": "Lecture 18: Sources of Revenue: Fundraising", "note": null },
-    { "date": "2026-11-12", "time": "08:30", "topic": "Lecture 19: The Nonprofit Startup and the Fundraising/Pricing Mix", "note": "Guest: Bob Rifkin, Co-President of Belmont Voice." },
-    { "date": "2026-11-17", "time": "08:30", "topic": "Lecture 20: Taxation and Nonprofit", "note": "Guest: Raphael Duguay, Yale School of Management. No preparation materials assigned." },
-    { "date": "2026-11-19", "time": "08:30", "topic": "Lecture 21: Open AI, For-Profit Conversions, and Changes of Form", "note": "Last class before Thanksgiving Break (Monday November 23 – Friday November 27). Preparation materials TBD." },
-    { "date": "2026-12-01", "time": "08:30", "topic": "Lecture 22: Good Governance and the Role of the Board", "note": "First class back after Thanksgiving Break." },
-    { "date": "2026-12-03", "time": "08:30", "topic": "Lecture 23: Restructuring Governance and Making Hard Decisions About Scope", "note": null },
-    { "date": "2026-12-08", "time": "08:30", "topic": "Lecture 24: Staff and Volunteers in the Nonprofit Sector", "note": null },
-    { "date": "2026-12-10", "time": "08:30", "topic": "Lecture 25: Nonprofit Innovation", "note": "Student projects on innovation will be discussed. Preparation materials TBD." },
-    { "date": "2026-12-15", "time": "08:30", "topic": "Lecture 26: Nonprofit and Social Enterprise Entrepreneurs", "note": "Final class. Project 2 presentations happen in this session; student presentations are assigned via Canvas for in-class discussion." }
+    {
+      "date": "2026-09-03",
+      "time": "08:30",
+      "topic": "Lecture 1: Introduction to the Course and the Sector",
+      "note": null
+    },
+    {
+      "date": "2026-09-08",
+      "time": "08:30",
+      "topic": "Lecture 2: Defining the Mission. Exploring the Relationship Between Mission and Sustainability I",
+      "note": null
+    },
+    {
+      "date": "2026-09-10",
+      "time": "08:30",
+      "topic": "Lecture 3: Public Policy Toward Nonprofits",
+      "note": null
+    },
+    {
+      "date": "2026-09-15",
+      "time": "08:30",
+      "topic": "Lecture 4: Industry Analysis and Competitive Advantage in the Nonprofit Sector",
+      "note": null
+    },
+    {
+      "date": "2026-09-17",
+      "time": "08:30",
+      "topic": "Lecture 5: Competing in a Mature Nonprofit Industry",
+      "note": null
+    },
+    {
+      "date": "2026-09-22",
+      "time": "08:30",
+      "topic": "Lecture 6: Partnering with the For-Profit Sector (Fortify Health)",
+      "note": "Guest via Zoom: Tony Senanayake '20, founder of Fortify Health."
+    },
+    {
+      "date": "2026-09-24",
+      "time": "08:30",
+      "topic": "Lecture 7: Partnering with the For-Profit Sector (AEP / The Nature Conservancy)",
+      "note": null
+    },
+    {
+      "date": "2026-09-29",
+      "time": "08:30",
+      "topic": "Lecture 8: Competing with the For-Profit Sector",
+      "note": null
+    },
+    {
+      "date": "2026-10-01",
+      "time": "08:30",
+      "topic": "Lecture 9: Substituting for the Public Sector",
+      "note": null
+    },
+    {
+      "date": "2026-10-06",
+      "time": "08:30",
+      "topic": "Lecture 10: Content Creator Nonprofit Fundraising Strategies",
+      "note": "Guest: LJ Jukowski '00."
+    },
+    {
+      "date": "2026-10-08",
+      "time": "08:30",
+      "topic": "Lecture 11: Boundaries of the Organization: Exit, Mergers, and Acquisitions Among Nonprofits",
+      "note": "Guest: Sarah Drummond, Dean of Andover Newton Theological Seminary at Yale Divinity School."
+    },
+    {
+      "date": "2026-10-13",
+      "time": "08:30",
+      "topic": "Lecture 12: Measuring Impact: Project Evaluation",
+      "note": null
+    },
+    {
+      "date": "2026-10-15",
+      "time": "08:30",
+      "topic": "Lecture 13: Expansion, Affiliation, and Franchising",
+      "note": "Last class before Fall Recess (Monday October 19 – Thursday October 22)."
+    },
+    {
+      "date": "2026-10-27",
+      "time": "08:30",
+      "topic": "Lecture 14: Nonprofit Financials: What Numbers Do We Look At?",
+      "note": "First class back after Fall Recess."
+    },
+    {
+      "date": "2026-10-29",
+      "time": "08:30",
+      "topic": "Lecture 15: Pricing and Earned Income Ventures",
+      "note": null
+    },
+    {
+      "date": "2026-11-03",
+      "time": "08:30",
+      "topic": "Lecture 16: Case Study of Beast Philanthropy",
+      "note": null
+    },
+    {
+      "date": "2026-11-05",
+      "time": "08:30",
+      "topic": "Lecture 17: Pricing as an Allocation Mechanism",
+      "note": null
+    },
+    {
+      "date": "2026-11-10",
+      "time": "08:30",
+      "topic": "Lecture 18: Sources of Revenue: Fundraising",
+      "note": null
+    },
+    {
+      "date": "2026-11-12",
+      "time": "08:30",
+      "topic": "Lecture 19: The Nonprofit Startup and the Fundraising/Pricing Mix",
+      "note": "Guest: Bob Rifkin, Co-President of Belmont Voice."
+    },
+    {
+      "date": "2026-11-17",
+      "time": "08:30",
+      "topic": "Lecture 20: Taxation and Nonprofit",
+      "note": "Guest: Raphael Duguay, Yale School of Management. No preparation materials assigned."
+    },
+    {
+      "date": "2026-11-19",
+      "time": "08:30",
+      "topic": "Lecture 21: Open AI, For-Profit Conversions, and Changes of Form",
+      "note": "Last class before Thanksgiving Break (Monday November 23 – Friday November 27). Preparation materials TBD."
+    },
+    {
+      "date": "2026-12-01",
+      "time": "08:30",
+      "topic": "Lecture 22: Good Governance and the Role of the Board",
+      "note": "First class back after Thanksgiving Break."
+    },
+    {
+      "date": "2026-12-03",
+      "time": "08:30",
+      "topic": "Lecture 23: Restructuring Governance and Making Hard Decisions About Scope",
+      "note": null
+    },
+    {
+      "date": "2026-12-08",
+      "time": "08:30",
+      "topic": "Lecture 24: Staff and Volunteers in the Nonprofit Sector",
+      "note": null
+    },
+    {
+      "date": "2026-12-10",
+      "time": "08:30",
+      "topic": "Lecture 25: Nonprofit Innovation",
+      "note": "Student projects on innovation will be discussed. Preparation materials TBD."
+    },
+    {
+      "date": "2026-12-15",
+      "time": "08:30",
+      "topic": "Lecture 26: Nonprofit and Social Enterprise Entrepreneurs",
+      "note": "Final class. Project 2 presentations happen in this session; student presentations are assigned via Canvas for in-class discussion."
+    }
   ],
-
   "items": [
     {
       "id": "l1-r1",
@@ -59,8 +185,17 @@
       "time": null,
       "summary": "Three chapters of an open-access nonprofit sector textbook — the professor calls it very easy reading.",
       "verbatim": "Dyana P. Mason, Introduction to the Nonprofit Sector, Read Ch. 1 Introduction, Ch. 2 Theories, and Ch. 9 International Organizations. This is very easy reading. This open access text can be found at: https://opentext.uoregon.edu/intrononprofit/",
-      "link": { "url": "https://opentext.uoregon.edu/intrononprofit/", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://opentext.uoregon.edu/intrononprofit/",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -71,8 +206,17 @@
       "time": null,
       "summary": "Optional — Hansmann's classic contract-failure theory of why nonprofits exist. If you skip it, ask AI for a summary.",
       "verbatim": "Optional: Henry Hansmann, \"The Role of Nonprofit Enterprise\". If you choose not to read the article, please ask AI to give you a summary.",
-      "link": { "url": "https://yalelawjournal.org/article/the-role-of-nonprofit-enterprise", "sourceType": "claude-found", "note": "Referenced by title only. Searched for the article; this is the free full text at the Yale Law Journal (89 Yale L.J. 835, 1980)." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://yalelawjournal.org/article/the-role-of-nonprofit-enterprise",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched for the article; this is the free full text at the Yale Law Journal (89 Yale L.J. 835, 1980)."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -83,8 +227,17 @@
       "time": null,
       "summary": "Blog post proposing a new theory of purposeful enterprise; underlying paper optional.",
       "verbatim": "\"A new Theory of Purposeful Enterprise,\" Cathy Hwang and Dorothy Lund, the CLS Blue Sky Blog. Link: https://clsbluesky.law.columbia.edu/2025/01/06/why-nonprofit-enterprises-succeed/ If interested, read the underlying paper.",
-      "link": { "url": "https://clsbluesky.law.columbia.edu/2025/01/06/why-nonprofit-enterprises-succeed/", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://clsbluesky.law.columbia.edu/2025/01/06/why-nonprofit-enterprises-succeed/",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -95,8 +248,17 @@
       "time": null,
       "summary": "Submit the intro Google Form on Canvas: name, pronouns, and your nonprofit interests and background.",
       "verbatim": "Assignment: Submit to Google Form on Canvas by Tuesday, September 8, 2026: Your name, preferred pronouns, and a description of your nonprofit interests and background.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -107,8 +269,17 @@
       "time": null,
       "summary": "A nonprofit reinventing itself after losing federal funding.",
       "verbatim": "Eden Stiffman, \"With federal funding slashed this nonprofit aims to reinvent itself,\" Chronicle of Philanthropy, 2025. Link: https://www-philanthropy-com.yale.idm.oclc.org/article/with-federal-funding-slashed-this-nonprofit-aims-to-reinvent-itself",
-      "link": { "url": "https://www-philanthropy-com.yale.idm.oclc.org/article/with-federal-funding-slashed-this-nonprofit-aims-to-reinvent-itself", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www-philanthropy-com.yale.idm.oclc.org/article/with-federal-funding-slashed-this-nonprofit-aims-to-reinvent-itself",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -119,8 +290,17 @@
       "time": null,
       "summary": "NYT piece on donor influence over a public park's mission.",
       "verbatim": "Callahan, \"The Billionaires' Park,\" New York Times, 2014.",
-      "link": { "url": null, "sourceType": "none", "note": "Paywalled New York Times op-ed; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Paywalled New York Times op-ed; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -131,8 +311,17 @@
       "time": "21:00",
       "summary": "Video option 1 of 13 — how a nonprofit you care about defined its mission and whether financial pressure shifted it too far.",
       "verbatim": "Individual Exercise: Consider a nonprofit of interest to you. How did it define its precise mission? How have financial stability concerns sharpened/changed/altered that mission? Has it shifted its activities too much?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: the syllabus attaches this exercise to Lecture 2 (Tuesday September 8) and states videos are due on Canvas by 9:00 p.m. the evening prior to class." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: the syllabus attaches this exercise to Lecture 2 (Tuesday September 8) and states videos are due on Canvas by 9:00 p.m. the evening prior to class."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -143,8 +332,17 @@
       "time": null,
       "summary": "OECD report on tax treatment of philanthropy — Ch. 2 through p. 33 plus the cross-country data tables.",
       "verbatim": "OECD, \"Taxation and Philanthropy,\" read Ch. 2 through page 33 and peruse the data tables throughout the report on tax treatment across countries. Found here: OECD_philanthropy",
-      "link": { "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/11/taxation-and-philanthropy_76508539/df434a77-en.pdf", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/11/taxation-and-philanthropy_76508539/df434a77-en.pdf",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -155,8 +353,17 @@
       "time": null,
       "summary": "Health Affairs study finding hospital charity care doesn't match the tax breaks received.",
       "verbatim": "Bai et al, \"Analysis Suggests Government and Nonprofit Hospitals' Charity Care is Not Aligned with their Favorable Tax Treatment\" Health Affairs, https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2020.01627",
-      "link": { "url": "https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2020.01627", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2020.01627",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -167,8 +374,17 @@
       "time": null,
       "summary": "Oster on applying competitive strategy frameworks to nonprofits.",
       "verbatim": "Oster, \"Competitive Strategy in the Nonprofit Sector,\" in The Oxford Handbook of Managerial Economics, 2013.",
-      "link": { "url": null, "sourceType": "none", "note": "Book chapter; available through the Yale library or posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Book chapter; available through the Yale library or posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -179,8 +395,17 @@
       "time": null,
       "summary": "Submit preliminary project topic areas on Canvas — can be general or specific, and is used to match-make project teams.",
       "verbatim": "Preliminary Project Topic Areas are due in Canvas on Thursday, September 17, 2026. Based on the preferences stated, students will be introduced to other students with overlapping interest to facilitate forming project groups. The professor and TA will help students match-make into teams. For the September 17 due date, the submission can be general or specific, depending on your level of passion for working on something particular.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -191,8 +416,17 @@
       "time": null,
       "summary": "Theatre Facts 2023 — read intro and executive summary, then browse the data.",
       "verbatim": "\"Theatre Facts 2023\", read the introduction and executive summary and peruse the data. Found at: Theatre Facts 2023",
-      "link": { "url": "https://docs.google.com/document/d/1okFwp-kxcLBdlA3c3nEolnXNSZbL9nw6e_RaTG3w9Wo/edit?tab=t.0", "sourceType": "original", "note": "The PDF's hyperlink text reads 'Theatre Facts 2023'; this Google Doc is the remaining unmatched link annotation on that page after assigning the others. Verify it opens to the right document." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://docs.google.com/document/d/1okFwp-kxcLBdlA3c3nEolnXNSZbL9nw6e_RaTG3w9Wo/edit?tab=t.0",
+        "sourceType": "original",
+        "note": "The PDF's hyperlink text reads 'Theatre Facts 2023'; this Google Doc is the remaining unmatched link annotation on that page after assigning the others. Verify it opens to the right document."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -203,8 +437,17 @@
       "time": null,
       "summary": "NYT on the financial crisis facing American regional theatres.",
       "verbatim": "Michael Paulson, \"A Crisis in America's Theaters Leaves Prestigious Stages Dark,\" NY Times, July 2023. Found at: NYT Paulson",
-      "link": { "url": "https://www.nytimes.com/2023/07/23/theater/regional-theater-crisis.html", "sourceType": "original", "note": "The syllabus embeds an NYT gift link with a long unlocked_article_code parameter; the base article URL is given here. If you hit the paywall, use the full gift link in the PDF." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.nytimes.com/2023/07/23/theater/regional-theater-crisis.html",
+        "sourceType": "original",
+        "note": "The syllabus embeds an NYT gift link with a long unlocked_article_code parameter; the base article URL is given here. If you hit the paywall, use the full gift link in the PDF."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -215,8 +458,17 @@
       "time": null,
       "summary": "Playbill on how nonprofit theatres are trying to save themselves.",
       "verbatim": "Diep Tran, \"How Non-Profit Theatres are Trying to Save themselves. And the Theatre Industry.\" Playbill, Nov 2023. Found at: https://playbill.com/article/how-non-profit-theatres-are-trying-to-save-themselves-and-the-theatre-industry",
-      "link": { "url": "https://playbill.com/article/how-non-profit-theatres-are-trying-to-save-themselves-and-the-theatre-industry", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://playbill.com/article/how-non-profit-theatres-are-trying-to-save-themselves-and-the-theatre-industry",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -227,8 +479,17 @@
       "time": "21:00",
       "summary": "Video option 2 of 13 — critique LWT's move to an itinerant model and set criteria for another struggling theatre.",
       "verbatim": "Individual Exercise: Critique the LWT's move to an itinerant model. If you were the board chair of a different struggling theatre, what criteria would you use to decide whether a similar move made sense? You may but do not have to use the example of a specific theatre with which you are familiar. You may do some research beyond the readings.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 5 (Thursday September 17); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 5 (Thursday September 17); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -239,8 +500,17 @@
       "time": null,
       "summary": "Fortify Health mini-case plus a video and other linked readings — get through all of them.",
       "verbatim": "Fortify Health mini-case. There are links there to a video to watch and some other readings. Please be sure to get through all of them.",
-      "link": { "url": null, "sourceType": "none", "note": "Course-produced mini-case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-produced mini-case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -251,8 +521,17 @@
       "time": null,
       "summary": "Stanford GSB case on AEP's forest conservation partnership with The Nature Conservancy.",
       "verbatim": "AEP: Investing in Forest Conservation (Stanford GSB #O1T-96).",
-      "link": { "url": null, "sourceType": "none", "note": "Purchased Stanford GSB case; distributed through the course, not freely available." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Purchased Stanford GSB case; distributed through the course, not freely available."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -263,8 +542,17 @@
       "time": "21:00",
       "summary": "Video option 3 of 13 — does the AEP partnership make sense from The Nature Conservancy's side?",
       "verbatim": "Individual Exercise: The case is framed around AEP's tradeoffs in partnering with The Nature Conservancy. In this exercise, explain whether you think the partnership makes sense for TNC and why.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 7 (Thursday September 24); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 7 (Thursday September 24); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -275,8 +563,17 @@
       "time": null,
       "summary": "Yale SOM case on a nonprofit lender entering a financial market.",
       "verbatim": "New Hampshire Community Loan Fund (Yale SOM).",
-      "link": { "url": null, "sourceType": "none", "note": "Yale SOM case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Yale SOM case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -287,8 +584,17 @@
       "time": null,
       "summary": "John Oliver segment on the mobile home park industry.",
       "verbatim": "Last Week Tonight with John Oliver, \"Mobile Homes.\"",
-      "link": { "url": null, "sourceType": "none", "note": "Television segment referenced by title only; not linked because multiple reuploads exist and I could not confirm the canonical one." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Television segment referenced by title only; not linked because multiple reuploads exist and I could not confirm the canonical one."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -299,8 +605,17 @@
       "time": "21:00",
       "summary": "Video option 4 of 13 — why aren't for-profit lenders financing mobile home park co-ops, and what should NHCLF aim for?",
       "verbatim": "Individual Exercise: If lending for cooperative ownership of mobile home parks can be done sustainably by NHCLF and others, why aren't for-profit lenders doing this? What should the long-term goals of NHCLF be for this project?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 8 (Tuesday September 29); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 8 (Tuesday September 29); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -311,8 +626,17 @@
       "time": null,
       "summary": "Living Goods mini-case on an NGO delivering health services in Uganda.",
       "verbatim": "Living Good mini-case and links.",
-      "link": { "url": null, "sourceType": "none", "note": "Course-produced mini-case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-produced mini-case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -323,8 +647,17 @@
       "time": null,
       "summary": "DFTBA mini-case on Hank and John Green's earned revenue and fundraising model.",
       "verbatim": "DFTBA Mini-case",
-      "link": { "url": null, "sourceType": "none", "note": "Course-produced mini-case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-produced mini-case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -335,8 +668,17 @@
       "time": null,
       "summary": "SSIR article on why nonprofit merger rates stay flat despite financial pressure.",
       "verbatim": "Milway, Orozco, Botero, \"Why Nonprofit Mergers Continue to Lag,\" Stanford Social Innovation Review, 2014.",
-      "link": { "url": "https://ssir.org/articles/entry/why_nonprofit_mergers_continue_to_lag", "sourceType": "claude-found", "note": "Referenced by title only. Searched for the SSIR article (Vol. 12, No. 2, 2014); this is the article page on ssir.org." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://ssir.org/articles/entry/why_nonprofit_mergers_continue_to_lag",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched for the SSIR article (Vol. 12, No. 2, 2014); this is the article page on ssir.org."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -347,8 +689,17 @@
       "time": null,
       "summary": "The Gibson church merger case — also cited as a model of a successful student project.",
       "verbatim": "Gibson, \"The Case of Church Mergers.\"",
-      "link": { "url": null, "sourceType": "none", "note": "Course-distributed case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-distributed case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -359,8 +710,17 @@
       "time": null,
       "summary": "HBS case on Year Up's approach to measuring and scaling impact.",
       "verbatim": "Year Up: Measuring and Scaling Impact (HBS case 823004).",
-      "link": { "url": null, "sourceType": "none", "note": "Purchased Harvard Business School case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Purchased Harvard Business School case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -371,8 +731,17 @@
       "time": "21:00",
       "summary": "Video option 5 of 13 — what impact metrics does a nonprofit you care about collect, and what should it collect?",
       "verbatim": "Individual Exercise: For a nonprofit of interest to you, discuss the metrics they collect to assess their impact and what metrics you think they should collect.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 12 (Tuesday October 13); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 12 (Tuesday October 13); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -383,8 +752,17 @@
       "time": null,
       "summary": "Oster on nonprofit affiliate structures as an organizational form.",
       "verbatim": "Oster, \"Nonprofit organizations and their affiliates: A study in organizational forms,\" Journal of Economic Behavior and Organization, 1996.",
-      "link": { "url": null, "sourceType": "none", "note": "Journal article; available through the Yale library or posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Journal article; available through the Yale library or posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -395,8 +773,17 @@
       "time": null,
       "summary": "Yale SOM case on scaling a New Haven summer program.",
       "verbatim": "Summer School in New Haven (Yale SOM case).",
-      "link": { "url": null, "sourceType": "none", "note": "Yale SOM case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Yale SOM case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -407,8 +794,17 @@
       "time": "21:00",
       "summary": "Video option 6 of 13 — should Foote partner with Horizons to scale its summer program?",
       "verbatim": "Individual Exercise: Taking it as given that Foote has decided to scale up its summer program, should it partner with Horizons to do so?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 13 (Thursday October 15); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 13 (Thursday October 15); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -419,8 +815,17 @@
       "time": null,
       "summary": "Video conversation with accounting scholar Brian Mittendorf on Canvas.",
       "verbatim": "Video conversation with Brian Mittendorf (Canvas).",
-      "link": { "url": null, "sourceType": "none", "note": "Posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -431,8 +836,17 @@
       "time": null,
       "summary": "The IRS instructions for Form 990 — the nonprofit annual information return.",
       "verbatim": "IRS Form 990 Instructions.",
-      "link": { "url": "https://www.irs.gov/instructions/i990", "sourceType": "claude-found", "note": "Referenced by title only. Searched irs.gov; this is the official Instructions for Form 990." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.irs.gov/instructions/i990",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched irs.gov; this is the official Instructions for Form 990."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -443,8 +857,17 @@
       "time": "21:00",
       "summary": "Video option 7 of 13 — analyze financial distress at a nonprofit you know well, and remedies.",
       "verbatim": "Individual Exercise: Consider a nonprofit of interest to you that has experienced financial distress. Analyze the causes of financial distress in a nonprofit of your interest and potential remedies. (This particular exercise might only work if you have pretty deep experience with the nonprofit).",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 14 (Tuesday October 27); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 14 (Tuesday October 27); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -455,8 +878,17 @@
       "time": null,
       "summary": "Yale SOM case on the business model and pricing of a costume rental venture.",
       "verbatim": "Costume Rentals (Yale SOM case).",
-      "link": { "url": null, "sourceType": "none", "note": "Yale SOM case; distributed through the course." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Yale SOM case; distributed through the course."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -467,8 +899,17 @@
       "time": "21:00",
       "summary": "Video option 8 of 13 — would Costume Rentals make money at higher volume, and what would you change?",
       "verbatim": "Individual Exercise: If the Costume Rentals Initiative increased its volume and otherwise kept its operations the same, would it make money? What improvements to their model would you suggest?",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 15 (Thursday October 29); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 15 (Thursday October 29); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -479,8 +920,17 @@
       "time": null,
       "summary": "Mini-case on Beast Philanthropy.",
       "verbatim": "Mini-case on Beast Philanthropy",
-      "link": { "url": null, "sourceType": "none", "note": "Course-produced mini-case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-produced mini-case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -491,8 +941,17 @@
       "time": null,
       "summary": "How Feeding America used a market with fake currency to allocate donated food.",
       "verbatim": "Prendergast, \"How Food Banks Use Markets to Feed the Poor,\" Journal of Economic Perspectives, 2017.",
-      "link": { "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjep.31.4.145", "sourceType": "claude-found", "note": "Referenced by title only. Searched for the JEP article (Vol. 31, No. 4, pp. 145-62); JEP is open access, so the full PDF is free at aeaweb.org." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjep.31.4.145",
+        "sourceType": "claude-found",
+        "note": "Referenced by title only. Searched for the JEP article (Vol. 31, No. 4, pp. 145-62); JEP is open access, so the full PDF is free at aeaweb.org."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -503,8 +962,17 @@
       "time": "21:00",
       "summary": "Video option 9 of 13 — propose a better allocation scheme for a nonprofit that rations a scarce resource.",
       "verbatim": "Individual Exercise: Consider a nonprofit of interest to you that allocates a scarce resource. Describe a better allocation scheme than the one it uses.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 17 (Thursday November 5); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 17 (Thursday November 5); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -515,8 +983,17 @@
       "time": null,
       "summary": "Mini-case on AI and fundraising.",
       "verbatim": "Mini-case on AI and fundraising",
-      "link": { "url": null, "sourceType": "none", "note": "Course-produced mini-case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-produced mini-case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -527,8 +1004,17 @@
       "time": null,
       "summary": "Short primer on the experimental evidence behind fundraising practice.",
       "verbatim": "Whillans, \"A Brief Introduction to the Science of Fundraising,\" Council for Advancement and Support of Education, 2016.",
-      "link": { "url": null, "sourceType": "none", "note": "CASE publication; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "CASE publication; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -539,8 +1025,17 @@
       "time": "21:00",
       "summary": "Video option 10 of 13 — critique a nonprofit's fundraising strategy, using data if you can.",
       "verbatim": "Individual Exercise: Choose a nonprofit of interest to you. Critique their fundraising strategies, using data if possible.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 18 (Tuesday November 10); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 18 (Tuesday November 10); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -551,8 +1046,17 @@
       "time": null,
       "summary": "Belmont Voice mini-case on the local nonprofit news model.",
       "verbatim": "Belmont Voice mini case.",
-      "link": { "url": null, "sourceType": "none", "note": "Course-produced mini-case; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-produced mini-case; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -563,8 +1067,17 @@
       "time": null,
       "summary": "Belmont Voice's own Startup of the Year contest submission.",
       "verbatim": "Belmont Voice submission to Startup of the Year contest.",
-      "link": { "url": null, "sourceType": "none", "note": "Course-distributed document; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Course-distributed document; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -575,8 +1088,17 @@
       "time": "21:00",
       "summary": "Video option 11 of 13 — would you recommend the Belmont Voice model for a nonprofit paper in Lowell?",
       "verbatim": "Individual Exercise: Consider the town of Lowell, about 30 minutes northwest of Belmont. Some local SOM graduates are considering starting a nonprofit newspaper there. Would you recommend the Belmont Voice model? How best to ensure success of this venture and what challenges would you expect to face? Feel free to look up any data about Lowell that would be helpful.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 19 (Thursday November 12); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 19 (Thursday November 12); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -587,8 +1109,17 @@
       "time": null,
       "summary": "Preparation materials for the Open AI / for-profit conversions session are not yet assigned.",
       "verbatim": "Preparation Materials: TBD",
-      "link": { "url": null, "sourceType": "none", "note": "Marked TBD in the syllabus — watch Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Marked TBD in the syllabus — watch Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -599,8 +1130,17 @@
       "time": null,
       "summary": "BoardSource's governance survey — read through page 37.",
       "verbatim": "BoardSource, Leading with Intent, 2021. Read through page 37. Found at: Leading with Intent",
-      "link": { "url": "https://leadingwithintent.org/wp-content/uploads/2021/06/2021-Leading-with-Intent-Report.pdf", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://leadingwithintent.org/wp-content/uploads/2021/06/2021-Leading-with-Intent-Report.pdf",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -611,8 +1151,17 @@
       "time": "21:00",
       "summary": "Video option 12 of 13 — analyze a nonprofit board's trustee backgrounds and giving history.",
       "verbatim": "Individual Exercise: Find a nonprofit's board and analyze trustee backgrounds and giving history (noting this can be challenging due to limited data).",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 22 (Tuesday December 1); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 22 (Tuesday December 1); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -623,8 +1172,17 @@
       "time": null,
       "summary": "Yale SOM case on restructuring governance at Catholic Charities of Chicago.",
       "verbatim": "Catholic Charities of the Archdiocese of Chicago (Yale SOM case). Found at: https://cases.som.yale.edu/catholic-charities-archdiocese-chicago/",
-      "link": { "url": "https://cases.som.yale.edu/catholic-charities-archdiocese-chicago/", "sourceType": "original", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://cases.som.yale.edu/catholic-charities-archdiocese-chicago/",
+        "sourceType": "original",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -635,8 +1193,17 @@
       "time": null,
       "summary": "BLS estimates of nonprofit pay and benefits.",
       "verbatim": "Bureau of Labor Statistics, \"Nonprofit pay and benefits: estimates from the National Compensation Survey,\" 2016.",
-      "link": { "url": null, "sourceType": "none", "note": "BLS Monthly Labor Review article; posted on Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "BLS Monthly Labor Review article; posted on Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -647,8 +1214,17 @@
       "time": null,
       "summary": "Yale Insights piece on mobile crowdsourcing for food rescue.",
       "verbatim": "Manshadi and Rodilitz, \"How Better Mobile Crowdsourcing Can Help Combat Food Waste and Feed the Hungry,\" Yale Insights.",
-      "link": { "url": null, "sourceType": "none", "note": "Yale Insights article; not linked because I could not confirm the exact URL." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Yale Insights article; not linked because I could not confirm the exact URL."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -659,8 +1235,17 @@
       "time": "21:00",
       "summary": "Video option 13 of 13 — analyze executive director compensation or an HR practice at a nonprofit.",
       "verbatim": "Individual Exercise: Analyze executive director compensation or summarize a human resources practice in a nonprofit.",
-      "link": { "url": null, "sourceType": "none", "note": "Date derived: attached to Lecture 24 (Tuesday December 8); videos are due by 9:00 p.m. the evening prior." },
-      "pool": { "isPool": true, "poolId": "individual-exercise-videos", "requiredCount": 4, "totalOptions": 13 },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: attached to Lecture 24 (Tuesday December 8); videos are due by 9:00 p.m. the evening prior."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "individual-exercise-videos",
+        "requiredCount": 4,
+        "totalOptions": 13
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -671,8 +1256,17 @@
       "time": null,
       "summary": "Preparation materials for the nonprofit innovation session are not yet assigned.",
       "verbatim": "Preparation Materials: TBD",
-      "link": { "url": null, "sourceType": "none", "note": "Marked TBD in the syllabus — watch Canvas." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Marked TBD in the syllabus — watch Canvas."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -683,8 +1277,17 @@
       "time": null,
       "summary": "Watch the student presentations assigned on Canvas ahead of the final class discussion.",
       "verbatim": "Student presentations assigned via Canvas for in-class discussion.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -695,8 +1298,17 @@
       "time": "08:30",
       "summary": "Project 2 groups present live in class — only required if you chose the nonprofit entrepreneurship track.",
       "verbatim": "Students who choose Project 2 below also must plan to present their work in class on Tuesday, December 15, 2026.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -707,8 +1319,17 @@
       "time": "23:59",
       "summary": "Final presentation video due on Canvas — max 15 minutes, individually or in a group of up to 5.",
       "verbatim": "Final Presentation Videos Due: Thursday, December 17, 2026 (Due by 11:59 PM on Canvas)",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     }

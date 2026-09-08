@@ -5,7 +5,7 @@
   "section": null,
   "semester": "Fall 2026",
   "archived": false,
-
+  "syllabusLink": null,
   "definitions": {
     "hwAssignment": "Homework is assigned at the end of most weeks and is generally due the following week, uploaded to Canvas (JPEG files only) and in some cases also brought to class. Assignments typically pair several short timed studies (2-5 minutes each) with one sustained large-format drawing representing roughly 5-6 hours of work. Students should expect to spend 4–6 hours per week outside of class on coursework.",
     "sketchbook": "A sketchbook must be maintained throughout the semester for exercises, experimentation, written reflections, and visual research. Just one sketchbook; recommended sizes 5x8 or 9x12.",
@@ -18,47 +18,193 @@
     "readingList": "Readings supplement studio practice throughout the semester: The Labor of Looking (Anoka Faruqee); How Art Can Be Thought: A Handbook for Change (De Souza, excerpt pp. 7-9); Zen in the Art of Archery (Eugen Herrigel, selected readings); Drawing As Destination Forever Arriving (Mei Kazama).",
     "materials": "Keep material cost around $100 or less. Student-supplied: sketchbook, drawing board with clip, large drawing pad (Strathmore 400 Series or Canson, 18\"x24\", mixed media paper), kneaded eraser, pencils (2H, HB, 2B, 3B, 4B, 6B), sharpener, portfolio. Provided by class: newsprint 18x24, watercolor paper, color pencils, cardboard drawing paper, glue stick and collage material, some extra paper, charcoal (vine/compressed, various weights) and drawing materials in limited amounts, kneaded eraser, large drawing pad for class use."
   },
-
   "gradingPolicy": "Evaluation is based approximately on: 30% participation and preparedness; 45% studio projects and assignments; 25% final project. Grades are determined by the completion and quality of studio projects, homework assignments, attendance, midterm portfolio, and the final project, along with thoughtful engagement in critiques and discussions. Three unexcused absences result in a failing grade. Any extra credit or missing assignments must be submitted by December 18 at 11:59 PM — no exceptions after that deadline.",
-
   "officeHours": {
     "note": "Regular office hours plus by appointment.",
     "details": "M/W, 1:30pm - 3:45pm and by appointment. Instructor: Erick A Benitez. TA: Siyu Chen. Class meets M/W 4:00pm-5:55pm in Green G01. Email addresses are in the syllabus PDF and on Canvas."
   },
-
   "classSessions": [
-    { "date": "2026-09-02", "time": "16:00", "topic": "Week 1 M: Introduction to the course, syllabus overview, and classroom orientation", "note": "Attendance at the first class is required. Note this falls on a Wednesday, not the usual Monday." },
-    { "date": "2026-09-04", "time": "16:00", "topic": "Week 1 F: Line exercises, contour and blind contour warm-ups, introduction to line and mark-making with pencil, demonstration of easel setup", "note": "Friday session held ON ZOOM — deviates from the normal M/W in-person pattern." },
-    { "date": "2026-09-07", "time": null, "topic": "Week 2 M: Labor Day — NO CLASS", "note": "No class." },
-    { "date": "2026-09-09", "time": "16:00", "topic": "Week 2 W: Slide lecture and materials orientation; negative space, cross-contour and value through still life; value scales, blind contour, sustained negative space still life", "note": "The syllabus lists two 'W:' entries for this week (the second describing continued still life observation exercises with a sustained pencil drawing) — one of them appears to be a labeling error, since Monday is Labor Day." },
-    { "date": "2026-09-14", "time": "16:00", "topic": "Week 3 M: Warm-up sketches, then in-depth studio on sphere and value scales (light and shadow)", "note": null },
-    { "date": "2026-09-16", "time": "16:00", "topic": "Week 3 W: Observation embodiment game, short warm-ups, sustained drapery still life using contour, hatching, composition and value", "note": null },
-    { "date": "2026-09-21", "time": "16:00", "topic": "Week 4 M: Viewing/discussion of Art 21: Drake Carr; warm-ups, demonstration, in-class sustained drapery still life in charcoal (subtractive method)", "note": null },
-    { "date": "2026-09-23", "time": "16:00", "topic": "Week 4 W: Group discussion of Zen in the Art of Archery + group critique of homework (still life and drapery drawing)", "note": "First group critique — bring your homework." },
-    { "date": "2026-09-28", "time": "16:00", "topic": "Week 5 M: Discussion of \"The Labor of Looking\" + drawing outside of campus with sketchbooks", "note": "OFF-CAMPUS SESSION — the class meets in the classroom and leaves together for an outdoor drawing location. Bring sketchbook and pencils or charcoal." },
-    { "date": "2026-09-30", "time": "16:00", "topic": "Week 5 W: Slide presentation on interior and exterior space — spatial depth, sighting, linear perspective; warm-ups then sustained charcoal drawing of interior space", "note": null },
-    { "date": "2026-10-05", "time": "16:00", "topic": "Week 6 M: Visiting Artist Talk — Christine Yerie, followed by Q&A", "note": "Visiting artist talk — deviates from the normal studio format." },
-    { "date": "2026-10-07", "time": "16:00", "topic": "Week 6 W: \"The Labor of Looking\" discussion continued, with interior perspective drawings from life using the subtractive method", "note": null },
-    { "date": "2026-10-12", "time": "16:00", "topic": "Week 7 M: Introduction to the midterm project (slide presentation) — developing a theme or narrative in pencil or charcoal + studio time", "note": null },
-    { "date": "2026-10-14", "time": "16:00", "topic": "Week 7 W: Studio work day for the midterm project + 1-on-1 check-ins", "note": "One-on-one check-ins with the instructor." },
-    { "date": "2026-10-19", "time": "16:00", "topic": "Week 8 M: Studio day for midterm project drawing + 1-on-1 check-in", "note": "One-on-one check-ins with the instructor." },
-    { "date": "2026-10-21", "time": null, "topic": "Week 8 W: October Break — NO CLASS", "note": "No class. No homework assigned this week." },
-    { "date": "2026-10-26", "time": "16:00", "topic": "Week 9 M: Critique for Midterm project — group 1", "note": "Midterm critique, group 1. Bring your finished midterm project." },
-    { "date": "2026-10-28", "time": "16:00", "topic": "Week 9 W: Critique for Midterm project — group 2", "note": "Midterm critique, group 2. Bring your finished midterm project." },
-    { "date": "2026-11-02", "time": "16:00", "topic": "Week 10 M: Live Model Session 1", "note": "Live model session." },
-    { "date": "2026-11-04", "time": "16:00", "topic": "Week 10 W: Live Model Session 2", "note": "Live model session." },
-    { "date": "2026-11-09", "time": "16:00", "topic": "Week 11 M: Field Trip to Yale University Art Gallery", "note": "FIELD TRIP — off-site at the Yale University Art Gallery." },
-    { "date": "2026-11-11", "time": "16:00", "topic": "Week 11 W: Discussion of field trip; viewing of David Hammons body prints and Day's End public sculpture next to the Whitney Museum + in-class drawing", "note": null },
-    { "date": "2026-11-16", "time": "16:00", "topic": "Week 12 M: Final Project overview and drawing warm-ups + studio time/research", "note": "The syllabus heads this week 'Nov 17 & Nov 18', but November 17 is a Tuesday. Assuming the normal M/W pattern (Nov 16 & Nov 18) — confirm with the instructor." },
-    { "date": "2026-11-18", "time": "16:00", "topic": "Week 12 W: Studio day for Final Projects", "note": "No homework assigned this week." },
-    { "date": "2026-11-23", "time": null, "topic": "Week 13 M: November Recess — NO CLASS", "note": "No class." },
-    { "date": "2026-11-25", "time": null, "topic": "Week 13 W: November Recess — NO CLASS", "note": "No class." },
-    { "date": "2026-11-30", "time": "16:00", "topic": "Week 14 M: Studio work day for continued development of final projects + 1-on-1 meetings", "note": "One-on-one meetings with the instructor." },
-    { "date": "2026-12-02", "time": "16:00", "topic": "Week 14 W: Studio work day for continued development of final projects + 1-on-1 meetings", "note": "One-on-one meetings with the instructor." },
-    { "date": "2026-12-07", "time": "16:00", "topic": "Week 15 M: Critique Group 1 — Final Project", "note": "LAST WEEK OF CLASS. Final critique, group 1 — bring your completed final project." },
-    { "date": "2026-12-09", "time": "16:00", "topic": "Week 15 W: Critique Group 2 — Final Project", "note": "LAST WEEK OF CLASS. Final critique, group 2 — bring your completed final project. Week 16 is Reading Period; classes do not meet." }
+    {
+      "date": "2026-09-02",
+      "time": "16:00",
+      "topic": "Week 1 M: Introduction to the course, syllabus overview, and classroom orientation",
+      "note": "Attendance at the first class is required. Note this falls on a Wednesday, not the usual Monday."
+    },
+    {
+      "date": "2026-09-04",
+      "time": "16:00",
+      "topic": "Week 1 F: Line exercises, contour and blind contour warm-ups, introduction to line and mark-making with pencil, demonstration of easel setup",
+      "note": "Friday session held ON ZOOM — deviates from the normal M/W in-person pattern."
+    },
+    {
+      "date": "2026-09-07",
+      "time": null,
+      "topic": "Week 2 M: Labor Day — NO CLASS",
+      "note": "No class."
+    },
+    {
+      "date": "2026-09-09",
+      "time": "16:00",
+      "topic": "Week 2 W: Slide lecture and materials orientation; negative space, cross-contour and value through still life; value scales, blind contour, sustained negative space still life",
+      "note": "The syllabus lists two 'W:' entries for this week (the second describing continued still life observation exercises with a sustained pencil drawing) — one of them appears to be a labeling error, since Monday is Labor Day."
+    },
+    {
+      "date": "2026-09-14",
+      "time": "16:00",
+      "topic": "Week 3 M: Warm-up sketches, then in-depth studio on sphere and value scales (light and shadow)",
+      "note": null
+    },
+    {
+      "date": "2026-09-16",
+      "time": "16:00",
+      "topic": "Week 3 W: Observation embodiment game, short warm-ups, sustained drapery still life using contour, hatching, composition and value",
+      "note": null
+    },
+    {
+      "date": "2026-09-21",
+      "time": "16:00",
+      "topic": "Week 4 M: Viewing/discussion of Art 21: Drake Carr; warm-ups, demonstration, in-class sustained drapery still life in charcoal (subtractive method)",
+      "note": null
+    },
+    {
+      "date": "2026-09-23",
+      "time": "16:00",
+      "topic": "Week 4 W: Group discussion of Zen in the Art of Archery + group critique of homework (still life and drapery drawing)",
+      "note": "First group critique — bring your homework."
+    },
+    {
+      "date": "2026-09-28",
+      "time": "16:00",
+      "topic": "Week 5 M: Discussion of \"The Labor of Looking\" + drawing outside of campus with sketchbooks",
+      "note": "OFF-CAMPUS SESSION — the class meets in the classroom and leaves together for an outdoor drawing location. Bring sketchbook and pencils or charcoal."
+    },
+    {
+      "date": "2026-09-30",
+      "time": "16:00",
+      "topic": "Week 5 W: Slide presentation on interior and exterior space — spatial depth, sighting, linear perspective; warm-ups then sustained charcoal drawing of interior space",
+      "note": null
+    },
+    {
+      "date": "2026-10-05",
+      "time": "16:00",
+      "topic": "Week 6 M: Visiting Artist Talk — Christine Yerie, followed by Q&A",
+      "note": "Visiting artist talk — deviates from the normal studio format."
+    },
+    {
+      "date": "2026-10-07",
+      "time": "16:00",
+      "topic": "Week 6 W: \"The Labor of Looking\" discussion continued, with interior perspective drawings from life using the subtractive method",
+      "note": null
+    },
+    {
+      "date": "2026-10-12",
+      "time": "16:00",
+      "topic": "Week 7 M: Introduction to the midterm project (slide presentation) — developing a theme or narrative in pencil or charcoal + studio time",
+      "note": null
+    },
+    {
+      "date": "2026-10-14",
+      "time": "16:00",
+      "topic": "Week 7 W: Studio work day for the midterm project + 1-on-1 check-ins",
+      "note": "One-on-one check-ins with the instructor."
+    },
+    {
+      "date": "2026-10-19",
+      "time": "16:00",
+      "topic": "Week 8 M: Studio day for midterm project drawing + 1-on-1 check-in",
+      "note": "One-on-one check-ins with the instructor."
+    },
+    {
+      "date": "2026-10-21",
+      "time": null,
+      "topic": "Week 8 W: October Break — NO CLASS",
+      "note": "No class. No homework assigned this week."
+    },
+    {
+      "date": "2026-10-26",
+      "time": "16:00",
+      "topic": "Week 9 M: Critique for Midterm project — group 1",
+      "note": "Midterm critique, group 1. Bring your finished midterm project."
+    },
+    {
+      "date": "2026-10-28",
+      "time": "16:00",
+      "topic": "Week 9 W: Critique for Midterm project — group 2",
+      "note": "Midterm critique, group 2. Bring your finished midterm project."
+    },
+    {
+      "date": "2026-11-02",
+      "time": "16:00",
+      "topic": "Week 10 M: Live Model Session 1",
+      "note": "Live model session."
+    },
+    {
+      "date": "2026-11-04",
+      "time": "16:00",
+      "topic": "Week 10 W: Live Model Session 2",
+      "note": "Live model session."
+    },
+    {
+      "date": "2026-11-09",
+      "time": "16:00",
+      "topic": "Week 11 M: Field Trip to Yale University Art Gallery",
+      "note": "FIELD TRIP — off-site at the Yale University Art Gallery."
+    },
+    {
+      "date": "2026-11-11",
+      "time": "16:00",
+      "topic": "Week 11 W: Discussion of field trip; viewing of David Hammons body prints and Day's End public sculpture next to the Whitney Museum + in-class drawing",
+      "note": null
+    },
+    {
+      "date": "2026-11-16",
+      "time": "16:00",
+      "topic": "Week 12 M: Final Project overview and drawing warm-ups + studio time/research",
+      "note": "The syllabus heads this week 'Nov 17 & Nov 18', but November 17 is a Tuesday. Assuming the normal M/W pattern (Nov 16 & Nov 18) — confirm with the instructor."
+    },
+    {
+      "date": "2026-11-18",
+      "time": "16:00",
+      "topic": "Week 12 W: Studio day for Final Projects",
+      "note": "No homework assigned this week."
+    },
+    {
+      "date": "2026-11-23",
+      "time": null,
+      "topic": "Week 13 M: November Recess — NO CLASS",
+      "note": "No class."
+    },
+    {
+      "date": "2026-11-25",
+      "time": null,
+      "topic": "Week 13 W: November Recess — NO CLASS",
+      "note": "No class."
+    },
+    {
+      "date": "2026-11-30",
+      "time": "16:00",
+      "topic": "Week 14 M: Studio work day for continued development of final projects + 1-on-1 meetings",
+      "note": "One-on-one meetings with the instructor."
+    },
+    {
+      "date": "2026-12-02",
+      "time": "16:00",
+      "topic": "Week 14 W: Studio work day for continued development of final projects + 1-on-1 meetings",
+      "note": "One-on-one meetings with the instructor."
+    },
+    {
+      "date": "2026-12-07",
+      "time": "16:00",
+      "topic": "Week 15 M: Critique Group 1 — Final Project",
+      "note": "LAST WEEK OF CLASS. Final critique, group 1 — bring your completed final project."
+    },
+    {
+      "date": "2026-12-09",
+      "time": "16:00",
+      "topic": "Week 15 W: Critique Group 2 — Final Project",
+      "note": "LAST WEEK OF CLASS. Final critique, group 2 — bring your completed final project. Week 16 is Reading Period; classes do not meet."
+    }
   ],
-
   "items": [
     {
       "id": "hw-week1",
@@ -67,8 +213,17 @@
       "time": null,
       "summary": "Gather materials; three contour and three blind contour drawings in your sketchbook; read Zen in the Art of Archery ch. 1-2 and write a reflection. Canvas upload — JPEGs only.",
       "verbatim": "HW Assignment: Gather required materials. Complete three contour drawings (3–5 minutes each) and three blind contour drawings (2–3 minutes each) in your sketchbook with pencils. Read Chapters 1–2 of Zen in the Art of Archery and write a short reflection in your sketchbook responding to the reading (Canvas upload, due Sept 9… please only upload JPEG FILES!)",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -79,8 +234,17 @@
       "time": null,
       "summary": "Three quick cross-contour/value studies of a home still life plus one sustained large-format still life (3 objects, strong light source), ~5-6 hours. Canvas upload.",
       "verbatim": "HW Assignment: Complete three quick studies (2–5 minutes each) using cross-contour and value of a home still life, and one sustained still life drawing on your large format paper using pencils. The still life should include three objects with a strong light source. Spend approximately 5-6 hours on large drawing paper. Due Sept 16 (Canvas upload).",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -91,8 +255,17 @@
       "time": null,
       "summary": "Three drapery sketches plus one sustained large-format pencil drapery still life (~5-6 hours), and a sketchbook reflection on Zen ch. 3. Due in class and on Canvas.",
       "verbatim": "HW Assignment: Complete three drapery sketches (3–5 minutes each; to lock in a composition for sustained drawing) and one sustained pencil drapery still life drawing with a strong light source on large-format paper. Spend approximately 5–6 hours on the sustained drawing. Read Chapter 3 of Zen in the Art of Archery and write a short sketchbook reflection. Due Sept 23 (in-class and Canvas upload)",
-      "link": { "url": null, "sourceType": "none", "note": "This is also the class where the group critique of the still life and drapery drawings happens." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "This is also the class where the group critique of the still life and drapery drawings happens."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -103,8 +276,17 @@
       "time": null,
       "summary": "Sustained drapery drawing using subtractive charcoal on large paper. Canvas upload — but note the syllabus contradicts itself on the due date.",
       "verbatim": "HW Assignment: Complete a sustained drapery drawing using the subtractive charcoal method on large paper. Due Sept 30 (Canvas upload).",
-      "link": { "url": null, "sourceType": "none", "note": "DATE CONFLICT in the syllabus: Week 4 says this is due Sept 30, but the Week 5 entry says \"Continue working on the Week 4 assignment (due this week Sept 28).\" Dated to Sept 30 here as the more specific statement — confirm with the instructor." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "DATE CONFLICT in the syllabus: Week 4 says this is due Sept 30, but the Week 5 entry says \"Continue working on the Week 4 assignment (due this week Sept 28).\" Dated to Sept 30 here as the more specific statement — confirm with the instructor."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -115,8 +297,17 @@
       "time": null,
       "summary": "Read Faruqee's \"The Labor of Looking\" — discussed in class the week of Sept 28.",
       "verbatim": "Read The Labor of Looking - Anoka Faruqee (we will discuss in class the reading the week Sept 28)",
-      "link": { "url": "https://faruqeedriscollstudio.com/the-labor-of-looking-from-intention-to-interpretation/", "sourceType": "claude-found", "note": "No link in syllabus. Searched for the essay; the full text is free on the author's studio website. Published as 'The Labor of Looking: from Intention to Interpretation' (2013)." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": "https://faruqeedriscollstudio.com/the-labor-of-looking-from-intention-to-interpretation/",
+        "sourceType": "claude-found",
+        "note": "No link in syllabus. Searched for the essay; the full text is free on the author's studio website. Published as 'The Labor of Looking: from Intention to Interpretation' (2013)."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -127,8 +318,17 @@
       "time": null,
       "summary": "Five quick 3-minute sketchbook studies of interior spaces in pencil, plus one large interior drawing (~6 hours). Canvas upload.",
       "verbatim": "HW Assignment: Create five quick sketchbook studies (3 minutes each) of interior spaces using pencil only. Make a large drawing of an interior space (room, library, etc…) and spend about 6 hours. Due Oct 14 (Canvas upload).",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -139,8 +339,17 @@
       "time": "16:00",
       "summary": "Midterm project due for critique — a themed or narrative drawing in pencil or charcoal. Critique group 1 on Oct 26, group 2 on Oct 28.",
       "verbatim": "M: Critique for Midterm project group 1  W: Critique for Midterm project group 2",
-      "link": { "url": null, "sourceType": "none", "note": "Dated to the first critique day (Monday October 26). If you are in critique group 2 your date is Wednesday October 28. The project was introduced Week 7 (Oct 12) as \"developing a theme or narrative using pencil or charcoal.\"" },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Dated to the first critique day (Monday October 26). If you are in critique group 2 your date is Wednesday October 28. The project was introduced Week 7 (Oct 12) as \"developing a theme or narrative using pencil or charcoal.\""
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -151,8 +360,17 @@
       "time": null,
       "summary": "Watch the William Kentridge Art21 episode and write a one-paragraph reflection. Canvas upload.",
       "verbatim": "HW Assignment: Watch William Kentridge Art 21 + one paragraph reflection (due Nov 4, Canvas upload)",
-      "link": { "url": null, "sourceType": "none", "note": "Art21 episode referenced by name only; available free on art21.org." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Art21 episode referenced by name only; available free on art21.org."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -163,8 +381,17 @@
       "time": null,
       "summary": "Five hand drawings in pencil on large-format paper, ~4-6 hours total across multiple sessions. Due in class and on Canvas.",
       "verbatim": "HW Assignment:  Create five hand drawings using pencil on large-format paper. Spend approximately 4–6 hours total (break it into different sessions). Due Nov 11 (in class and Canvas upload).",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -175,8 +402,17 @@
       "time": "16:00",
       "summary": "Final project due — bring it to class for your assigned critique group. Worth 25% of the grade.",
       "verbatim": "HW Assignment: Complete the final project and bring it to class for the assigned critique group. Upload final documentation to Canvas by April 28.",
-      "link": { "url": null, "sourceType": "none", "note": "Dated to the first final critique day (Monday December 7); if you are in critique group 2 your date is Wednesday December 9. NOTE: the syllabus says to upload final documentation \"by April 28,\" which appears to be a leftover from a spring-semester version of this syllabus — confirm the real upload deadline. The hard backstop for any missing work is December 18 at 11:59 PM." },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Dated to the first final critique day (Monday December 7); if you are in critique group 2 your date is Wednesday December 9. NOTE: the syllabus says to upload final documentation \"by April 28,\" which appears to be a leftover from a spring-semester version of this syllabus — confirm the real upload deadline. The hard backstop for any missing work is December 18 at 11:59 PM."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     },
@@ -187,8 +423,17 @@
       "time": "23:59",
       "summary": "Hard deadline for any extra credit or missing assignments — no exceptions after this.",
       "verbatim": "***Any extra credit or missing assignments must be submitted by December 18 at 11:59 PM. No exceptions will be made after this deadline.",
-      "link": { "url": null, "sourceType": "none", "note": null },
-      "pool": { "isPool": false, "poolId": null, "requiredCount": null, "totalOptions": null },
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": null
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
       "completed": false,
       "poolSelected": false
     }

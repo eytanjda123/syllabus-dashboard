@@ -614,29 +614,68 @@ button {
 
 /* --------------------------------------------------------- reference page */
 
-.refblock {
-  padding: 0.9rem 0;
+.refcourse {
   border-bottom: 1px solid var(--rule);
   max-width: 46rem;
 }
 
-.refblock h3 {
-  font-family: var(--serif);
-  font-weight: normal;
-  font-size: 1.1rem;
-  margin: 0 0 0.1rem;
+.refcourse summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 0.9rem;
+  padding: 0.85rem 0;
+  cursor: pointer;
 }
 
-.refblock .who { font-size: 0.8rem; color: var(--ink-soft); margin: 0 0 0.5rem; }
+.refcourse summary:hover .rc-name { text-decoration: underline; text-decoration-color: var(--rule-strong); }
+.refcourse[open] summary { padding-bottom: 0.5rem; }
 
-.refblock h4 {
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: var(--ink-soft);
-  margin: 0.6rem 0 0.1rem;
+.refcourse .rc-name { font-family: var(--serif); font-size: 1.05rem; }
+.refcourse .rc-who { font-size: 0.78rem; color: var(--ink-soft); }
+
+.refcourse .rc-body { padding: 0 0 1.2rem; }
+
+.refcourse .rc-source { margin: 0 0 0.9rem; }
+.refcourse .rc-source a { font-size: 0.8rem; color: var(--project); text-decoration: none; }
+.refcourse .rc-source a:hover { text-decoration: underline; }
+
+.refcourse .rc-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.7rem 0.2rem;
+  margin: 0 0 1rem;
+}
+.refcourse .rc-card h4 { margin-top: 0; border-bottom: none; }
+
+.refcourse h4 {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 1rem 0 0.35rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.refblock p { margin: 0 0 0.35rem; font-size: 0.87rem; }
+.refcourse p { margin: 0 0 0.5rem; font-size: 0.87rem; line-height: 1.55; }
+.refcourse strong { font-weight: 700; }
+
+.refcourse .defs { margin: 0.2rem 0 0; }
+.refcourse .def-row {
+  padding: 0.05rem 0 0.05rem 0.65rem;
+  border-left: 2px solid var(--rule-strong);
+  margin-bottom: 0.6rem;
+}
+.refcourse .def-row dt { font-weight: 600; font-size: 0.8rem; color: var(--ink); margin-bottom: 0.1rem; }
+.refcourse .def-row dd { margin: 0; font-size: 0.83rem; color: var(--ink-soft); line-height: 1.5; }
+
+.coursehead .source-link { margin: 0.35rem 0 0; }
+.coursehead .source-link a { font-size: 0.82rem; color: var(--project); text-decoration: none; }
+.coursehead .source-link a:hover { text-decoration: underline; }
 
 /* ------------------------------------------------------------ course list */
 
