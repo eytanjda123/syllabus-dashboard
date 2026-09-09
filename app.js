@@ -648,9 +648,16 @@
       html += renderDayDetail(state.selected);
     } else if (state.view === 'week') {
       html += renderWeekStrip();
+      var t0 = today();
+      var weekHasToday = t0 >= state.weekAnchor && t0 < addDays(state.weekAnchor, 7);
+      var todayLineDrawn = !weekHasToday;
       for (var i = 0; i < 7; i++) {
         var d = addDays(state.weekAnchor, i);
         var ds = ymd(d);
+        if (!todayLineDrawn && d > t0) {
+          html += '<p class="todayline"><span>Today ends here</span></p>';
+          todayLineDrawn = true;
+        }
         if (!itemsOn(ds).length) continue;
         html += renderDayDetail(ds);
       }

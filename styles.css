@@ -404,6 +404,29 @@ button {
   flex: 0 0 auto;
 }
 
+.todayline {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1.4rem 0 0.5rem;
+  color: var(--ink-faint);
+}
+.todayline::before,
+.todayline::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--rule-strong);
+}
+.todayline span {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex: 0 0 auto;
+}
+
 .items { list-style: none; margin: 0; padding: 0; }
 
 .item {
