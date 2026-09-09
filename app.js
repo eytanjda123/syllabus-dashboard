@@ -530,8 +530,8 @@
     el.innerHTML = '<span class="urgent-label">Next 48 hours</span><ul>' +
       items.map(function (it) {
         return '<li><span class="when">' + esc(fmtWhen(it)) + '</span>' +
-          '<span><a href="#/course/' + attr(it.courseId) + '">' + esc(shortCourse(it.courseName)) + '</a> — ' +
-          esc(it.summary) + '</span></li>';
+          '<a href="#/course/' + attr(it.courseId) + '">' + esc(shortCourse(it.courseName)) + '</a>' +
+          '<span class="kind kind-' + it.type + '">' + esc(TYPE_LABEL[it.type]) + '</span></li>';
       }).join('') + '</ul>';
   }
 

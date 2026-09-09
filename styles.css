@@ -113,20 +113,24 @@ button {
 /* ------------------------------------------------------------ urgent strip */
 
 .urgent {
-  border-bottom: 1px solid var(--rule);
-  padding: 0.45rem 0;
-  font-size: 0.82rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  margin: 0.6rem 0 0;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.74rem;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.35rem 0.9rem;
+  gap: 0.25rem 0.75rem;
 }
 
-.urgent--quiet { color: var(--ink-faint); }
+.urgent--quiet { color: var(--ink-faint); background: transparent; border-style: dashed; }
 
 .urgent .urgent-label {
   font-family: var(--serif);
   font-style: italic;
+  font-size: 0.78rem;
   color: var(--ink-soft);
   flex: 0 0 auto;
 }
@@ -135,19 +139,24 @@ button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.2rem 1rem;
+  gap: 0.2rem 0.85rem;
   margin: 0;
   padding: 0;
   flex: 1 1 16rem;
 }
 
-.urgent li { display: flex; gap: 0.4rem; align-items: baseline; }
+.urgent li { display: flex; gap: 0.3rem; align-items: baseline; }
 
 .urgent .when {
-  color: var(--ink-soft);
+  color: var(--ink-faint);
   font-variant-numeric: tabular-nums;
   flex: 0 0 auto;
 }
+
+.urgent a { color: var(--ink-soft); text-decoration: none; }
+.urgent a:hover { text-decoration: underline; }
+
+.urgent .kind { font-size: 0.66rem; letter-spacing: 0.02em; text-transform: uppercase; }
 
 /* -------------------------------------------------------------- view bar */
 
