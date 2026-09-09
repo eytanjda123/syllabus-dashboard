@@ -569,8 +569,16 @@ button {
 .nudge .sub { font-size: 0.78rem; color: var(--ink-faint); margin: 0 0 0.5rem; }
 .nudge ul { list-style: none; margin: 0.2rem 0 0; padding: 0; }
 .nudge li { padding: 0.16rem 0; display: flex; gap: 0.5rem; align-items: baseline; }
-.nudge .when { color: var(--ink-faint); font-variant-numeric: tabular-nums; flex: 0 0 auto; }
-.nudge .kind { color: var(--ink-faint); font-size: 0.78rem; }
+.nudge .when { color: var(--ink-faint); font-variant-numeric: tabular-nums; flex: 0 0 auto; white-space: nowrap; }
+.nudge .desc { color: var(--ink-soft); font-weight: 400; }
+
+.nudge .kind { font-weight: 700; }
+.nudge .kind-reading { color: var(--reading); }
+.nudge .kind-assignment { color: var(--assignment); }
+.nudge .kind-exam { color: var(--exam); }
+.nudge .kind-project { color: var(--project); }
+.nudge .kind-deliverable { color: var(--deliverable); }
+.nudge .kind-other { color: var(--other); }
 
 .nudge--ahead { border-style: dashed; }
 

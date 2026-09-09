@@ -539,9 +539,11 @@
     var html = '<section class="nudge nudge--ahead"><h3>Further out</h3>';
     html += '<p class="sub">Bigger milestones for the rest of the semester — projects, exams, essays, presentations, and the like. Readings and routine assignments aren\'t included.</p>';
     html += '<ul>' + items.map(function (it) {
-      return '<li><span class="when">' + esc(fmtWhen(it)) + '</span><span>' +
-        esc(shortCourse(it.courseName)) + ' — ' + esc(it.summary) +
-        ' <span class="kind">(' + esc(TYPE_LABEL[it.type]) + ')</span></span></li>';
+      var days = daysBetween(today(), parseDate(it.date));
+      var when = days === 0 ? 'today' : days + ' day' + (days === 1 ? '' : 's');
+      return '<li><span class="when">' + when + '</span><span>' +
+        esc(shortCourse(it.courseName)) + ' — <strong class="kind kind-' + it.type + '">' +
+        esc(TYPE_LABEL[it.type]) + '</strong>: <span class="desc">' + esc(it.summary) + '</span></span></li>';
     }).join('') + '</ul></section>';
     return html;
   }
