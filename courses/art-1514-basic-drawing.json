@@ -335,6 +335,7 @@
     {
       "id": "midterm-project",
       "type": "project",
+      "major": true,
       "date": "2026-10-26",
       "time": "16:00",
       "summary": "Midterm project due for critique — a themed or narrative drawing in pencil or charcoal. Critique group 1 on Oct 26, group 2 on Oct 28.",
@@ -398,6 +399,7 @@
     {
       "id": "final-project",
       "type": "project",
+      "major": true,
       "date": "2026-12-07",
       "time": "16:00",
       "summary": "Final project due — bring it to class for your assigned critique group. Worth 25% of the grade.",

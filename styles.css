@@ -240,7 +240,10 @@ button {
   border-top: 3px solid transparent;
   min-height: 5.1rem;
   color: var(--ink-soft);
+  background: var(--paper-sunk);
 }
+
+.daytile.is-weekend { background: var(--paper); color: var(--ink-faint); }
 
 .daytile:last-child { border-right: none; }
 .daytile:hover { background: rgba(255,255,255,0.45); }
@@ -324,6 +327,8 @@ button {
   background: var(--paper-sunk);
 }
 
+.monthgrid .hdr.is-weekend { background: var(--paper); }
+
 .mcell {
   min-height: 4.1rem;
   padding: 0.25rem 0.3rem;
@@ -333,7 +338,10 @@ button {
   width: 100%;
   color: var(--ink-soft);
   display: block;
+  background: var(--paper-sunk);
 }
+
+.mcell.is-weekend { background: var(--paper); color: var(--ink-faint); }
 
 .mcell:hover { background: var(--paper-raised); }
 .mcell.is-outside { opacity: 0.35; }
@@ -558,9 +566,11 @@ button {
   margin: 0 0 0.3rem;
 }
 
+.nudge .sub { font-size: 0.78rem; color: var(--ink-faint); margin: 0 0 0.5rem; }
 .nudge ul { list-style: none; margin: 0.2rem 0 0; padding: 0; }
 .nudge li { padding: 0.16rem 0; display: flex; gap: 0.5rem; align-items: baseline; }
 .nudge .when { color: var(--ink-faint); font-variant-numeric: tabular-nums; flex: 0 0 auto; }
+.nudge .kind { color: var(--ink-faint); font-size: 0.78rem; }
 
 .nudge--ahead { border-style: dashed; }
 

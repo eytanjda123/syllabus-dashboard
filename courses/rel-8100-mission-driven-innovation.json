@@ -181,6 +181,7 @@
     {
       "id": "assignment-1-personal-framing",
       "type": "assignment",
+      "major": true,
       "date": "2026-09-16",
       "time": "23:59",
       "summary": "Written Assignment #1 (15%) — 500-word essay on personal framing. A personal reflection; no outside research needed.",
@@ -265,6 +266,7 @@
     {
       "id": "assignment-2-problem-statement",
       "type": "assignment",
+      "major": true,
       "date": "2026-09-30",
       "time": "23:59",
       "summary": "Written Assignment #2 (15%) — 800-word problem statement. Requires research per the textbook guidelines.",
@@ -538,6 +540,7 @@
     {
       "id": "assignment-3-logic-model",
       "type": "assignment",
+      "major": true,
       "date": "2026-11-18",
       "time": "23:59",
       "summary": "Written Assignment #3 (20%) — Logic Model, using the tabular/visual template from the textbook or your own.",
@@ -601,6 +604,7 @@
     {
       "id": "final-reflection",
       "type": "assignment",
+      "major": true,
       "date": "2026-12-09",
       "time": "23:59",
       "summary": "Final reflection paper (20%) — 1,000 words synthesizing the course. Upload any time between Dec 2 and Dec 9.",

@@ -368,6 +368,7 @@
     {
       "id": "assignment-1-reflection",
       "type": "assignment",
+      "major": true,
       "date": "2026-09-27",
       "time": "23:59",
       "summary": "Assignment 1 (15%) — 2-3 page reflection applying course themes to a real philanthropist's giving strategy.",
@@ -725,6 +726,7 @@
     {
       "id": "assignment-2-draft-proposal",
       "type": "assignment",
+      "major": true,
       "date": "2026-11-08",
       "time": "23:59",
       "summary": "Assignment 2 (5%) — 1-2 page draft of your final project focus area, rationale, and guiding principles.",
@@ -935,6 +937,7 @@
     {
       "id": "final-project-video",
       "type": "project",
+      "major": true,
       "date": "2026-12-04",
       "time": null,
       "summary": "Final project video pitch due — max 6-8 minutes, advising your donor on a $100M philanthropic strategy.",
@@ -1082,6 +1085,7 @@
     {
       "id": "final-project-memo",
       "type": "project",
+      "major": true,
       "date": "2026-12-21",
       "time": "23:59",
       "summary": "Final project memo due — max 8 pages double-spaced (~2,000 words), addressed to your donor.",

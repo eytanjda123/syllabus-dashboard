@@ -17,15 +17,13 @@
     deliverable: 'Deliverable',
     other: 'Other'
   };
-  var DAY_SHORT = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  var DAY_SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
                 'July', 'August', 'September', 'October', 'November', 'December'];
   var MON_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   var URGENT_HOURS = 48;
-  var AHEAD_MIN_DAYS = 14;   // look-ahead window starts here
-  var AHEAD_MAX_DAYS = 45;   // ...and ends here
 
   /* ----------------------------------------------------------------- storage */
 
@@ -180,8 +178,8 @@
     return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
   }
 
-  // Monday-first index
-  function dowIndex(d) { return (d.getDay() + 6) % 7; }
+  // Sunday-first index
+  function dowIndex(d) { return d.getDay(); }
 
   function startOfWeek(d) { return addDays(d, -dowIndex(d)); }
 
@@ -337,12 +335,9 @@
   }
 
   function lookAheadItems() {
-    var t0 = today();
-    var from = addDays(t0, AHEAD_MIN_DAYS);
-    var to = addDays(t0, AHEAD_MAX_DAYS + 1);
+    var now = new Date();
     return activeItems().filter(function (it) {
-      return (it.type === 'exam' || it.type === 'project') &&
-             !isDone(it) && it._due >= from && it._due < to;
+      return it.major && !isDone(it) && it._due >= now;
     });
   }
 
@@ -542,10 +537,11 @@
     var items = lookAheadItems();
     if (!items.length) return '';
     var html = '<section class="nudge nudge--ahead"><h3>Further out</h3>';
+    html += '<p class="sub">Bigger milestones for the rest of the semester — projects, exams, essays, presentations, and the like. Readings and routine assignments aren\'t included.</p>';
     html += '<ul>' + items.map(function (it) {
-      var days = daysBetween(today(), parseDate(it.date));
-      return '<li><span class="when">' + days + ' days</span><span>' +
-        esc(shortCourse(it.courseName)) + ' — ' + esc(it.summary) + '</span></li>';
+      return '<li><span class="when">' + esc(fmtWhen(it)) + '</span><span>' +
+        esc(shortCourse(it.courseName)) + ' — ' + esc(it.summary) +
+        ' <span class="kind">(' + esc(TYPE_LABEL[it.type]) + ')</span></span></li>';
     }).join('') + '</ul></section>';
     return html;
   }
@@ -590,6 +586,7 @@
       var items = itemsOn(ds);
       var open = items.filter(function (it) { return !isDone(it); }).length;
       var cls = 'daytile';
+      if (i === 0 || i === 6) cls += ' is-weekend';
       if (sameDay(d, t0)) cls += ' is-today';
       if (d < t0) cls += ' is-past';
       html += '<button type="button" class="' + cls + '" data-day="' + ds + '" aria-pressed="' + (ds === state.selected ? 'true' : 'false') + '">';
@@ -609,7 +606,7 @@
     var gridStart = startOfWeek(first);
     var t0 = today();
     var html = '<div class="monthgrid">';
-    DAY_SHORT.forEach(function (n) { html += '<div class="hdr">' + n + '</div>'; });
+    DAY_SHORT.forEach(function (n, i) { html += '<div class="hdr' + (i === 0 || i === 6 ? ' is-weekend' : '') + '">' + n + '</div>'; });
 
     for (var i = 0; i < 42; i++) {
       var d = addDays(gridStart, i);
@@ -617,6 +614,7 @@
       var ds = ymd(d);
       var items = itemsOn(ds);
       var cls = 'mcell';
+      if (d.getDay() === 0 || d.getDay() === 6) cls += ' is-weekend';
       if (d.getMonth() !== first.getMonth()) cls += ' is-outside';
       if (sameDay(d, t0)) cls += ' is-today';
       html += '<button type="button" class="' + cls + '" data-day="' + ds + '" aria-pressed="' + (ds === state.selected ? 'true' : 'false') + '">';

@@ -917,6 +917,7 @@
     {
       "id": "merger-simulation-due",
       "type": "assignment",
+      "major": true,
       "date": "2026-10-09",
       "time": null,
       "summary": "Merger simulation exercise due — the graded final piece of the merger exercise (15% of grade).",
@@ -1064,6 +1065,7 @@
     {
       "id": "midterm",
       "type": "exam",
+      "major": true,
       "date": "2026-10-14",
       "time": "08:30",
       "summary": "Midterm assessment — individual, closed book and closed internet, in the last class before fall break.",
@@ -1736,6 +1738,7 @@
     {
       "id": "final-exam",
       "type": "exam",
+      "major": true,
       "date": "2026-12-14",
       "time": "08:30",
       "summary": "Final exam, in class — closed book, covering all topics in the course.",

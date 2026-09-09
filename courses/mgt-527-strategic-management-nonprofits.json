@@ -1294,6 +1294,7 @@
     {
       "id": "project2-presentations",
       "type": "project",
+      "major": true,
       "date": "2026-12-15",
       "time": "08:30",
       "summary": "Project 2 groups present live in class — only required if you chose the nonprofit entrepreneurship track.",
@@ -1315,6 +1316,7 @@
     {
       "id": "final-presentation-video",
       "type": "project",
+      "major": true,
       "date": "2026-12-17",
       "time": "23:59",
       "summary": "Final presentation video due on Canvas — max 15 minutes, individually or in a group of up to 5.",

@@ -370,6 +370,7 @@
     {
       "id": "retreat",
       "type": "other",
+      "major": true,
       "date": "2026-11-06",
       "time": "17:30",
       "summary": "Mandatory weekend retreat at Wisdom House, Litchfield CT — you cannot pass the course without it.",

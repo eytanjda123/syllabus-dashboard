@@ -373,6 +373,7 @@
     {
       "id": "external-review-1",
       "type": "deliverable",
+      "major": true,
       "date": "2026-10-09",
       "time": "09:00",
       "summary": "External Review 1 — present initial project concepts to outside reviewers.",
@@ -394,6 +395,7 @@
     {
       "id": "external-review-2",
       "type": "deliverable",
+      "major": true,
       "date": "2026-11-06",
       "time": "09:00",
       "summary": "External Review 2 — present the developed project concept to outside reviewers.",
@@ -415,6 +417,7 @@
     {
       "id": "moot",
       "type": "deliverable",
+      "major": true,
       "date": "2026-11-20",
       "time": "09:00",
       "summary": "Moot — rehearsal of the project ahead of final presentations.",
@@ -436,6 +439,7 @@
     {
       "id": "final-project-proposal",
       "type": "project",
+      "major": true,
       "date": "2026-12-18",
       "time": "09:00",
       "summary": "Final group project proposal and External Review 3 presentation at Rudolph Hall — narrative, mapping, legal framework, cost estimate, pro forma, financing, and schematic design.",
