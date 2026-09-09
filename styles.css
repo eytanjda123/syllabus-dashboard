@@ -387,6 +387,14 @@ button {
 .coursegroup > h4 a { text-decoration: none; color: inherit; }
 .coursegroup > h4 a:hover { text-decoration: underline; }
 
+.coursegroup > h4 .donecount {
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
+}
+
 .items { list-style: none; margin: 0; padding: 0; }
 
 .item {
@@ -572,13 +580,13 @@ button {
 .nudge .when { color: var(--ink-faint); font-variant-numeric: tabular-nums; flex: 0 0 auto; white-space: nowrap; }
 .nudge .desc { color: var(--ink-soft); font-weight: 400; }
 
-.nudge .kind { font-weight: 700; }
-.nudge .kind-reading { color: var(--reading); }
-.nudge .kind-assignment { color: var(--assignment); }
-.nudge .kind-exam { color: var(--exam); }
-.nudge .kind-project { color: var(--project); }
-.nudge .kind-deliverable { color: var(--deliverable); }
-.nudge .kind-other { color: var(--other); }
+.kind { font-weight: 700; }
+.kind-reading { color: var(--reading); }
+.kind-assignment { color: var(--assignment); }
+.kind-exam { color: var(--exam); }
+.kind-project { color: var(--project); }
+.kind-deliverable { color: var(--deliverable); }
+.kind-other { color: var(--other); }
 
 .nudge--ahead { border-style: dashed; }
 
@@ -770,6 +778,96 @@ button {
   color: var(--ink);
 }
 
+/* ------------------------------------------------------------------ search */
+
+.search-trigger {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  padding: 0.18rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.search-trigger:hover { color: var(--ink); border-color: var(--ink-soft); }
+.search-trigger kbd {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  padding: 0 0.3rem;
+  color: var(--ink-faint);
+}
+
+.search-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 18, 14, 0.4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8vh 1rem 2rem;
+  z-index: 50;
+}
+.search-modal[hidden] { display: none; }
+
+.search-panel {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 34rem;
+  max-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 16px 44px rgba(20, 18, 14, 0.28);
+}
+
+.search-input {
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.85rem 0.95rem;
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  outline: none;
+  flex: 0 0 auto;
+}
+
+.search-results { list-style: none; margin: 0; padding: 0.3rem; overflow-y: auto; }
+
+.search-results button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-radius: 4px;
+  font: inherit;
+}
+.search-results li.is-active button,
+.search-results button:hover { background: var(--paper-sunk); }
+
+.search-results .kind {
+  font-size: 0.64rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.search-results .summary { font-size: 0.88rem; color: var(--ink); }
+.search-results .meta {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  margin-top: 0.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.search-empty { padding: 1.2rem; text-align: center; color: var(--ink-faint); font-size: 0.85rem; }
+
 .hidden { display: none !important; }
 
 .sr-only {
@@ -798,9 +896,11 @@ button {
   .stepper button { width: 2rem; height: 2rem; }
   .stepper button.btn { width: auto; height: 2rem; padding: 0 0.75rem; }
   .segmented button { padding: 0.35rem 0.85rem; }
-  .item { grid-template-columns: 1.7rem 0.4rem 1fr; padding: 0.45rem 0; }
+  .item { grid-template-columns: 1.7rem 1fr; padding: 0.45rem 0; }
   .item .check { width: 1.35rem; height: 1.35rem; margin-top: 0.08rem; }
   .nudge-actions .btn, .nudge-actions label.btn { flex: 1 1 auto; text-align: center; }
+  .search-trigger kbd { display: none; }
+  .search-modal { padding-top: 4vh; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

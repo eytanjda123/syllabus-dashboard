@@ -53,6 +53,7 @@
   var poolSelected = read(KEY.pool, {});
 
   function itemKey(courseId, itemId) { return courseId + '::' + itemId; }
+  function domId(key) { return key.replace(/:/g, '-'); }
   function isDone(it) { return !!completed[itemKey(it.courseId, it.id)]; }
   function isPlanned(it) { return !!poolSelected[itemKey(it.courseId, it.id)]; }
 
@@ -425,7 +426,7 @@
     }
 
     var html = '';
-    html += '<li class="' + cls + '">';
+    html += '<li class="' + cls + '" id="item-' + domId(key) + '">';
     html += '<input class="check" type="checkbox" data-complete="' + attr(key) + '"' +
             (done ? ' checked' : '') + ' aria-label="Mark ' + attr(it.summary) + ' complete">';
     html += '<div class="body">';
@@ -468,8 +469,9 @@
     var d = parseDate(dateStr);
     var items = itemsOn(dateStr);
     var html = '';
+    var doneToday = items.filter(isDone).length;
     html += '<h2 class="section-head">' + esc(fmtDayLong(d));
-    html += '<span class="sub">' + (items.length ? items.length + (items.length === 1 ? ' item' : ' items') : 'nothing due') + '</span></h2>';
+    html += '<span class="sub">' + (items.length ? doneToday + ' of ' + items.length + ' done' : 'nothing due') + '</span></h2>';
 
     // Class sessions that meet today, with any deviation flagged.
     var sessions = [];
@@ -502,9 +504,11 @@
     state.courses.forEach(function (c) {
       var list = byCourse[c.courseId];
       if (!list) return;
+      var listDone = list.filter(isDone).length;
       html += '<section class="coursegroup">';
       html += '<h4><a href="#/course/' + attr(c.courseId) + '">' + esc(c.courseName) + '</a>' +
-              (c.section ? '<span class="sub">' + esc(c.section) + '</span>' : '') + '</h4>';
+              (c.section ? '<span class="sub">' + esc(c.section) + '</span>' : '') +
+              '<span class="donecount">' + listDone + ' of ' + list.length + '</span></h4>';
       html += renderItemList(list, {});
       html += '</section>';
     });
@@ -857,6 +861,91 @@
     return html;
   }
 
+  /* ---------------------------------------------------------------- search */
+
+  function buildSearchIndex() {
+    var out = [];
+    function addFrom(list, fromArchive) {
+      list.forEach(function (c) {
+        c.items.forEach(function (it) {
+          out.push({
+            courseId: c.courseId, courseName: c.courseName, fromArchive: fromArchive,
+            id: it.id, type: it.type, date: it.date, time: it.time,
+            summary: it.summary, verbatim: it.verbatim || '', _due: it._due
+          });
+        });
+      });
+    }
+    addFrom(state.courses, false);
+    addFrom(state.archive, true);
+    return out;
+  }
+
+  function searchMatch(entry, q) {
+    return entry.summary.toLowerCase().indexOf(q) !== -1 ||
+           entry.verbatim.toLowerCase().indexOf(q) !== -1 ||
+           entry.courseName.toLowerCase().indexOf(q) !== -1 ||
+           TYPE_LABEL[entry.type].toLowerCase().indexOf(q) !== -1;
+  }
+
+  function searchResultHtml(entry, i) {
+    var when = fmtWhen({ date: entry.date, time: entry.time, _due: entry._due });
+    return '<li' + (i === 0 ? ' class="is-active"' : '') + '>' +
+      '<button type="button" data-result="' + i + '">' +
+      '<span class="kind kind-' + entry.type + '">' + esc(TYPE_LABEL[entry.type]) + '</span>' +
+      '<span class="summary">' + esc(entry.summary) + '</span>' +
+      '<span class="meta">' + esc(shortCourse(entry.courseName)) + ' — ' + esc(when) + '</span>' +
+      '</button></li>';
+  }
+
+  function renderSearchResults(q) {
+    var list = document.getElementById('searchResults');
+    var empty = document.getElementById('searchEmpty');
+    var index = buildSearchIndex();
+    var results;
+    if (!q) {
+      results = index.filter(function (e) { return e._due >= new Date(); })
+        .sort(function (a, b) { return a._due - b._due; }).slice(0, 12);
+    } else {
+      var needle = q.toLowerCase();
+      results = index.filter(function (e) { return searchMatch(e, needle); })
+        .sort(function (a, b) { return a._due - b._due; }).slice(0, 40);
+    }
+    state.searchResults = results;
+    if (!results.length) {
+      list.innerHTML = '';
+      empty.hidden = false;
+      empty.textContent = q ? 'No matches.' : 'Nothing upcoming.';
+    } else {
+      empty.hidden = true;
+      list.innerHTML = results.map(searchResultHtml).join('');
+    }
+  }
+
+  function openSearch() {
+    var modal = document.getElementById('searchModal');
+    modal.hidden = false;
+    var input = document.getElementById('searchInput');
+    input.value = '';
+    renderSearchResults('');
+    input.focus();
+  }
+
+  function closeSearch() {
+    document.getElementById('searchModal').hidden = true;
+  }
+
+  function goToSearchResult(entry) {
+    closeSearch();
+    var key = itemKey(entry.courseId, entry.id);
+    state.expanded[key] = true;
+    var path = (entry.fromArchive ? '#/archive/' : '#/course/') + encodeURIComponent(entry.courseId);
+    history.pushState(null, '', path);
+    render();
+    var el = document.getElementById('item-' + domId(key));
+    if (el) el.scrollIntoView({ block: 'center' });
+  }
+
   /* ----------------------------------------------------------------- router */
 
   function currentRoute() {
@@ -949,6 +1038,17 @@
   }
 
   document.addEventListener('click', function (e) {
+    if (e.target.id === 'searchTrigger') { openSearch(); return; }
+    if (e.target.id === 'searchModal') { closeSearch(); return; }
+
+    var result = e.target.closest ? e.target.closest('[data-result]') : null;
+    if (result) {
+      var idx = parseInt(result.getAttribute('data-result'), 10);
+      var entry = state.searchResults && state.searchResults[idx];
+      if (entry) goToSearchResult(entry);
+      return;
+    }
+
     var t = e.target.closest ? e.target.closest('[data-view],[data-step],[data-day],[data-toggle],[data-plan],[data-sync],.synclink') : null;
     if (!t) return;
 
@@ -1015,7 +1115,40 @@
     }
   });
 
+  document.addEventListener('input', function (e) {
+    if (e.target.id === 'searchInput') renderSearchResults(e.target.value.trim());
+  });
+
   document.addEventListener('keydown', function (e) {
+    if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+      e.preventDefault();
+      openSearch();
+      return;
+    }
+
+    if (e.target.id === 'searchInput') {
+      if (e.key === 'Escape') { e.preventDefault(); closeSearch(); return; }
+      var items = document.querySelectorAll('#searchResults li');
+      if (!items.length) return;
+      var activeIdx = 0;
+      items.forEach(function (li, i) { if (li.classList.contains('is-active')) activeIdx = i; });
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        items[activeIdx].classList.remove('is-active');
+        var next = e.key === 'ArrowDown' ? (activeIdx + 1) % items.length : (activeIdx - 1 + items.length) % items.length;
+        items[next].classList.add('is-active');
+        items[next].scrollIntoView({ block: 'nearest' });
+        return;
+      }
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        var btn = items[activeIdx].querySelector('[data-result]');
+        if (btn) btn.click();
+        return;
+      }
+      return;
+    }
+
     var tag = (e.target.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
     if (e.altKey) return;

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Coursework</title>
 <meta name="description" content="A personal dashboard for what's due across this semester's courses.">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -13,6 +13,7 @@
 
   <header class="masthead">
     <h1><a href="#/">Coursework</a></h1>
+    <button type="button" id="searchTrigger" class="search-trigger">Search <kbd>&#8984;K</kbd></button>
     <div class="today-line" id="todayLine"></div>
   </header>
 
@@ -26,6 +27,14 @@
 
   <div id="urgent" class="urgent" aria-live="polite"></div>
 
+  <div class="search-modal" id="searchModal" hidden>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search readings, assignments, courses…" autocomplete="off" spellcheck="false">
+      <ul class="search-results" id="searchResults"></ul>
+      <p class="search-empty" id="searchEmpty" hidden>No matches.</p>
+    </div>
+  </div>
+
   <main id="view">
     <p class="empty">Loading your courses&hellip;</p>
   </main>
@@ -34,6 +43,6 @@
 
 </div>
 
-<script src="app.js?v=8"></script>
+<script src="app.js?v=9"></script>
 </body>
 </html>
