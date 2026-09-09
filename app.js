@@ -26,16 +26,12 @@
   var URGENT_HOURS = 48;
   var AHEAD_MIN_DAYS = 14;   // look-ahead window starts here
   var AHEAD_MAX_DAYS = 45;   // ...and ends here
-  var MISSED_LOOKBACK_DAYS = 21;
-  var MISSED_QUIET_DAYS = 3; // only nag if you've been away this long
 
   /* ----------------------------------------------------------------- storage */
 
   var KEY = {
     completed: 'sd.completed',
     pool: 'sd.poolSelected',
-    ignored: 'sd.ignored',
-    lastVisit: 'sd.lastVisit',
     monthDots: 'sd.monthDots',
     view: 'sd.view'
   };
@@ -57,13 +53,10 @@
 
   var completed = read(KEY.completed, {});
   var poolSelected = read(KEY.pool, {});
-  var ignored = read(KEY.ignored, {});
-  var lastVisit = read(KEY.lastVisit, null);
 
   function itemKey(courseId, itemId) { return courseId + '::' + itemId; }
   function isDone(it) { return !!completed[itemKey(it.courseId, it.id)]; }
   function isPlanned(it) { return !!poolSelected[itemKey(it.courseId, it.id)]; }
-  function isIgnored(it) { return !!ignored[itemKey(it.courseId, it.id)]; }
 
   /* ------------------------------------------------------- cross-device sync
      No server involved: progress travels as a link or a file, device to
@@ -82,7 +75,7 @@
   }
 
   function syncPayload() {
-    return { completed: completed, poolSelected: poolSelected, ignored: ignored };
+    return { completed: completed, poolSelected: poolSelected };
   }
 
   function mergeSyncData(data) {
@@ -95,11 +88,9 @@
     }
     mergeInto(completed, data.completed);
     mergeInto(poolSelected, data.poolSelected);
-    mergeInto(ignored, data.ignored);
     if (n) {
       write(KEY.completed, completed);
       write(KEY.pool, poolSelected);
-      write(KEY.ignored, ignored);
     }
     return n;
   }
@@ -163,7 +154,6 @@
     monthAnchor: null,    // Date, first of displayed month
     weekAnchor: null,     // Date, Monday of displayed week
     expanded: {},         // itemKey -> true (session only)
-    missedDismissed: false,
     loadErrors: []
   };
 
@@ -353,16 +343,6 @@
     return activeItems().filter(function (it) {
       return (it.type === 'exam' || it.type === 'project') &&
              !isDone(it) && it._due >= from && it._due < to;
-    });
-  }
-
-  function missedItems() {
-    var now = new Date();
-    var floor = addDays(today(), -MISSED_LOOKBACK_DAYS);
-    return activeItems().filter(function (it) {
-      if (isDone(it) || isIgnored(it)) return false;
-      if (it.pool && it.pool.isPool) return false; // optional until claimed
-      return it._due < now && it._due >= floor;
     });
   }
 
@@ -570,29 +550,6 @@
     return html;
   }
 
-  function renderMissed() {
-    if (state.missedDismissed) return '';
-    var away = lastVisit ? daysBetween(new Date(lastVisit), new Date()) : 99;
-    if (away < MISSED_QUIET_DAYS) return '';
-    var items = missedItems();
-    if (!items.length) return '';
-
-    var html = '<section class="nudge"><h3>While you were away</h3>';
-    html += '<p>' + items.length + (items.length === 1 ? ' item' : ' items') +
-            ' came due in the last ' + MISSED_LOOKBACK_DAYS + ' days and are still unchecked.</p>';
-    html += '<ul>' + items.slice(0, 8).map(function (it) {
-      return '<li><span class="when">' + esc(fmtWhen(it)) + '</span><span>' +
-        esc(shortCourse(it.courseName)) + ' — ' + esc(it.summary) + '</span></li>';
-    }).join('') + '</ul>';
-    if (items.length > 8) html += '<p class="sub">…and ' + (items.length - 8) + ' more.</p>';
-    html += '<div class="nudge-actions">';
-    html += '<button class="btn" type="button" data-missed="complete">Mark all complete</button>';
-    html += '<button class="btn" type="button" data-missed="ignore">Clear without checking</button>';
-    html += '<button class="btn" type="button" data-missed="dismiss">Leave for now</button>';
-    html += '</div></section>';
-    return html;
-  }
-
   /* -------------------------------------------------------------- home views */
 
   function renderViewBar() {
@@ -703,7 +660,6 @@
       html += renderDayDetail(state.selected);
     }
 
-    html += renderMissed();
     html += renderLookAhead();
     return html;
   }
@@ -831,9 +787,9 @@
       delete state.syncFallbackLink;
     }
 
-    var n = countKeys(completed) + countKeys(poolSelected) + countKeys(ignored);
+    var n = countKeys(completed) + countKeys(poolSelected);
     html += '<p style="font-size:.85rem;color:var(--ink-soft);margin-top:.9rem">' +
-      n + ' item' + (n === 1 ? '' : 's') + ' checked off, planned, or cleared on this device.</p>';
+      n + ' item' + (n === 1 ? '' : 's') + ' checked off or planned on this device.</p>';
 
     html += '<div class="nudge-actions">';
     html += '<button class="btn" type="button" data-sync="link">Copy a sync link</button>';
@@ -993,7 +949,7 @@
   }
 
   document.addEventListener('click', function (e) {
-    var t = e.target.closest ? e.target.closest('[data-view],[data-step],[data-day],[data-toggle],[data-plan],[data-missed],[data-sync],.synclink') : null;
+    var t = e.target.closest ? e.target.closest('[data-view],[data-step],[data-day],[data-toggle],[data-plan],[data-sync],.synclink') : null;
     if (!t) return;
 
     if (t.classList && t.classList.contains('synclink')) { t.select(); return; }
@@ -1027,22 +983,6 @@
       write(KEY.pool, poolSelected);
       render();
       return;
-    }
-    if (t.hasAttribute('data-missed')) {
-      var action = t.getAttribute('data-missed');
-      if (action === 'dismiss') {
-        state.missedDismissed = true;
-      } else {
-        missedItems().forEach(function (it) {
-          var k2 = itemKey(it.courseId, it.id);
-          if (action === 'complete') completed[k2] = true;
-          else ignored[k2] = true;
-        });
-        write(KEY.completed, completed);
-        write(KEY.ignored, ignored);
-        state.missedDismissed = true;
-      }
-      render();
     }
   });
 
@@ -1119,7 +1059,6 @@
 
   loadAll().then(function () {
     render();
-    write(KEY.lastVisit, new Date().toISOString());
   }).catch(function (err) {
     document.getElementById('view').innerHTML =
       '<div class="err"><strong>Could not read courses/manifest.json.</strong><p>' + esc(err.message) + '</p>' +
