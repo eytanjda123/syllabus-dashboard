@@ -246,6 +246,11 @@
 
   function attr(s) { return esc(s); }
 
+  var PAGE_RANGE_RE = /\b(?:pp?\.?|pages?)\s*\d+(?:\s*[-–—]\s*\d+)?(?:\s*(?:and|&amp;|,)\s*\d+(?:\s*[-–—]\s*\d+)?)*/gi;
+  function escBoldPages(s) {
+    return esc(s).replace(PAGE_RANGE_RE, function (m) { return '<strong>' + m + '</strong>'; });
+  }
+
   /* ------------------------------------------------------------- data loading */
 
   function normalizeCourse(course, sourcePath) {
@@ -432,13 +437,13 @@
     html += '<div class="body">';
     html += '<button class="disclose" type="button" data-toggle="' + attr(key) + '" aria-expanded="' + (open ? 'true' : 'false') + '">';
     html += '<span class="itemtag itemtag-' + it.type + '">' + esc(TYPE_LABEL[it.type]) + '</span>';
-    html += '<span class="summary">' + esc(it.summary) + '</span>';
+    html += '<span class="summary">' + escBoldPages(it.summary) + '</span>';
     if (meta.length) html += '<span class="meta">' + meta.join('') + '</span>';
     html += '</button>';
 
     if (open) {
       html += '<div class="detail">';
-      html += '<p class="verbatim">' + esc(it.verbatim || 'No original text was captured for this item.') + '</p>';
+      html += '<p class="verbatim">' + escBoldPages(it.verbatim || 'No original text was captured for this item.') + '</p>';
       var link = it.link || {};
       if (link.url) {
         html += '<p class="resource">';
@@ -547,7 +552,7 @@
       var when = days === 0 ? 'today' : days + ' day' + (days === 1 ? '' : 's');
       return '<li><span class="when">' + when + '</span><span>' +
         esc(shortCourse(it.courseName)) + ' — <strong class="kind kind-' + it.type + '">' +
-        esc(TYPE_LABEL[it.type]) + '</strong>: <span class="desc">' + esc(it.summary) + '</span></span></li>';
+        esc(TYPE_LABEL[it.type]) + '</strong>: <span class="desc">' + escBoldPages(it.summary) + '</span></span></li>';
     }).join('') + '</ul></section>';
     return html;
   }
@@ -900,7 +905,7 @@
     return '<li' + (i === 0 ? ' class="is-active"' : '') + '>' +
       '<button type="button" data-result="' + i + '">' +
       '<span class="kind kind-' + entry.type + '">' + esc(TYPE_LABEL[entry.type]) + '</span>' +
-      '<span class="summary">' + esc(entry.summary) + '</span>' +
+      '<span class="summary">' + escBoldPages(entry.summary) + '</span>' +
       '<span class="meta">' + esc(shortCourse(entry.courseName)) + ' — ' + esc(when) + '</span>' +
       '</button></li>';
   }
