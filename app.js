@@ -377,6 +377,11 @@
     return name.length > 26 ? name.slice(0, 24).replace(/\s+\S*$/, '') + '…' : name;
   }
 
+  function courseCode(c) {
+    var code = (c.courseName || '').split(':')[0].trim();
+    return c.shortName ? code + ' — ' + c.shortName : code;
+  }
+
   /* ---------------------------------------------------------- item rendering */
 
   function dotsFor(items) {
@@ -486,12 +491,16 @@
       });
     });
     if (sessions.length) {
-      html += '<p class="legend">' + sessions.map(function (x) {
-        return '<span>' + esc(shortCourse(x.course.courseName)) +
-          (x.s.time ? ' at ' + esc(fmtTime(x.s.time)) : '') +
-          ' — ' + esc(x.s.topic) +
-          (x.s.note ? ' <strong>(' + esc(x.s.note) + ')</strong>' : '') + '</span>';
-      }).join('') + '</p>';
+      sessions.sort(function (a, b) {
+        var ta = a.s.time || '', tb = b.s.time || '';
+        return ta < tb ? -1 : ta > tb ? 1 : 0;
+      });
+      html += '<div class="sched">' + sessions.map(function (x) {
+        var row = '<span class="stime">' + (x.s.time ? esc(fmtTime(x.s.time)) : '—') + '</span>' +
+          '<span><strong class="scourse">' + esc(courseCode(x.course)) + '</strong> — ' + esc(x.s.topic) + '</span>';
+        if (x.s.note) row += '<span></span><span class="snoterow">' + esc(x.s.note) + '</span>';
+        return row;
+      }).join('') + '</div>';
     }
 
     if (!items.length) {

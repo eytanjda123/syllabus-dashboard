@@ -770,6 +770,40 @@ button {
 
 .legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
 
+/* ------------------------------------------------------------- day schedule */
+
+.sched {
+  display: grid;
+  grid-template-columns: 3.4rem 1fr;
+  row-gap: 0.2rem;
+  column-gap: 0.6rem;
+  align-items: start;
+  font-size: 0.82rem;
+  padding: 0.5rem 0 0;
+}
+
+.sched .stime {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  padding-top: 0.05rem;
+}
+
+.sched .scourse { font-weight: 700; }
+
+.sched .snoterow {
+  grid-column: 2;
+  margin: 0.1rem 0 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--exam);
+  background: color-mix(in srgb, var(--exam) 16%, var(--paper-raised));
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  display: inline-block;
+  width: fit-content;
+}
+
 /* ------------------------------------------------------------------ misc */
 
 .empty {
