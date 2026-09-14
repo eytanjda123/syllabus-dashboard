@@ -378,6 +378,15 @@ button {
   font-variant-numeric: tabular-nums;
 }
 
+.dayhead {
+  font-size: 1.55rem;
+  margin-top: 2.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.dayhead:first-of-type { margin-top: 0.9rem; padding-top: 0; border-top: none; }
+
 .coursegroup { margin-top: 0.9rem; }
 
 .coursegroup > h4 {

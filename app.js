@@ -480,7 +480,7 @@
     var items = itemsOn(dateStr);
     var html = '';
     var doneToday = items.filter(isDone).length;
-    html += '<h2 class="section-head">' + esc(fmtDayLong(d));
+    html += '<h2 class="section-head dayhead">' + esc(fmtDayLong(d));
     html += '<span class="sub">' + (items.length ? doneToday + ' of ' + items.length + ' done' : 'nothing due') + '</span></h2>';
 
     // Class sessions that meet today, with any deviation flagged.
