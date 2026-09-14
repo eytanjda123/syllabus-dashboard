@@ -31,7 +31,8 @@
     completed: 'sd.completed',
     pool: 'sd.poolSelected',
     monthDots: 'sd.monthDots',
-    view: 'sd.view'
+    view: 'sd.view',
+    custom: 'sd.custom'
   };
 
   function read(key, fallback) {
@@ -51,6 +52,7 @@
 
   var completed = read(KEY.completed, {});
   var poolSelected = read(KEY.pool, {});
+  var customItems = read(KEY.custom, []);
 
   function itemKey(courseId, itemId) { return courseId + '::' + itemId; }
   function domId(key) { return key.replace(/:/g, '-'); }
@@ -330,6 +332,54 @@
     return null;
   }
 
+  /* ------------------------------------------------------------ custom items
+     Things you add yourself — saved to this browser's localStorage only,
+     never touching the course JSON files. Re-applied on top of the loaded
+     courses after every load, add, or delete. */
+
+  function applyCustomItems() {
+    state.courses.forEach(function (c) {
+      c.items = c.items.filter(function (it) { return !it.custom; });
+    });
+    var byCourse = {};
+    customItems.forEach(function (ci) {
+      (byCourse[ci.courseId] = byCourse[ci.courseId] || []).push(ci);
+    });
+    state.courses.forEach(function (c) {
+      var list = byCourse[c.courseId];
+      if (!list) return;
+      list.forEach(function (ci) {
+        var it = {
+          id: ci.id, type: ci.type, date: ci.date, time: ci.time || null,
+          summary: ci.summary, verbatim: ci.summary,
+          link: { url: null, sourceType: 'none', note: null },
+          pool: { isPool: false, poolId: null, requiredCount: null, totalOptions: null },
+          completed: false, poolSelected: false, custom: true,
+          courseId: c.courseId, courseName: c.courseName
+        };
+        it._due = dueAt(it);
+        if (it._due) c.items.push(it);
+      });
+      c.items.sort(function (a, b) { return a._due - b._due; });
+    });
+  }
+
+  function addCustomItem(data) {
+    var id = 'custom-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6);
+    customItems.push({
+      id: id, courseId: data.courseId, type: data.type,
+      date: data.date, time: data.time || null, summary: data.summary
+    });
+    write(KEY.custom, customItems);
+    applyCustomItems();
+  }
+
+  function deleteCustomItem(id) {
+    customItems = customItems.filter(function (ci) { return ci.id !== id; });
+    write(KEY.custom, customItems);
+    applyCustomItems();
+  }
+
   // Everything due in the next 48 hours, still open. Never touched by completion
   // of *other* items — this is pure date arithmetic against the real clock.
   function urgentItems() {
@@ -425,6 +475,7 @@
     if (opts.showDate) meta.push('<span>' + esc(fmtWhen(it)) + '</span>');
     else if (it.time) meta.push('<span>' + esc(fmtTime(it.time)) + '</span>');
     if (opts.showCourse) meta.push('<span>' + esc(shortCourse(it.courseName)) + '</span>');
+    if (it.custom) meta.push('<span class="customtag">Added by you</span>');
     if (isPool) {
       var course = courseById(it.courseId, true);
       var st = course ? poolStats(course, it.pool.poolId) : null;
@@ -448,7 +499,9 @@
 
     if (open) {
       html += '<div class="detail">';
-      html += '<p class="verbatim">' + escBoldPages(it.verbatim || 'No original text was captured for this item.') + '</p>';
+      if (!it.custom) {
+        html += '<p class="verbatim">' + escBoldPages(it.verbatim || 'No original text was captured for this item.') + '</p>';
+      }
       var link = it.link || {};
       if (link.url) {
         html += '<p class="resource">';
@@ -462,6 +515,9 @@
       if (isPool) {
         html += '<p class="resource"><button class="btn" type="button" data-plan="' + attr(key) + '">' +
           (isPlanned(it) ? 'Remove from my plan' : 'Plan to do this one') + '</button></p>';
+      }
+      if (it.custom) {
+        html += '<p class="resource"><button class="btn btn-delete" type="button" data-delete-custom="' + attr(it.id) + '">Delete this item</button></p>';
       }
       html += '</div>';
     }
@@ -505,27 +561,28 @@
 
     if (!items.length) {
       html += '<p class="empty">No readings or deadlines on this day.</p>';
-      return html;
+    } else {
+      // Grouped by course so the day reads as "what each class wants from me".
+      var byCourse = {};
+      items.forEach(function (it) {
+        if (!byCourse[it.courseId]) byCourse[it.courseId] = [];
+        byCourse[it.courseId].push(it);
+      });
+
+      state.courses.forEach(function (c) {
+        var list = byCourse[c.courseId];
+        if (!list) return;
+        var listDone = list.filter(isDone).length;
+        html += '<section class="coursegroup">';
+        html += '<h4><a href="#/course/' + attr(c.courseId) + '">' + esc(c.courseName) + '</a>' +
+                (c.section ? '<span class="sub">' + esc(c.section) + '</span>' : '') +
+                '<span class="donecount">' + listDone + ' of ' + list.length + '</span></h4>';
+        html += renderItemList(list, {});
+        html += '</section>';
+      });
     }
 
-    // Grouped by course so the day reads as "what each class wants from me".
-    var byCourse = {};
-    items.forEach(function (it) {
-      if (!byCourse[it.courseId]) byCourse[it.courseId] = [];
-      byCourse[it.courseId].push(it);
-    });
-
-    state.courses.forEach(function (c) {
-      var list = byCourse[c.courseId];
-      if (!list) return;
-      var listDone = list.filter(isDone).length;
-      html += '<section class="coursegroup">';
-      html += '<h4><a href="#/course/' + attr(c.courseId) + '">' + esc(c.courseName) + '</a>' +
-              (c.section ? '<span class="sub">' + esc(c.section) + '</span>' : '') +
-              '<span class="donecount">' + listDone + ' of ' + list.length + '</span></h4>';
-      html += renderItemList(list, {});
-      html += '</section>';
-    });
+    html += '<button type="button" class="add-inline" data-add-day="' + attr(dateStr) + '">+ Add something for ' + esc(fmtDayShort(d)) + '</button>';
 
     return html;
   }
@@ -967,6 +1024,26 @@
     if (el) el.scrollIntoView({ block: 'center' });
   }
 
+  /* --------------------------------------------------------------- add item */
+
+  function openAddModal(prefillDate) {
+    var modal = document.getElementById('addModal');
+    var courseSel = document.getElementById('addCourse');
+    courseSel.innerHTML = state.courses.map(function (c) {
+      return '<option value="' + attr(c.courseId) + '">' + esc(c.courseName) + '</option>';
+    }).join('');
+    document.getElementById('addDate').value = prefillDate || ymd(today());
+    document.getElementById('addTime').value = '';
+    document.getElementById('addTitle').value = '';
+    document.getElementById('addType').value = 'assignment';
+    modal.hidden = false;
+    document.getElementById('addTitle').focus();
+  }
+
+  function closeAddModal() {
+    document.getElementById('addModal').hidden = true;
+  }
+
   /* ----------------------------------------------------------------- router */
 
   function currentRoute() {
@@ -1061,12 +1138,25 @@
   document.addEventListener('click', function (e) {
     if (e.target.id === 'searchTrigger') { openSearch(); return; }
     if (e.target.id === 'searchModal') { closeSearch(); return; }
+    if (e.target.id === 'addTrigger') { openAddModal(); return; }
+    if (e.target.id === 'addModal') { closeAddModal(); return; }
+    if (e.target.id === 'addCancel') { closeAddModal(); return; }
 
     var result = e.target.closest ? e.target.closest('[data-result]') : null;
     if (result) {
       var idx = parseInt(result.getAttribute('data-result'), 10);
       var entry = state.searchResults && state.searchResults[idx];
       if (entry) goToSearchResult(entry);
+      return;
+    }
+
+    var addDay = e.target.closest ? e.target.closest('[data-add-day]') : null;
+    if (addDay) { openAddModal(addDay.getAttribute('data-add-day')); return; }
+
+    var delCustom = e.target.closest ? e.target.closest('[data-delete-custom]') : null;
+    if (delCustom) {
+      deleteCustomItem(delCustom.getAttribute('data-delete-custom'));
+      render();
       return;
     }
 
@@ -1140,6 +1230,19 @@
     if (e.target.id === 'searchInput') renderSearchResults(e.target.value.trim());
   });
 
+  document.getElementById('addForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var courseId = document.getElementById('addCourse').value;
+    var type = document.getElementById('addType').value;
+    var title = document.getElementById('addTitle').value.trim();
+    var date = document.getElementById('addDate').value;
+    var time = document.getElementById('addTime').value;
+    if (!courseId || !title || !date) return;
+    addCustomItem({ courseId: courseId, type: type, date: date, time: time, summary: title });
+    closeAddModal();
+    render();
+  });
+
   document.addEventListener('keydown', function (e) {
     if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
       e.preventDefault();
@@ -1167,6 +1270,11 @@
         if (btn) btn.click();
         return;
       }
+      return;
+    }
+
+    if (e.key === 'Escape' && e.target.closest && e.target.closest('#addModal')) {
+      closeAddModal();
       return;
     }
 
@@ -1208,10 +1316,11 @@
   syncAnchors();
 
   document.getElementById('footnote').innerHTML =
-    'Checkboxes are saved in this browser only and never change what the dashboard treats as due — see <a href="#/sync">Sync</a> to move them to another device. ' +
-    'Keyboard: D for due, 1 day, 2 week, 3 month, arrows to move, T for today.';
+    'Checkboxes and items you add yourself are saved in this browser only — see <a href="#/sync">Sync</a> to move checkboxes to another device (added items don\'t travel with it yet). ' +
+    'Keyboard: D for due, 1 day, 2 week, 3 month, arrows to move, T for today, ⌘K to search.';
 
   loadAll().then(function () {
+    applyCustomItems();
     render();
   }).catch(function (err) {
     document.getElementById('view').innerHTML =

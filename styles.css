@@ -946,6 +946,71 @@ button {
 
 .search-empty { padding: 1.2rem; text-align: center; color: var(--ink-faint); font-size: 0.85rem; }
 
+/* --------------------------------------------------------------- add item */
+
+.add-panel { padding: 1.1rem 1.2rem 1.2rem; max-height: 85vh; overflow-y: auto; }
+
+.add-panel h3 {
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem;
+}
+
+.add-hint { font-size: 0.76rem; color: var(--ink-faint); margin: 0 0 0.9rem; }
+
+.add-field {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 0.7rem;
+}
+
+.add-field input,
+.add-field select {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  font: inherit;
+  font-size: 0.87rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.5rem;
+}
+
+.add-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 0.6rem; }
+
+.add-actions { display: flex; gap: 0.5rem; margin-top: 0.3rem; }
+.add-actions .btn { flex: 0 0 auto; }
+.add-actions .btn[type="submit"] { background: var(--ink); color: var(--paper-raised); border-color: var(--ink); }
+.add-actions .btn[type="submit"]:hover { color: var(--paper-raised); }
+
+.add-inline {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-top: 0.9rem;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  border-top: 1px dashed var(--rule);
+}
+.add-inline:hover { color: var(--ink-soft); }
+
+.customtag {
+  font-size: 0.68rem;
+  color: var(--project);
+  border: 1px solid currentColor;
+  border-radius: 99px;
+  padding: 0 0.4rem;
+}
+
+.btn-delete { color: var(--exam); border-color: var(--exam); }
+.btn-delete:hover { color: var(--exam); background: color-mix(in srgb, var(--exam) 10%, var(--paper)); }
+
 .hidden { display: none !important; }
 
 .sr-only {
@@ -979,6 +1044,7 @@ button {
   .nudge-actions .btn, .nudge-actions label.btn { flex: 1 1 auto; text-align: center; }
   .search-trigger kbd { display: none; }
   .search-modal { padding-top: 4vh; }
+  .add-row { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
