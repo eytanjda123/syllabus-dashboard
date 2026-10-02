@@ -1,0 +1,196 @@
+{
+  "courseId": "mgt-782-ob-preseminar",
+  "courseName": "MGT 782: PhD Pre-Seminar: Organizations & Management",
+  "shortName": "OB Pre-sem",
+  "professor": "Jennifer Dannals",
+  "section": "",
+  "semester": "Fall 2026",
+  "archived": false,
+  "syllabusLink": null,
+  "definitions": {
+    "gradingBasis": "Pass/Fail. Three requirements: one written memo per semester, active participation in discussions, and at least three questions per semester in the OB Seminar.",
+    "memo": "One written memo per semester: pick one of two options and write a one-page single-spaced answer — (1) review the paper (reject or R&R, with the 2-3 key weaknesses), or (2) outline the next paper you would write building on this research program. Memos are due the Monday before the relevant seminar, by midnight, to the professor via email. You may miss one pre-seminar session per semester with no make-up; if you miss more than one, send an additional memo.",
+    "participation": "Come prepared having closely read the speaker's paper. Be ready to discuss: What is the proposed theoretical contribution — novel, interesting, important, well articulated, how could it improve? How well does the empirical evidence support it, and what additional evidence would be useful?",
+    "seminarQuestions": "Ask at least three questions each semester during the OB Seminar (Tuesdays 11:35-12:50, right after pre-seminar). For up to two of the three you may email the speaker instead, forwarding the professor."
+  },
+  "gradingPolicy": "Pass/Fail: one memo per semester, active participation in pre-seminar discussions, and at least three questions per semester in the OB Seminar.",
+  "officeHours": {
+    "note": "By appointment.",
+    "details": "Professor Jennifer Dannals — office hours by appointment. Pre-seminar meets Tuesdays 10:15-11:25am in Evans Hall 2230, immediately before the OB Seminar (11:35-12:50)."
+  },
+  "classSessions": [
+    {
+      "date": "2026-09-22",
+      "time": "10:15",
+      "topic": "Pre-seminar discussion of Marya Besharov's work (OB Seminar follows 11:35-12:50)",
+      "note": "Evans Hall 2230."
+    },
+    {
+      "date": "2026-10-06",
+      "time": "10:15",
+      "topic": "Pre-seminar discussion of Adam Waytz's work (OB Seminar follows 11:35-12:50)",
+      "note": "Evans Hall 2230."
+    },
+    {
+      "date": "2026-12-01",
+      "time": "10:15",
+      "topic": "Pre-seminar discussion of Nour Kteily's work (OB Seminar follows 11:35-12:50)",
+      "note": "Evans Hall 2230."
+    },
+    {
+      "date": "2026-12-08",
+      "time": "10:15",
+      "topic": "Pre-seminar discussion of David Levari's work (OB Seminar follows 11:35-12:50)",
+      "note": "Evans Hall 2230."
+    }
+  ],
+  "items": [
+    {
+      "id": "memo-waytz",
+      "type": "assignment",
+      "date": "2026-10-05",
+      "time": "23:59",
+      "summary": "Optional memo slot — one-page memo on Adam Waytz's paper (you only need one memo this semester).",
+      "verbatim": "One written memo per semester: pick one of two options and write a one-page single-spaced answer — (1) review the paper (reject or R&R, with the 2-3 key weaknesses), or (2) outline the next paper you would write building on this research program. Memos are due the Monday before the relevant seminar, by midnight, to the professor via email.",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: due the Monday before the seminar. Pick any ONE seminar speaker per semester. The Sept 22 (Besharov) slot has already passed and is not listed."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "fall-memo",
+        "requiredCount": 1,
+        "totalOptions": 3
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "read-waytz",
+      "type": "reading",
+      "date": "2026-10-06",
+      "time": "10:15",
+      "summary": "Closely read Adam Waytz's seminar paper before pre-seminar.",
+      "verbatim": "Active participation: come fully prepared having closely read the seminar speaker's paper — theoretical contribution (novel, important, well articulated?) and empirical support (what additional evidence would help?).",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "The specific paper is not named in the syllabus; the speaker's paper will be shared separately."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "memo-kteily",
+      "type": "assignment",
+      "date": "2026-11-30",
+      "time": "23:59",
+      "summary": "Optional memo slot — one-page memo on Nour Kteily's paper (you only need one memo this semester).",
+      "verbatim": "One written memo per semester: pick one of two options and write a one-page single-spaced answer — (1) review the paper (reject or R&R, with the 2-3 key weaknesses), or (2) outline the next paper you would write building on this research program. Memos are due the Monday before the relevant seminar, by midnight, to the professor via email.",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: due the Monday before the seminar. Pick any ONE seminar speaker per semester. The Sept 22 (Besharov) slot has already passed and is not listed."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "fall-memo",
+        "requiredCount": 1,
+        "totalOptions": 3
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "read-kteily",
+      "type": "reading",
+      "date": "2026-12-01",
+      "time": "10:15",
+      "summary": "Closely read Nour Kteily's seminar paper before pre-seminar.",
+      "verbatim": "Active participation: come fully prepared having closely read the seminar speaker's paper — theoretical contribution (novel, important, well articulated?) and empirical support (what additional evidence would help?).",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "The specific paper is not named in the syllabus; the speaker's paper will be shared separately."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "memo-levari",
+      "type": "assignment",
+      "date": "2026-12-07",
+      "time": "23:59",
+      "summary": "Optional memo slot — one-page memo on David Levari's paper (you only need one memo this semester).",
+      "verbatim": "One written memo per semester: pick one of two options and write a one-page single-spaced answer — (1) review the paper (reject or R&R, with the 2-3 key weaknesses), or (2) outline the next paper you would write building on this research program. Memos are due the Monday before the relevant seminar, by midnight, to the professor via email.",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: due the Monday before the seminar. Pick any ONE seminar speaker per semester. The Sept 22 (Besharov) slot has already passed and is not listed."
+      },
+      "pool": {
+        "isPool": true,
+        "poolId": "fall-memo",
+        "requiredCount": 1,
+        "totalOptions": 3
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "questions-fall",
+      "type": "other",
+      "date": "2026-12-08",
+      "time": null,
+      "summary": "Ask at least three questions in the OB Seminar this fall (up to two may be emailed to the speaker, forwarding the professor).",
+      "verbatim": "To pass, ask at least three questions each semester during the OB seminar (Tuesdays 11:35-12:50). If uncomfortable speaking up, for up to two of the three you may email the speaker your questions and comments afterward, forwarding the professor.",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "Date derived: last fall seminar session; no explicit deadline in the syllabus."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    },
+    {
+      "id": "read-levari",
+      "type": "reading",
+      "date": "2026-12-08",
+      "time": "10:15",
+      "summary": "Closely read David Levari's seminar paper before pre-seminar.",
+      "verbatim": "Active participation: come fully prepared having closely read the seminar speaker's paper — theoretical contribution (novel, important, well articulated?) and empirical support (what additional evidence would help?).",
+      "link": {
+        "url": null,
+        "sourceType": "none",
+        "note": "The specific paper is not named in the syllabus; the speaker's paper will be shared separately."
+      },
+      "pool": {
+        "isPool": false,
+        "poolId": null,
+        "requiredCount": null,
+        "totalOptions": null
+      },
+      "completed": false,
+      "poolSelected": false
+    }
+  ]
+}
